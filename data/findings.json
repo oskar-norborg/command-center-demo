@@ -1,19 +1,25 @@
 {
-  "AMBR": [
+  "AAPL": [
     {
       "run_id": "2026-11-16-close",
       "type": "close",
       "date": "2026-11-16",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
-        "price": 201.3,
+        "price": 352.78,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-16",
-        "change_pct": -0.25,
+        "change_pct": -0.98,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "AAPL 352.78 is 2.0% below trim 360"
+        }
+      ],
       "news": []
     },
     {
@@ -22,14 +28,20 @@
       "date": "2026-11-13",
       "status": "ok",
       "quote": {
-        "price": 201.8,
+        "price": 356.27,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-13",
-        "change_pct": -0.39,
+        "change_pct": 0.39,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "AAPL 356.27 is 1.0% below trim 360"
+        }
+      ],
       "news": []
     },
     {
@@ -38,22 +50,21 @@
       "date": "2026-11-12",
       "status": "ok",
       "quote": {
-        "price": 202.6,
+        "price": 354.88,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-12",
-        "change_pct": -0.59,
+        "change_pct": -0.21,
         "change_basis": "prev-session"
       },
-      "alerts": [],
-      "news": [
+      "alerts": [
         {
-          "title": "Amberline Retail expands same-day delivery to more cities",
-          "url": "https://example.com/demo-news/amberline-retail-expands-same-day-delivery-to-more-cities",
-          "source": "Demo Wire",
-          "published": "2026-11-06T15:00:00Z"
+          "severity": "medium",
+          "kind": "near",
+          "title": "AAPL 354.88 is 1.4% below trim 360"
         }
-      ]
+      ],
+      "news": []
     },
     {
       "run_id": "2026-11-11-close",
@@ -61,22 +72,21 @@
       "date": "2026-11-11",
       "status": "ok",
       "quote": {
-        "price": 203.8,
+        "price": 355.63,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-11",
-        "change_pct": 0.79,
+        "change_pct": 2.04,
         "change_basis": "prev-session"
       },
-      "alerts": [],
-      "news": [
+      "alerts": [
         {
-          "title": "Amberline Retail expands same-day delivery to more cities",
-          "url": "https://example.com/demo-news/amberline-retail-expands-same-day-delivery-to-more-cities",
-          "source": "Demo Wire",
-          "published": "2026-11-06T15:00:00Z"
+          "severity": "medium",
+          "kind": "near",
+          "title": "AAPL 355.63 is 1.2% below trim 360"
         }
-      ]
+      ],
+      "news": []
     },
     {
       "run_id": "2026-11-10-close",
@@ -84,22 +94,15 @@
       "date": "2026-11-10",
       "status": "ok",
       "quote": {
-        "price": 202.2,
+        "price": 348.51,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-10",
-        "change_pct": -0.44,
+        "change_pct": -0.62,
         "change_basis": "prev-session"
       },
       "alerts": [],
-      "news": [
-        {
-          "title": "Amberline Retail expands same-day delivery to more cities",
-          "url": "https://example.com/demo-news/amberline-retail-expands-same-day-delivery-to-more-cities",
-          "source": "Demo Wire",
-          "published": "2026-11-06T15:00:00Z"
-        }
-      ]
+      "news": []
     },
     {
       "run_id": "2026-11-09-close",
@@ -107,22 +110,21 @@
       "date": "2026-11-09",
       "status": "ok",
       "quote": {
-        "price": 203.1,
+        "price": 350.69,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-09",
-        "change_pct": 0.59,
+        "change_pct": 2.43,
         "change_basis": "prev-session"
       },
-      "alerts": [],
-      "news": [
+      "alerts": [
         {
-          "title": "Amberline Retail expands same-day delivery to more cities",
-          "url": "https://example.com/demo-news/amberline-retail-expands-same-day-delivery-to-more-cities",
-          "source": "Demo Wire",
-          "published": "2026-11-06T15:00:00Z"
+          "severity": "medium",
+          "kind": "near",
+          "title": "AAPL 350.69 is 2.6% below trim 360"
         }
-      ]
+      ],
+      "news": []
     },
     {
       "run_id": "2026-11-06-close",
@@ -130,393 +132,10 @@
       "date": "2026-11-06",
       "status": "ok",
       "quote": {
-        "price": 201.9,
+        "price": 342.37,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-06",
-        "change_pct": 1.05,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Amberline Retail expands same-day delivery to more cities",
-          "url": "https://example.com/demo-news/amberline-retail-expands-same-day-delivery-to-more-cities",
-          "source": "Demo Wire",
-          "published": "2026-11-06T15:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 199.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.4,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 200.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 0.7,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 199.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.45,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "BRSK": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 64.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -0.31,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 64.3,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": 0.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Briarstock Financial completes another tranche of its buyback",
-          "url": "https://example.com/demo-news/briarstock-financial-completes-another-tranche-of-its-buyback",
-          "source": "Demo Wire",
-          "published": "2026-11-09T11:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 63.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": 0.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Briarstock Financial completes another tranche of its buyback",
-          "url": "https://example.com/demo-news/briarstock-financial-completes-another-tranche-of-its-buyback",
-          "source": "Demo Wire",
-          "published": "2026-11-09T11:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 63.5,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 1.11,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Briarstock Financial completes another tranche of its buyback",
-          "url": "https://example.com/demo-news/briarstock-financial-completes-another-tranche-of-its-buyback",
-          "source": "Demo Wire",
-          "published": "2026-11-09T11:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 62.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -0.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Briarstock Financial completes another tranche of its buyback",
-          "url": "https://example.com/demo-news/briarstock-financial-completes-another-tranche-of-its-buyback",
-          "source": "Demo Wire",
-          "published": "2026-11-09T11:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 63.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 0.96,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Briarstock Financial completes another tranche of its buyback",
-          "url": "https://example.com/demo-news/briarstock-financial-completes-another-tranche-of-its-buyback",
-          "source": "Demo Wire",
-          "published": "2026-11-09T11:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 62.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 1.13,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 61.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.32,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 62.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 0.65,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 61.7,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.49,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "CWYK": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": null,
-        "currency": "USD",
-        "label": "fetch failed",
-        "session_date": null,
-        "change_pct": null,
-        "change_basis": null,
-        "failure_reason": "no source returned a usable price",
-        "last_good": {
-          "price": 271,
-          "as_of": "2026-11-13"
-        }
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Candlewyck Software names a new finance chief",
-          "url": "https://example.com/demo-news/candlewyck-software-names-a-new-finance-chief",
-          "source": "Demo Wire",
-          "published": "2026-11-11T14:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 271,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.51,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Candlewyck Software names a new finance chief",
-          "url": "https://example.com/demo-news/candlewyck-software-names-a-new-finance-chief",
-          "source": "Demo Wire",
-          "published": "2026-11-11T14:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 272.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": 1.04,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Candlewyck Software names a new finance chief",
-          "url": "https://example.com/demo-news/candlewyck-software-names-a-new-finance-chief",
-          "source": "Demo Wire",
-          "published": "2026-11-11T14:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 269.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": -0.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Candlewyck Software names a new finance chief",
-          "url": "https://example.com/demo-news/candlewyck-software-names-a-new-finance-chief",
-          "source": "Demo Wire",
-          "published": "2026-11-11T14:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 271.3,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": 0.93,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 268.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
         "change_pct": -0.52,
         "change_basis": "prev-session"
       },
@@ -524,32 +143,16 @@
       "news": []
     },
     {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 270.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 0.67,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
       "run_id": "2026-11-05-close",
       "type": "close",
       "date": "2026-11-05",
       "status": "ok",
       "quote": {
-        "price": 268.4,
+        "price": 344.17,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-05",
-        "change_pct": 1.32,
+        "change_pct": -1.53,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -561,11 +164,11 @@
       "date": "2026-11-04",
       "status": "ok",
       "quote": {
-        "price": 264.9,
+        "price": 349.51,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-04",
-        "change_pct": -0.93,
+        "change_pct": 5.31,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -577,29 +180,29 @@
       "date": "2026-11-03",
       "status": "ok",
       "quote": {
-        "price": 267.4,
+        "price": 331.9,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-03",
-        "change_pct": 0.6,
+        "change_pct": -1.9,
         "change_basis": "prev-session"
       },
       "alerts": [],
       "news": []
     }
   ],
-  "ELRY": [
+  "AMZN": [
     {
       "run_id": "2026-11-16-close",
       "type": "close",
       "date": "2026-11-16",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
-        "price": 812.5,
+        "price": 257.75,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-16",
-        "change_pct": -0.22,
+        "change_pct": -3.34,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -611,11 +214,11 @@
       "date": "2026-11-13",
       "status": "ok",
       "quote": {
-        "price": 814.3,
+        "price": 266.66,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-13",
-        "change_pct": -0.46,
+        "change_pct": -0.29,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -627,1260 +230,148 @@
       "date": "2026-11-12",
       "status": "ok",
       "quote": {
-        "price": 818.1,
+        "price": 267.44,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-12",
+        "change_pct": 0.48,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-11-close",
+      "type": "close",
+      "date": "2026-11-11",
+      "status": "ok",
+      "quote": {
+        "price": 266.17,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-11",
+        "change_pct": -1.74,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-10-close",
+      "type": "close",
+      "date": "2026-11-10",
+      "status": "ok",
+      "quote": {
+        "price": 270.87,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-10",
+        "change_pct": 1.48,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-09-close",
+      "type": "close",
+      "date": "2026-11-09",
+      "status": "ok",
+      "quote": {
+        "price": 266.93,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-09",
+        "change_pct": 2.94,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-06-close",
+      "type": "close",
+      "date": "2026-11-06",
+      "status": "ok",
+      "quote": {
+        "price": 259.3,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-06",
+        "change_pct": -0.35,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-05-close",
+      "type": "close",
+      "date": "2026-11-05",
+      "status": "ok",
+      "quote": {
+        "price": 260.21,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-05",
+        "change_pct": -2.19,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-04-close",
+      "type": "close",
+      "date": "2026-11-04",
+      "status": "ok",
+      "quote": {
+        "price": 266.03,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-04",
+        "change_pct": 6.12,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-03-close",
+      "type": "close",
+      "date": "2026-11-03",
+      "status": "ok",
+      "quote": {
+        "price": 250.69,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-03",
+        "change_pct": 2.06,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    }
+  ],
+  "COST": [
+    {
+      "run_id": "2026-11-16-close",
+      "type": "close",
+      "date": "2026-11-16",
+      "status": "ok",
+      "quote": {
+        "price": 1113.74,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-16",
         "change_pct": 0.68,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 812.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": -0.32,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Ellery Pharma opens a second plant for its weight-loss medicine",
-          "url": "https://example.com/demo-news/ellery-pharma-opens-a-second-plant-for-its-weight-loss-medicine",
-          "source": "Demo Wire",
-          "published": "2026-11-05T12:45:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 815.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": 0.78,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Ellery Pharma opens a second plant for its weight-loss medicine",
-          "url": "https://example.com/demo-news/ellery-pharma-opens-a-second-plant-for-its-weight-loss-medicine",
-          "source": "Demo Wire",
-          "published": "2026-11-05T12:45:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 808.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": -0.31,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Ellery Pharma opens a second plant for its weight-loss medicine",
-          "url": "https://example.com/demo-news/ellery-pharma-opens-a-second-plant-for-its-weight-loss-medicine",
-          "source": "Demo Wire",
-          "published": "2026-11-05T12:45:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 811.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 0.57,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Ellery Pharma opens a second plant for its weight-loss medicine",
-          "url": "https://example.com/demo-news/ellery-pharma-opens-a-second-plant-for-its-weight-loss-medicine",
-          "source": "Demo Wire",
-          "published": "2026-11-05T12:45:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 806.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": 0.95,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Ellery Pharma opens a second plant for its weight-loss medicine",
-          "url": "https://example.com/demo-news/ellery-pharma-opens-a-second-plant-for-its-weight-loss-medicine",
-          "source": "Demo Wire",
-          "published": "2026-11-05T12:45:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 799.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": -0.67,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 804.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.51,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "HLDN": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 218.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -0.23,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Halden Defense Systems wins an air-defence order from a European customer",
-          "url": "https://example.com/demo-news/halden-defense-systems-wins-an-air-defence-order-from-a-european-customer",
-          "source": "Demo Wire",
-          "published": "2026-11-12T07:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 218.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.32,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Halden Defense Systems wins an air-defence order from a European customer",
-          "url": "https://example.com/demo-news/halden-defense-systems-wins-an-air-defence-order-from-a-european-customer",
-          "source": "Demo Wire",
-          "published": "2026-11-12T07:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 219.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": -0.32,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Halden Defense Systems wins an air-defence order from a European customer",
-          "url": "https://example.com/demo-news/halden-defense-systems-wins-an-air-defence-order-from-a-european-customer",
-          "source": "Demo Wire",
-          "published": "2026-11-12T07:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 220.3,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 0.96,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 218.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -0.41,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 219.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 0.78,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 217.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 0.69,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 215.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.42,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 216.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 0.74,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 215.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.37,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "MRLN": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 135.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -0.44,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "MRLN 135.60 is 2.7% above exit 132"
-        }
-      ],
-      "news": [
-        {
-          "title": "Marlowe shares slip as an analyst trims estimates",
-          "url": "https://example.com/demo-news/marlowe-shares-slip-as-an-analyst-trims-estimates",
-          "source": "Demo Markets",
-          "published": "2026-11-13T18:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 136.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.51,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe shares slip as an analyst trims estimates",
-          "url": "https://example.com/demo-news/marlowe-shares-slip-as-an-analyst-trims-estimates",
-          "source": "Demo Markets",
-          "published": "2026-11-13T18:30:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 136.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": -0.44,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe Diagnostics says routine test volumes are still below last year",
-          "url": "https://example.com/demo-news/marlowe-diagnostics-says-routine-test-volumes-are-still-below-last-year",
-          "source": "Demo Wire",
-          "published": "2026-11-06T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 137.5,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": -0.43,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe Diagnostics says routine test volumes are still below last year",
-          "url": "https://example.com/demo-news/marlowe-diagnostics-says-routine-test-volumes-are-still-below-last-year",
-          "source": "Demo Wire",
-          "published": "2026-11-06T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 138.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -1.22,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe Diagnostics says routine test volumes are still below last year",
-          "url": "https://example.com/demo-news/marlowe-diagnostics-says-routine-test-volumes-are-still-below-last-year",
-          "source": "Demo Wire",
-          "published": "2026-11-06T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 139.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": -0.43,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe Diagnostics says routine test volumes are still below last year",
-          "url": "https://example.com/demo-news/marlowe-diagnostics-says-routine-test-volumes-are-still-below-last-year",
-          "source": "Demo Wire",
-          "published": "2026-11-06T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 140.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": -0.57,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Marlowe Diagnostics says routine test volumes are still below last year",
-          "url": "https://example.com/demo-news/marlowe-diagnostics-says-routine-test-volumes-are-still-below-last-year",
-          "source": "Demo Wire",
-          "published": "2026-11-06T12:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 141.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -1.19,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 142.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": -0.49,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 143.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": -0.49,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "NVRN": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 142.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -0.9,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "A large cloud buyer raises its capital spending plan, lifting chip makers",
-          "url": "https://example.com/demo-news/a-large-cloud-buyer-raises-its-capital-spending-plan-lifting-chip-makers",
-          "source": "Demo Markets",
-          "published": "2026-11-13T20:40:00Z"
-        },
-        {
-          "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-          "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-          "source": "Demo Wire",
-          "published": "2026-11-10T13:15:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 143.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.62,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "A large cloud buyer raises its capital spending plan, lifting chip makers",
-          "url": "https://example.com/demo-news/a-large-cloud-buyer-raises-its-capital-spending-plan-lifting-chip-makers",
-          "source": "Demo Markets",
-          "published": "2026-11-13T20:40:00Z"
-        },
-        {
-          "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-          "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-          "source": "Demo Wire",
-          "published": "2026-11-10T13:15:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 144.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": -0.55,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-          "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-          "source": "Demo Wire",
-          "published": "2026-11-10T13:15:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 145.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 1.75,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-          "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-          "source": "Demo Wire",
-          "published": "2026-11-10T13:15:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 143.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -0.76,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-          "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-          "source": "Demo Wire",
-          "published": "2026-11-10T13:15:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 144.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 0.91,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 142.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 2.22,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 139.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -1.27,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 141.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 1.07,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 140.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.94,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "ORBQ": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 31.5,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": 0.64,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Orbique Launch Systems completes a static-fire test of its medium rocket",
-          "url": "https://example.com/demo-news/orbique-launch-systems-completes-a-static-fire-test-of-its-medium-rocket",
-          "source": "Demo Wire",
-          "published": "2026-11-11T16:20:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 31.3,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Orbique Launch Systems completes a static-fire test of its medium rocket",
-          "url": "https://example.com/demo-news/orbique-launch-systems-completes-a-static-fire-test-of-its-medium-rocket",
-          "source": "Demo Wire",
-          "published": "2026-11-11T16:20:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 31.5,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": -0.94,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Orbique Launch Systems completes a static-fire test of its medium rocket",
-          "url": "https://example.com/demo-news/orbique-launch-systems-completes-a-static-fire-test-of-its-medium-rocket",
-          "source": "Demo Wire",
-          "published": "2026-11-11T16:20:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 31.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 1.92,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Orbique Launch Systems completes a static-fire test of its medium rocket",
-          "url": "https://example.com/demo-news/orbique-launch-systems-completes-a-static-fire-test-of-its-medium-rocket",
-          "source": "Demo Wire",
-          "published": "2026-11-11T16:20:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 31.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -1.27,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 31.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 1.61,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 31.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 1.63,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 30.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.97,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 30.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 1.64,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 30.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 1,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "TALV": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 327.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": 1.08,
         "change_basis": "prev-session"
       },
       "alerts": [
         {
           "severity": "high",
           "kind": "hit",
-          "title": "TALV 327.90 is 0.9% above trim 325"
-        },
-        {
-          "severity": "info",
-          "kind": "earnings",
-          "title": "TALV earnings 2026-11-18, in 2 days (fmp, estimated)"
-        },
-        {
-          "severity": "info",
-          "kind": "pending-action",
-          "title": "pending action pa-talv-trim: trigger printed on 2026-11-16, cash unchanged in state — confirm or clear"
-        }
-      ],
-      "news": [
-        {
-          "title": "Talvera adds automated bookkeeping to its small-business product",
-          "url": "https://example.com/demo-news/talvera-adds-automated-bookkeeping-to-its-small-business-product",
-          "source": "Demo Wire",
-          "published": "2026-11-16T20:25:00Z"
-        },
-        {
-          "title": "Talvera extends its rally ahead of results",
-          "url": "https://example.com/demo-news/talvera-extends-its-rally-ahead-of-results",
-          "source": "Demo Markets",
-          "published": "2026-11-13T19:10:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 324.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": 0.25,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "TALV 324.40 is 0.2% below trim 325"
-        },
-        {
-          "severity": "info",
-          "kind": "earnings",
-          "title": "TALV earnings 2026-11-18, in 5 days (fmp, estimated)"
-        }
-      ],
-      "news": [
-        {
-          "title": "Talvera extends its rally ahead of results",
-          "url": "https://example.com/demo-news/talvera-extends-its-rally-ahead-of-results",
-          "source": "Demo Markets",
-          "published": "2026-11-13T19:10:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 323.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": 0.75,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "TALV 323.60 is 0.4% below trim 325"
-        },
-        {
-          "severity": "info",
-          "kind": "earnings",
-          "title": "TALV earnings 2026-11-18, in 6 days (fmp, estimated)"
-        }
-      ],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 321.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 0.88,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "TALV 321.20 is 1.2% below trim 325"
-        },
-        {
-          "severity": "info",
-          "kind": "earnings",
-          "title": "TALV earnings 2026-11-18, in 7 days (fmp, estimated)"
-        }
-      ],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 318.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": 0.47,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "TALV 318.40 is 2.0% below trim 325"
-        }
-      ],
-      "news": [
-        {
-          "title": "Talvera Software sets the date for its quarterly results",
-          "url": "https://example.com/demo-news/talvera-software-sets-the-date-for-its-quarterly-results",
-          "source": "Demo Wire",
-          "published": "2026-11-04T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 316.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 1.02,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "TALV 316.90 is 2.5% below trim 325"
-        }
-      ],
-      "news": [
-        {
-          "title": "Talvera Software sets the date for its quarterly results",
-          "url": "https://example.com/demo-news/talvera-software-sets-the-date-for-its-quarterly-results",
-          "source": "Demo Wire",
-          "published": "2026-11-04T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 313.7,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 1.49,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Talvera Software sets the date for its quarterly results",
-          "url": "https://example.com/demo-news/talvera-software-sets-the-date-for-its-quarterly-results",
-          "source": "Demo Wire",
-          "published": "2026-11-04T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 309.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.42,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Talvera Software sets the date for its quarterly results",
-          "url": "https://example.com/demo-news/talvera-software-sets-the-date-for-its-quarterly-results",
-          "source": "Demo Wire",
-          "published": "2026-11-04T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 310.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 0.71,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Talvera Software sets the date for its quarterly results",
-          "url": "https://example.com/demo-news/talvera-software-sets-the-date-for-its-quarterly-results",
-          "source": "Demo Wire",
-          "published": "2026-11-04T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 308.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.69,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "DRMA": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 90.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -0.55,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "DRMA 90.10 is 2.4% above buy 88"
+          "title": "COST 1113.74 is 1.2% above trim 1100"
         }
       ],
       "news": []
@@ -1891,406 +382,21 @@
       "date": "2026-11-13",
       "status": "ok",
       "quote": {
-        "price": 90.6,
+        "price": 1106.21,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-13",
-        "change_pct": -0.66,
+        "change_pct": 1.28,
         "change_basis": "prev-session"
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "DRMA 90.60 is 3.0% above buy 88"
-        }
-      ],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 91.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": -0.44,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 91.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": -0.54,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Dermavance Animal Health keeps its full-year outlook",
-          "url": "https://example.com/demo-news/dermavance-animal-health-keeps-its-full-year-outlook",
-          "source": "Demo Wire",
-          "published": "2026-11-05T06:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 92.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -0.65,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Dermavance Animal Health keeps its full-year outlook",
-          "url": "https://example.com/demo-news/dermavance-animal-health-keeps-its-full-year-outlook",
-          "source": "Demo Wire",
-          "published": "2026-11-05T06:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 92.7,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": -1.28,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Dermavance Animal Health keeps its full-year outlook",
-          "url": "https://example.com/demo-news/dermavance-animal-health-keeps-its-full-year-outlook",
-          "source": "Demo Wire",
-          "published": "2026-11-05T06:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 93.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 0.32,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Dermavance Animal Health keeps its full-year outlook",
-          "url": "https://example.com/demo-news/dermavance-animal-health-keeps-its-full-year-outlook",
-          "source": "Demo Wire",
-          "published": "2026-11-05T06:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 93.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.53,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": [
-        {
-          "title": "Dermavance Animal Health keeps its full-year outlook",
-          "url": "https://example.com/demo-news/dermavance-animal-health-keeps-its-full-year-outlook",
-          "source": "Demo Wire",
-          "published": "2026-11-05T06:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 94.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": -0.74,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 94.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": -0.52,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "HXLY": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 53,
-        "currency": "USD",
-        "label": "intraday print",
-        "session_date": "2026-11-16",
-        "change_pct": 0.38,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 52.8,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.56,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-12-close",
-      "type": "close",
-      "date": "2026-11-12",
-      "status": "ok",
-      "quote": {
-        "price": 53.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-12",
-        "change_pct": 0.38,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-11-close",
-      "type": "close",
-      "date": "2026-11-11",
-      "status": "ok",
-      "quote": {
-        "price": 52.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-11",
-        "change_pct": 1.15,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-10-close",
-      "type": "close",
-      "date": "2026-11-10",
-      "status": "ok",
-      "quote": {
-        "price": 52.3,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-10",
-        "change_pct": -0.57,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-09-close",
-      "type": "close",
-      "date": "2026-11-09",
-      "status": "ok",
-      "quote": {
-        "price": 52.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-09",
-        "change_pct": 0.77,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-06-close",
-      "type": "close",
-      "date": "2026-11-06",
-      "status": "ok",
-      "quote": {
-        "price": 52.2,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-06",
-        "change_pct": 1.56,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-05-close",
-      "type": "close",
-      "date": "2026-11-05",
-      "status": "ok",
-      "quote": {
-        "price": 51.4,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-05",
-        "change_pct": -0.96,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-04-close",
-      "type": "close",
-      "date": "2026-11-04",
-      "status": "ok",
-      "quote": {
-        "price": 51.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-04",
-        "change_pct": 0.58,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    },
-    {
-      "run_id": "2026-11-03-close",
-      "type": "close",
-      "date": "2026-11-03",
-      "status": "ok",
-      "quote": {
-        "price": 51.6,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-03",
-        "change_pct": 0.58,
-        "change_basis": "prev-session"
-      },
-      "alerts": [],
-      "news": []
-    }
-  ],
-  "KELP": [
-    {
-      "run_id": "2026-11-16-close",
-      "type": "close",
-      "date": "2026-11-16",
-      "status": "degraded",
-      "quote": {
-        "price": 13.9,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-16",
-        "change_pct": -1.42,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
+          "severity": "high",
           "kind": "hit",
-          "title": "KELP 13.90 is 0.7% below buy 14"
+          "title": "COST 1106.21 is 0.6% above trim 1100"
         }
       ],
-      "news": [
-        {
-          "title": "Kelpwave Energy moves the start of its first array by a quarter",
-          "url": "https://example.com/demo-news/kelpwave-energy-moves-the-start-of-its-first-array-by-a-quarter",
-          "source": "Demo Energy",
-          "published": "2026-11-12T13:00:00Z"
-        }
-      ]
-    },
-    {
-      "run_id": "2026-11-13-close",
-      "type": "close",
-      "date": "2026-11-13",
-      "status": "ok",
-      "quote": {
-        "price": 14.1,
-        "currency": "USD",
-        "label": "confirmed close",
-        "session_date": "2026-11-13",
-        "change_pct": -0.7,
-        "change_basis": "prev-session"
-      },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "KELP 14.10 is 0.7% above buy 14"
-        }
-      ],
-      "news": [
-        {
-          "title": "Kelpwave Energy moves the start of its first array by a quarter",
-          "url": "https://example.com/demo-news/kelpwave-energy-moves-the-start-of-its-first-array-by-a-quarter",
-          "source": "Demo Energy",
-          "published": "2026-11-12T13:00:00Z"
-        }
-      ]
+      "news": []
     },
     {
       "run_id": "2026-11-12-close",
@@ -2298,28 +404,21 @@
       "date": "2026-11-12",
       "status": "ok",
       "quote": {
-        "price": 14.2,
+        "price": 1092.21,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-12",
-        "change_pct": -0.7,
+        "change_pct": 0.42,
         "change_basis": "prev-session"
       },
       "alerts": [
         {
           "severity": "medium",
           "kind": "near",
-          "title": "KELP 14.20 is 1.4% above buy 14"
+          "title": "COST 1092.21 is 0.7% below trim 1100"
         }
       ],
-      "news": [
-        {
-          "title": "Kelpwave Energy moves the start of its first array by a quarter",
-          "url": "https://example.com/demo-news/kelpwave-energy-moves-the-start-of-its-first-array-by-a-quarter",
-          "source": "Demo Energy",
-          "published": "2026-11-12T13:00:00Z"
-        }
-      ]
+      "news": []
     },
     {
       "run_id": "2026-11-11-close",
@@ -2327,18 +426,18 @@
       "date": "2026-11-11",
       "status": "ok",
       "quote": {
-        "price": 14.3,
+        "price": 1087.61,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-11",
-        "change_pct": -0.69,
+        "change_pct": 2.01,
         "change_basis": "prev-session"
       },
       "alerts": [
         {
           "severity": "medium",
           "kind": "near",
-          "title": "KELP 14.30 is 2.1% above buy 14"
+          "title": "COST 1087.61 is 1.1% below trim 1100"
         }
       ],
       "news": []
@@ -2349,20 +448,14 @@
       "date": "2026-11-10",
       "status": "ok",
       "quote": {
-        "price": 14.4,
+        "price": 1066.14,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-10",
-        "change_pct": -0.69,
+        "change_pct": 0,
         "change_basis": "prev-session"
       },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "KELP 14.40 is 2.9% above buy 14"
-        }
-      ],
+      "alerts": [],
       "news": []
     },
     {
@@ -2371,11 +464,11 @@
       "date": "2026-11-09",
       "status": "ok",
       "quote": {
-        "price": 14.5,
+        "price": 1066.18,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-09",
-        "change_pct": -1.36,
+        "change_pct": 1.2,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2387,11 +480,11 @@
       "date": "2026-11-06",
       "status": "ok",
       "quote": {
-        "price": 14.7,
+        "price": 1053.56,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-06",
-        "change_pct": -2.65,
+        "change_pct": -1.13,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2403,11 +496,11 @@
       "date": "2026-11-05",
       "status": "ok",
       "quote": {
-        "price": 15.1,
+        "price": 1065.59,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-05",
-        "change_pct": 0.67,
+        "change_pct": 1.83,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2419,11 +512,11 @@
       "date": "2026-11-04",
       "status": "ok",
       "quote": {
-        "price": 15,
+        "price": 1046.47,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-04",
-        "change_pct": -0.66,
+        "change_pct": 2.67,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2435,29 +528,29 @@
       "date": "2026-11-03",
       "status": "ok",
       "quote": {
-        "price": 15.1,
+        "price": 1019.26,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-03",
-        "change_pct": -0.66,
+        "change_pct": -2.05,
         "change_basis": "prev-session"
       },
       "alerts": [],
       "news": []
     }
   ],
-  "OSTR": [
+  "GOOGL": [
     {
       "run_id": "2026-11-16-close",
       "type": "close",
       "date": "2026-11-16",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
-        "price": 143.9,
+        "price": 283.72,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-16",
-        "change_pct": 0.91,
+        "change_pct": -4.07,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2469,11 +562,11 @@
       "date": "2026-11-13",
       "status": "ok",
       "quote": {
-        "price": 142.6,
+        "price": 295.77,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-13",
-        "change_pct": -0.42,
+        "change_pct": -0.98,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2485,11 +578,11 @@
       "date": "2026-11-12",
       "status": "ok",
       "quote": {
-        "price": 143.2,
+        "price": 298.7,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-12",
-        "change_pct": 1.06,
+        "change_pct": 1.79,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2501,11 +594,11 @@
       "date": "2026-11-11",
       "status": "ok",
       "quote": {
-        "price": 141.7,
+        "price": 293.45,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-11",
-        "change_pct": -0.42,
+        "change_pct": 2.11,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2517,11 +610,11 @@
       "date": "2026-11-10",
       "status": "ok",
       "quote": {
-        "price": 142.3,
+        "price": 287.38,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-10",
-        "change_pct": 1.07,
+        "change_pct": -0.27,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2533,11 +626,11 @@
       "date": "2026-11-09",
       "status": "ok",
       "quote": {
-        "price": 140.8,
+        "price": 288.15,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-09",
-        "change_pct": -0.42,
+        "change_pct": 1.18,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2549,11 +642,11 @@
       "date": "2026-11-06",
       "status": "ok",
       "quote": {
-        "price": 141.4,
+        "price": 284.78,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-06",
-        "change_pct": 0.86,
+        "change_pct": 0.78,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2565,14 +658,20 @@
       "date": "2026-11-05",
       "status": "ok",
       "quote": {
-        "price": 140.2,
+        "price": 282.57,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-05",
-        "change_pct": 1.15,
+        "change_pct": -2.2,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "GOOGL 282.57 is 2.8% above invalidation 275"
+        }
+      ],
       "news": []
     },
     {
@@ -2581,11 +680,11 @@
       "date": "2026-11-04",
       "status": "ok",
       "quote": {
-        "price": 138.6,
+        "price": 288.93,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-04",
-        "change_pct": -0.36,
+        "change_pct": 3.18,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2597,32 +696,206 @@
       "date": "2026-11-03",
       "status": "ok",
       "quote": {
-        "price": 139.1,
+        "price": 280.03,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-03",
-        "change_pct": 0.58,
+        "change_pct": 0.37,
+        "change_basis": "prev-session"
+      },
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "GOOGL 280.03 is 1.8% above invalidation 275"
+        }
+      ],
+      "news": []
+    }
+  ],
+  "JPM": [
+    {
+      "run_id": "2026-11-16-close",
+      "type": "close",
+      "date": "2026-11-16",
+      "status": "ok",
+      "quote": {
+        "price": 338.21,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-16",
+        "change_pct": -2.31,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-13-close",
+      "type": "close",
+      "date": "2026-11-13",
+      "status": "ok",
+      "quote": {
+        "price": 346.19,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-13",
+        "change_pct": 0.98,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-12-close",
+      "type": "close",
+      "date": "2026-11-12",
+      "status": "ok",
+      "quote": {
+        "price": 342.82,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-12",
+        "change_pct": -0.17,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-11-close",
+      "type": "close",
+      "date": "2026-11-11",
+      "status": "ok",
+      "quote": {
+        "price": 343.39,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-11",
+        "change_pct": 0.39,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-10-close",
+      "type": "close",
+      "date": "2026-11-10",
+      "status": "ok",
+      "quote": {
+        "price": 342.07,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-10",
+        "change_pct": 0,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-09-close",
+      "type": "close",
+      "date": "2026-11-09",
+      "status": "ok",
+      "quote": {
+        "price": 342.08,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-09",
+        "change_pct": 2.27,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-06-close",
+      "type": "close",
+      "date": "2026-11-06",
+      "status": "ok",
+      "quote": {
+        "price": 334.49,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-06",
+        "change_pct": -0.84,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-05-close",
+      "type": "close",
+      "date": "2026-11-05",
+      "status": "ok",
+      "quote": {
+        "price": 337.34,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-05",
+        "change_pct": -4.19,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-04-close",
+      "type": "close",
+      "date": "2026-11-04",
+      "status": "ok",
+      "quote": {
+        "price": 352.11,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-04",
+        "change_pct": 4.18,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-03-close",
+      "type": "close",
+      "date": "2026-11-03",
+      "status": "ok",
+      "quote": {
+        "price": 337.98,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-03",
+        "change_pct": -0.76,
         "change_basis": "prev-session"
       },
       "alerts": [],
       "news": []
     }
   ],
-  "PVNE": [
+  "NVDA": [
     {
       "run_id": "2026-11-16-close",
       "type": "close",
       "date": "2026-11-16",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
-        "price": 166.9,
+        "price": 156.14,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-16",
-        "change_pct": 0.66,
+        "change_pct": -4.12,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 156.14 is 2.4% below invalidation 160"
+        }
+      ],
       "news": []
     },
     {
@@ -2631,14 +904,20 @@
       "date": "2026-11-13",
       "status": "ok",
       "quote": {
-        "price": 165.8,
+        "price": 162.85,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-13",
-        "change_pct": -0.3,
+        "change_pct": -2.01,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "NVDA 162.85 is 1.8% above invalidation 160"
+        }
+      ],
       "news": []
     },
     {
@@ -2647,11 +926,11 @@
       "date": "2026-11-12",
       "status": "ok",
       "quote": {
-        "price": 166.3,
+        "price": 166.19,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-12",
-        "change_pct": 0.97,
+        "change_pct": -4.34,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2663,11 +942,11 @@
       "date": "2026-11-11",
       "status": "ok",
       "quote": {
-        "price": 164.7,
+        "price": 173.73,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-11",
-        "change_pct": -0.24,
+        "change_pct": 2.87,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2679,11 +958,11 @@
       "date": "2026-11-10",
       "status": "ok",
       "quote": {
-        "price": 165.1,
+        "price": 168.89,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-10",
-        "change_pct": 0.92,
+        "change_pct": -5.47,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2695,11 +974,11 @@
       "date": "2026-11-09",
       "status": "ok",
       "quote": {
-        "price": 163.6,
+        "price": 178.67,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-09",
-        "change_pct": -0.37,
+        "change_pct": -4.27,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2711,11 +990,11 @@
       "date": "2026-11-06",
       "status": "ok",
       "quote": {
-        "price": 164.2,
+        "price": 186.64,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-06",
-        "change_pct": 1.11,
+        "change_pct": 2.78,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2727,11 +1006,11 @@
       "date": "2026-11-05",
       "status": "ok",
       "quote": {
-        "price": 162.4,
+        "price": 181.6,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-05",
-        "change_pct": -0.43,
+        "change_pct": -9.26,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2743,11 +1022,11 @@
       "date": "2026-11-04",
       "status": "ok",
       "quote": {
-        "price": 163.1,
+        "price": 200.13,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-04",
-        "change_pct": 0.8,
+        "change_pct": -3.17,
         "change_basis": "prev-session"
       },
       "alerts": [],
@@ -2759,11 +1038,11 @@
       "date": "2026-11-03",
       "status": "ok",
       "quote": {
-        "price": 161.8,
+        "price": 206.69,
         "currency": "USD",
         "label": "confirmed close",
         "session_date": "2026-11-03",
-        "change_pct": -0.25,
+        "change_pct": 2.29,
         "change_basis": "prev-session"
       },
       "alerts": [],

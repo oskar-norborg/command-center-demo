@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-17T05:06:30.003Z",
+  "generated_at": "2026-11-17T05:54:44.240Z",
   "state_commit": "demo",
   "portfolio": {
     "schema_version": 1,
@@ -27,19 +27,19 @@
     },
     "funds": [
       {
-        "id": "aurora-global",
-        "name": "Aurora Global Index Fund",
+        "id": "voo",
+        "name": "Vanguard S&P 500 ETF (VOO)",
         "units": {
-          "AF": 14803,
-          "ASK": 9407
+          "AF": 3300,
+          "ASK": 2200
         },
         "gav": {
-          "AF": 156.1,
-          "ASK": 158.4
+          "AF": 625.5,
+          "ASK": 625.5
         },
-        "gav_as_of": "2026-10-27",
+        "gav_as_of": "2025-12-01",
         "nav_currency": "USD",
-        "bucket": "global-equity",
+        "bucket": "us-equity",
         "role": "core",
         "rules": [
           "Core holding; never rotated out.",
@@ -47,32 +47,15 @@
         ]
       },
       {
-        "id": "polar-treasury",
-        "name": "Polar Short Treasury Fund",
+        "id": "qqq",
+        "name": "Invesco QQQ Trust (QQQ)",
         "units": {
-          "ASK": 8653
+          "AF": 2270
         },
         "gav": {
-          "ASK": 101.2
+          "AF": 617.2
         },
-        "gav_as_of": "2026-11-02",
-        "nav_currency": "USD",
-        "bucket": "cash-like",
-        "role": "reserve",
-        "rules": [
-          "Bought in three fixed slices whatever the market does. Two are done; the third is planned for 2026-12-01."
-        ]
-      },
-      {
-        "id": "nordlys-tech",
-        "name": "Nordlys Technology Fund",
-        "units": {
-          "AF": 2451
-        },
-        "gav": {
-          "AF": 486.2
-        },
-        "gav_as_of": "2026-10-27",
+        "gav_as_of": "2025-12-01",
         "nav_currency": "USD",
         "bucket": "tech",
         "role": "capped",
@@ -81,34 +64,52 @@
         ]
       },
       {
-        "id": "tundra-em",
-        "name": "Tundra Emerging Markets Fund",
+        "id": "schd",
+        "name": "Schwab US Dividend Equity ETF (SCHD)",
         "units": {
-          "AF": 48507
+          "ASK": 27900
         },
         "gav": {
-          "AF": 12.6
+          "ASK": 27.5
         },
-        "gav_as_of": "2026-10-27",
+        "gav_as_of": "2025-12-01",
         "nav_currency": "USD",
-        "bucket": "em-equity",
+        "bucket": "dividend-equity",
         "role": "core",
         "rules": []
+      },
+      {
+        "id": "bnd",
+        "name": "Vanguard Total Bond Market ETF (BND)",
+        "units": {
+          "ASK": 17700
+        },
+        "gav": {
+          "ASK": 74.3
+        },
+        "gav_as_of": "2025-12-01",
+        "nav_currency": "USD",
+        "bucket": "bonds",
+        "role": "reserve",
+        "rules": [
+          "The book's reserve: sold only to fund a purchase the plan calls for."
+        ]
       }
     ],
     "rules": {
       "tech_cap_pct": 45,
       "tech_bucket_members": [
-        "nordlys-tech",
-        "CWYK",
-        "TALV",
-        "NVRN"
+        "qqq",
+        "AAPL",
+        "NVDA",
+        "GOOGL"
       ],
       "fee_floor_per_buy_nok": 25000,
       "courtage_warn_pct": 0.5,
       "min_courtage": {
         "ASK": {
-          "OSE": 1
+          "NYSE": 1,
+          "NASDAQ": 1
         },
         "AF": {
           "NYSE": 1,
@@ -120,90 +121,68 @@
       "fund_nav_stale_days": 14,
       "state_quiet_warn_days": 30,
       "account_rules": "Stocks are held in the brokerage account. The IRA holds funds only.\n",
-      "never_average_down": [
-        "MRLN"
-      ]
+      "never_average_down": []
     },
     "sleeve": {
-      "name": "Demo tactical sleeve",
-      "inception": "2026-09-30",
-      "inception_value_nok": 431385.8,
+      "name": "Model stock sleeve",
+      "inception": "2025-12-01",
+      "inception_value_nok": 3404733,
       "members": [
-        "MRLN",
-        "TALV",
-        "BRSK"
+        "AAPL",
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "JPM",
+        "COST"
       ],
       "benchmarks": {
-        "aurora-global": {
-          "at_inception": 160.1
+        "voo": {
+          "at_inception": 625.5
         }
       }
     },
     "position2_pipeline": {
-      "rule": "Retired in the demo: candidates come from the watchlist, each with a written buy level.",
+      "rule": "Retired in the demo: the model book holds its ten names and adds none.",
       "bench": [],
       "status": "retired",
-      "status_reason": "Demo: the bench was retired when the book moved to tactical positions."
+      "status_reason": "Demo: the model portfolio has no candidate list."
     },
-    "exited": [
-      {
-        "ticker": "GRNX",
-        "note": "sold"
-      },
-      {
-        "ticker": "VLTR",
-        "note": "sold in full 2026-08-07 after a failed trial readout"
-      }
-    ],
-    "rejected": [
-      {
-        "ticker": "PLMQ",
-        "note": "looked at and turned down"
-      }
-    ],
-    "pending_actions": [
-      {
-        "id": "pa-talv-trim",
-        "ticker": "TALV",
-        "action": "Trim 400 shares at 325",
-        "proposed_on": "2026-11-11",
-        "trigger_price": 325,
-        "note": "Limit order idea, not placed."
-      }
-    ]
+    "exited": [],
+    "rejected": [],
+    "pending_actions": []
   },
   "marks": {
     "schema_version": 1,
-    "confirmed_current_on": "2026-11-13",
+    "confirmed_current_on": "2026-11-16",
     "cash": {
       "ASK": {
-        "nok": 148220.4,
-        "as_of": "2026-11-13"
+        "nok": 152400.5,
+        "as_of": "2026-11-16"
       },
       "AF": {
-        "nok": 643572.35,
-        "as_of": "2026-10-28"
+        "nok": 471300.4,
+        "as_of": "2026-11-16"
       }
     },
     "navs": {
-      "aurora-global": {
-        "nav": 168.3,
+      "voo": {
+        "nav": 680.26,
         "as_of": "2026-11-16",
         "status": "manual"
       },
-      "polar-treasury": {
-        "nav": 101.7,
+      "qqq": {
+        "nav": 661.75,
         "as_of": "2026-11-16",
         "status": "manual"
       },
-      "nordlys-tech": {
-        "nav": 521.3,
+      "schd": {
+        "nav": 35.86,
         "as_of": "2026-11-16",
         "status": "manual"
       },
-      "tundra-em": {
-        "nav": 13.4,
-        "as_of": "2026-10-26",
+      "bnd": {
+        "nav": 70.62,
+        "as_of": "2026-11-16",
         "status": "manual"
       }
     }
@@ -276,19 +255,289 @@
     }
   },
   "positions": {
-    "AMBR": {
+    "AAPL": {
       "schema_version": 1,
-      "ticker": "AMBR",
-      "units": 2411,
-      "gav": 191,
-      "gav_as_of": "2026-02-12",
+      "ticker": "AAPL",
+      "units": 2480,
+      "gav": 283.1,
+      "gav_as_of": "2025-12-01",
+      "levels": [
+        {
+          "id": "trim-360",
+          "type": "trim",
+          "price": 360,
+          "action": "Trim a fifth",
+          "condition": "At or above $360, and only if the position is over its cap.",
+          "status": "active"
+        },
+        {
+          "id": "inv-290",
+          "type": "invalidation",
+          "price": 290,
+          "action": "Re-underwrite",
+          "condition": "Daily close below $290.",
+          "status": "active"
+        }
+      ],
+      "name": "Apple",
+      "aliases": [
+        "apple",
+        "aapl"
+      ],
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "account": "AF",
+      "role": "core",
+      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
+      "news_priority": "normal",
+      "move_threshold_pct": 12,
+      "caps": {
+        "max_pct_of_book": 9,
+        "rule": "No new money above 9% of the book."
+      },
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "sections": {
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: a very large consumer hardware and services business, held as a core position for its cash generation.</p>\n<p><strong>What has to go right:</strong> Services keep growing as a share of sales and the installed base keeps upgrading.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 290 (level <code>inv-290</code>).</li>\n<li>Two reporting periods in a row of falling services revenue.</li>\n</ul>\n",
+        "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
+      }
+    },
+    "AMZN": {
+      "schema_version": 1,
+      "ticker": "AMZN",
+      "units": 2900,
+      "gav": 233.9,
+      "gav_as_of": "2025-12-01",
+      "levels": [
+        {
+          "id": "trim-285",
+          "type": "trim",
+          "price": 285,
+          "action": "Trim a fifth",
+          "condition": "At or above $285.",
+          "status": "active"
+        },
+        {
+          "id": "inv-225",
+          "type": "invalidation",
+          "price": 225,
+          "action": "Re-underwrite",
+          "condition": "Daily close below $225.",
+          "status": "active"
+        }
+      ],
+      "name": "Amazon.com",
+      "aliases": [
+        "amazon",
+        "amzn"
+      ],
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "account": "AF",
+      "role": "core",
+      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
+      "news_priority": "normal",
+      "move_threshold_pct": 12,
+      "caps": {
+        "max_pct_of_book": 8,
+        "rule": "No new money above 8% of the book."
+      },
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "sections": {
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: online retail and a cloud business in one company, held for the cloud unit's growth and the retail unit's margin recovery.</p>\n<p><strong>What has to go right:</strong> Cloud growth holds up and retail margins keep widening.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 225 (level <code>inv-225</code>).</li>\n<li>Cloud growth slowing for two reporting periods in a row.</li>\n</ul>\n",
+        "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
+      }
+    },
+    "COST": {
+      "schema_version": 1,
+      "ticker": "COST",
+      "units": 560,
+      "gav": 912,
+      "gav_as_of": "2025-12-01",
+      "levels": [
+        {
+          "id": "trim-1100",
+          "type": "trim",
+          "price": 1100,
+          "action": "Trim a fifth",
+          "condition": "At or above $1,100.",
+          "status": "active"
+        },
+        {
+          "id": "inv-880",
+          "type": "invalidation",
+          "price": 880,
+          "action": "Re-underwrite",
+          "condition": "Daily close below $880.",
+          "status": "active"
+        }
+      ],
+      "name": "Costco Wholesale",
+      "aliases": [
+        "costco",
+        "cost"
+      ],
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "account": "AF",
+      "role": "core",
+      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
+      "news_priority": "normal",
+      "move_threshold_pct": 12,
+      "caps": {
+        "max_pct_of_book": 7,
+        "rule": "No new money above 7% of the book."
+      },
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "sections": {
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: a membership warehouse retailer, held as the book's defensive consumer name.</p>\n<p><strong>What has to go right:</strong> Membership renewal rates stay high and new warehouses keep opening.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 880 (level <code>inv-880</code>).</li>\n<li>Membership renewal rates falling.</li>\n</ul>\n",
+        "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
+      }
+    },
+    "GOOGL": {
+      "schema_version": 1,
+      "ticker": "GOOGL",
+      "units": 2200,
+      "gav": 314.9,
+      "gav_as_of": "2025-12-01",
+      "levels": [
+        {
+          "id": "trim-360",
+          "type": "trim",
+          "price": 360,
+          "action": "Trim a quarter",
+          "condition": "At or above $360.",
+          "status": "active"
+        },
+        {
+          "id": "inv-275",
+          "type": "invalidation",
+          "price": 275,
+          "action": "Re-underwrite",
+          "condition": "Daily close below $275.",
+          "status": "active"
+        }
+      ],
+      "name": "Alphabet",
+      "aliases": [
+        "alphabet",
+        "googl"
+      ],
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "account": "AF",
+      "role": "core-active",
+      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
+      "news_priority": "normal",
+      "move_threshold_pct": 12,
+      "caps": {
+        "max_pct_of_book": 7,
+        "rule": "No new money above 7% of the book."
+      },
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "sections": {
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: search advertising and a cloud business. Trimmed once on the way up; the rest is held against a written invalidation level.</p>\n<p><strong>What has to go right:</strong> Search advertising stays intact as AI answers spread, and the cloud unit keeps growing.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 275 (level <code>inv-275</code>).</li>\n<li>Evidence that search advertising revenue is falling, not just growing more slowly.</li>\n</ul>\n",
+        "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
+      }
+    },
+    "JPM": {
+      "schema_version": 1,
+      "ticker": "JPM",
+      "units": 2200,
+      "gav": 302.7,
+      "gav_as_of": "2026-01-20",
+      "levels": [
+        {
+          "id": "trim-365",
+          "type": "trim",
+          "price": 365,
+          "action": "Trim a fifth",
+          "condition": "At or above $365.",
+          "status": "active"
+        },
+        {
+          "id": "inv-300",
+          "type": "invalidation",
+          "price": 300,
+          "action": "Re-underwrite",
+          "condition": "Daily close below $300.",
+          "status": "active"
+        }
+      ],
+      "name": "JPMorgan Chase",
+      "aliases": [
+        "jpmorgan",
+        "jpm"
+      ],
+      "exchange": "NYSE",
+      "currency": "USD",
+      "account": "AF",
+      "role": "core",
+      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
+      "news_priority": "normal",
+      "move_threshold_pct": 12,
+      "caps": {
+        "max_pct_of_book": 8,
+        "rule": "No new money above 8% of the book."
+      },
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "sections": {
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: the largest US bank, the book's only financial, bought as a counterweight to the technology names.</p>\n<p><strong>What has to go right:</strong> Credit losses stay ordinary and net interest income holds.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 300 (level <code>inv-300</code>).</li>\n<li>Credit loss provisions rising sharply for two reporting periods in a row.</li>\n</ul>\n",
+        "notes": "<h3>2026-01-20</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
+      }
+    },
+    "NVDA": {
+      "schema_version": 1,
+      "ticker": "NVDA",
+      "units": 4800,
+      "gav": 182.1,
+      "gav_as_of": "2026-02-10",
       "levels": [
         {
           "id": "trim-240",
           "type": "trim",
           "price": 240,
           "action": "Trim a quarter",
-          "condition": "At or above $240, and only if the position is over its cap.",
+          "condition": "At or above $240.",
           "status": "active"
         },
         {
@@ -300,1134 +549,275 @@
           "status": "active"
         }
       ],
-      "name": "Amberline Retail",
+      "name": "NVIDIA",
       "aliases": [
-        "amberline",
-        "ambr"
+        "nvidia",
+        "nvda"
       ],
       "exchange": "NASDAQ",
       "currency": "USD",
       "account": "AF",
-      "role": "core",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Operating margin",
-          "value": "11.2%",
-          "as_of": "2026-09-14",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Cloud revenue growth, year on year",
-          "value": "17%",
-          "as_of": "2026-09-14",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional online retailer whose cloud and advertising units earn most of the profit.</p>\n<p><strong>What has to go right:</strong> Cloud growth re-accelerates, and retail margins keep widening as delivery costs fall.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 160 (level <code>inv-160</code>).</li>\n<li>Cloud growth under 12% for two quarters.</li>\n</ul>\n",
-        "notes": "<h3>2026-02-12</h3>\n<p>Demo note: core holding.</p>\n"
-      }
-    },
-    "BRSK": {
-      "schema_version": 1,
-      "ticker": "BRSK",
-      "units": 6811,
-      "gav": 61.2,
-      "gav_as_of": "2026-10-23",
-      "levels": [
-        {
-          "id": "stop-55",
-          "type": "exit",
-          "price": 55,
-          "action": "Exit",
-          "condition": "Daily close below $55.",
-          "status": "active"
-        },
-        {
-          "id": "trim-68",
-          "type": "trim",
-          "price": 68,
-          "action": "Trim",
-          "condition": "At or above $68.",
-          "status": "active"
-        },
-        {
-          "id": "trim-73",
-          "type": "trim",
-          "price": 73,
-          "action": "Trim",
-          "condition": "At or above $73.",
-          "status": "active"
-        }
-      ],
-      "review_by": {
-        "date": "2026-12-16",
-        "note": null
-      },
-      "name": "Briarstock Financial",
-      "aliases": [
-        "briarstock",
-        "brsk"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "account": "AF",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Price to tangible book",
-          "value": "1.1x",
-          "as_of": "2026-11-09",
-          "source": "demo estimate"
-        },
-        {
-          "name": "Return on tangible equity",
-          "value": "11.4%",
-          "as_of": "2026-09-28",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional bank at about 1.1 times tangible book while it buys back stock. It fell after a results beat.</p>\n<p><strong>What has to go right:</strong> Return on tangible equity keeps rising toward the stated target, and credit losses stay near the recent level.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 55 (level <code>stop-55</code>).</li>\n<li>Return on tangible equity under 10% at the next results.</li>\n<li>A jump in card losses.</li>\n</ul>\n",
-        "notes": "<h3>2026-10-23</h3>\n<p>Demo note: bought inside the planned zone.</p>\n"
-      }
-    },
-    "CWYK": {
-      "schema_version": 1,
-      "ticker": "CWYK",
-      "units": 3207,
-      "gav": 252,
-      "gav_as_of": "2026-04-14",
-      "levels": [
-        {
-          "id": "trim-320",
-          "type": "trim",
-          "price": 320,
-          "action": "Trim a quarter",
-          "condition": "At or above $320, and only if the position is over its cap.",
-          "status": "active"
-        },
-        {
-          "id": "inv-205",
-          "type": "invalidation",
-          "price": 205,
-          "action": "Re-underwrite",
-          "condition": "Daily close below $205.",
-          "status": "active"
-        }
-      ],
-      "name": "Candlewyck Software",
-      "aliases": [
-        "candlewyck",
-        "cwyk"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "account": "AF",
-      "role": "core",
+      "role": "core-active",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
       "move_threshold_pct": 12,
       "caps": {
         "max_pct_of_book": 8,
-        "rule": "Position complete at about 7%. Growth from price alone is not a trim signal; the review flag is 8%."
+        "rule": "No new money above 8% of the book."
       },
       "earnings": {
         "next": null,
         "source": null,
         "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
       },
-      "metrics": [
-        {
-          "name": "Net revenue retention",
-          "value": "118%",
-          "as_of": "2026-09-11",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Cloud revenue growth, year on year",
-          "value": "24%",
-          "as_of": "2026-09-11",
-          "source": "demo quarterly report"
-        }
-      ],
+      "metrics": [],
       "reports": [],
       "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional enterprise-software and cloud company whose subscription base renews above 115%. The largest single stock in the book.</p>\n<p><strong>What has to go right:</strong> Cloud revenue keeps growing above 20%, and spending on data centres starts to show up in margins.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 205 on a guidance cut (level <code>inv-205</code>).</li>\n<li>Net revenue retention falling under 110%.</li>\n</ul>\n",
-        "notes": "<h3>2026-04-14</h3>\n<p>Demo note: core holding, held through two earnings cycles.</p>\n"
-      }
-    },
-    "ELRY": {
-      "schema_version": 1,
-      "ticker": "ELRY",
-      "units": 703,
-      "gav": 760,
-      "gav_as_of": "2025-12-17",
-      "levels": [
-        {
-          "id": "trim-930",
-          "type": "trim",
-          "price": 930,
-          "action": "Trim a fifth",
-          "condition": "At or above $930, and only if the position is over its cap.",
-          "status": "active"
-        },
-        {
-          "id": "inv-690",
-          "type": "invalidation",
-          "price": 690,
-          "action": "Re-underwrite",
-          "condition": "Daily close below $690.",
-          "status": "active"
-        }
-      ],
-      "name": "Ellery Pharma",
-      "aliases": [
-        "ellery",
-        "elry"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "account": "AF",
-      "role": "core",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Revenue growth, year on year",
-          "value": "38%",
-          "as_of": "2026-09-18",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Price to earnings (forward)",
-          "value": "29x",
-          "as_of": "2026-11-09",
-          "source": "demo estimate"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional drug maker whose weight-loss and diabetes medicines are growing faster than it can make them.</p>\n<p><strong>What has to go right:</strong> New plants come on line on schedule, and prices hold as rival products reach the market.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 690 (level <code>inv-690</code>).</li>\n<li>A safety finding on its lead medicine.</li>\n<li>A price cut forced by a large insurer or by government.</li>\n</ul>\n",
-        "notes": "<h3>2025-12-17</h3>\n<p>Demo note: core holding.</p>\n"
-      }
-    },
-    "HLDN": {
-      "schema_version": 1,
-      "ticker": "HLDN",
-      "units": 2609,
-      "gav": 204,
-      "gav_as_of": "2026-03-20",
-      "levels": [
-        {
-          "id": "trim-255",
-          "type": "trim",
-          "price": 255,
-          "action": "Trim a quarter",
-          "condition": "At or above $255, and only if the position is over its cap.",
-          "status": "active"
-        },
-        {
-          "id": "inv-182",
-          "type": "invalidation",
-          "price": 182,
-          "action": "Re-underwrite",
-          "condition": "Daily close below $182.",
-          "status": "active"
-        }
-      ],
-      "name": "Halden Defense Systems",
-      "aliases": [
-        "halden",
-        "hldn"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "account": "AF",
-      "role": "core-active",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "caps": {
-        "max_pct_of_book": 6,
-        "rule": "No new money above 6% of the book."
-      },
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Order backlog to revenue",
-          "value": "3.8x",
-          "as_of": "2026-09-17",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Book-to-bill",
-          "value": "1.3",
-          "as_of": "2026-09-17",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional maker of air-defence systems and missiles, with an order backlog close to four years of revenue.</p>\n<p><strong>What has to go right:</strong> Deliveries keep pace with the backlog, and new orders at least match revenue each quarter.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 182 (level <code>inv-182</code>).</li>\n<li>Two quarters running with orders below revenue.</li>\n<li>Budget cuts by its largest customers. A peace headline alone is not a reason.</li>\n</ul>\n",
-        "notes": "<h3>2026-03-20</h3>\n<p>Demo note: bought on a pullback after a large secondary offering.</p>\n"
-      }
-    },
-    "MRLN": {
-      "schema_version": 1,
-      "ticker": "MRLN",
-      "units": 2903,
-      "gav": 148.6,
-      "gav_as_of": "2026-09-30",
-      "levels": [
-        {
-          "id": "stop-132",
-          "type": "exit",
-          "price": 132,
-          "action": "Exit",
-          "condition": "Daily close below $132.",
-          "status": "active"
-        },
-        {
-          "id": "trim-168",
-          "type": "trim",
-          "price": 168,
-          "action": "Trim",
-          "condition": "At or above $168.",
-          "status": "active"
-        },
-        {
-          "id": "trim-182",
-          "type": "trim",
-          "price": 182,
-          "action": "Trim",
-          "condition": "At or above $182.",
-          "status": "active"
-        }
-      ],
-      "review_by": {
-        "date": "2026-11-12",
-        "note": "The stop is close. Decide whether the thesis still holds."
-      },
-      "name": "Marlowe Diagnostics",
-      "aliases": [
-        "marlowe",
-        "mrln"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "account": "AF",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Price to earnings (forward)",
-          "value": "14.2x",
-          "as_of": "2026-11-09",
-          "source": "demo estimate"
-        },
-        {
-          "name": "Routine test volumes, year on year",
-          "value": "-3%",
-          "as_of": "2026-09-24",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional lab-testing company at about 14 times earnings, against a long-run average near 22, after two soft quarters of routine test volumes.</p>\n<p><strong>What has to go right:</strong> Routine test volumes stop falling, and the new specialty panel reaches the revenue run-rate management guided to.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 132 (level <code>stop-132</code>).</li>\n<li>A cut to full-year guidance.</li>\n<li>The specialty panel launch slipping again.</li>\n</ul>\n",
-        "notes": "<h3>2026-09-30</h3>\n<p>Demo note: bought at the lower end of the planned zone. No adds below the entry price.</p>\n"
-      }
-    },
-    "NVRN": {
-      "schema_version": 1,
-      "ticker": "NVRN",
-      "units": 4513,
-      "gav": 131,
-      "gav_as_of": "2026-07-24",
-      "levels": [
-        {
-          "id": "trim-165",
-          "type": "trim",
-          "price": 165,
-          "action": "Trim a quarter",
-          "condition": "At or above $165, and only if the position is over its cap.",
-          "status": "active"
-        },
-        {
-          "id": "inv-118",
-          "type": "invalidation",
-          "price": 118,
-          "action": "Re-underwrite",
-          "condition": "Daily close below $118.",
-          "status": "active"
-        }
-      ],
-      "name": "Novarion Semiconductor",
-      "aliases": [
-        "novarion",
-        "nvrn"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "account": "AF",
-      "role": "core-active",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "caps": {
-        "max_pct_of_book": 6,
-        "rule": "No new money above 6% of the book."
-      },
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Gross margin",
-          "value": "73%",
-          "as_of": "2026-10-08",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Price to earnings (forward)",
-          "value": "31x",
-          "as_of": "2026-11-09",
-          "source": "demo estimate"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional designer of accelerator chips for data centres. Demand is set by a handful of very large buyers, which is both the thesis and the risk.</p>\n<p><strong>What has to go right:</strong> Data-centre orders stay ahead of supply through next year, and gross margin holds above 70%.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 118 (level <code>inv-118</code>).</li>\n<li>One of the large buyers cutting its capital spending plan.</li>\n<li>Gross margin under 65%.</li>\n</ul>\n",
-        "notes": "<h3>2026-07-24</h3>\n<p>Demo note: bought after a 20% pullback on export-rule headlines.</p>\n"
-      }
-    },
-    "ORBQ": {
-      "schema_version": 1,
-      "ticker": "ORBQ",
-      "units": 14021,
-      "gav": 28.9,
-      "gav_as_of": "2026-06-01",
-      "levels": [
-        {
-          "id": "trim-36",
-          "type": "trim",
-          "price": 36,
-          "action": "Trim a third",
-          "condition": "At or above $36, and only if the position is over its cap.",
-          "status": "active"
-        },
-        {
-          "id": "inv-24",
-          "type": "invalidation",
-          "price": 24,
-          "action": "Re-underwrite",
-          "condition": "Daily close below $24.",
-          "status": "active"
-        }
-      ],
-      "name": "Orbique Launch Systems",
-      "aliases": [
-        "orbique",
-        "orbq"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "account": "AF",
-      "role": "core-active",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "caps": {
-        "max_pct_of_book": 4,
-        "rule": "High risk: no new money above 4% of the book."
-      },
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Launch backlog",
-          "value": "41 missions",
-          "as_of": "2026-09-23",
-          "source": "demo quarterly report"
-        },
-        {
-          "name": "Cash runway",
-          "value": "9 quarters",
-          "as_of": "2026-09-23",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional small-launch provider moving into satellite services, which carry higher margins than launches. The riskiest holding, sized to match.</p>\n<p><strong>What has to go right:</strong> The new medium rocket flies on schedule, and the satellite business reaches a third of revenue.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 24 (level <code>inv-24</code>).</li>\n<li>A failed launch of the new vehicle.</li>\n<li>Funding the satellite purchase by issuing a large amount of new stock.</li>\n</ul>\n",
-        "notes": "<h3>2026-06-01</h3>\n<p>Demo note: added after the launch contract news.</p>\n"
-      }
-    },
-    "TALV": {
-      "schema_version": 1,
-      "ticker": "TALV",
-      "units": 1407,
-      "gav": 301.4,
-      "gav_as_of": "2026-10-07",
-      "levels": [
-        {
-          "id": "stop-262",
-          "type": "exit",
-          "price": 262,
-          "action": "Exit",
-          "condition": "Daily close below $262.",
-          "status": "active"
-        },
-        {
-          "id": "trim-325",
-          "type": "trim",
-          "price": 325,
-          "action": "Trim",
-          "condition": "At or above $325.",
-          "status": "active"
-        },
-        {
-          "id": "trim-350",
-          "type": "trim",
-          "price": 350,
-          "action": "Trim",
-          "condition": "At or above $350.",
-          "status": "active"
-        },
-        {
-          "id": "trim-310",
-          "type": "trim",
-          "price": 310,
-          "action": "Trim",
-          "condition": "At or above $310.",
-          "status": "retired",
-          "retired_on": "2026-10-28",
-          "retired_reason": "Filled: 400 of 1,807 shares trimmed."
-        }
-      ],
-      "review_by": {
-        "date": "2026-11-19",
-        "note": "Review the day after results."
-      },
-      "name": "Talvera Software",
-      "aliases": [
-        "talvera",
-        "talv"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "account": "AF",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [
-        {
-          "name": "Price to earnings (forward)",
-          "value": "15.1x",
-          "as_of": "2026-11-09",
-          "source": "demo estimate"
-        },
-        {
-          "name": "Subscriber growth, year on year",
-          "value": "19%",
-          "as_of": "2026-10-02",
-          "source": "demo quarterly report"
-        }
-      ],
-      "reports": [],
-      "sections": {
-        "thesis": "<p><strong>Why I own it:</strong> A fictional accounting-software company that fell by half on fear that automation replaces its product. Customers still renew, and it trades at about 15 times forward earnings.</p>\n<p><strong>What has to go right:</strong> Results meet the lowered bar, the full-year outlook is kept, and subscriber growth stays near 20%.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 262 (level <code>stop-262</code>).</li>\n<li>A cut to the full-year outlook.</li>\n<li>Subscriber growth slowing sharply.</li>\n<li>A fall after good results is not a reason on its own.</li>\n</ul>\n",
-        "notes": "<h3>2026-10-28</h3>\n<p>Demo note: trimmed 400 of 1,807 shares at the first target. The rest runs to 325.</p>\n"
+        "thesis": "<p><strong>Why I own it:</strong> A model holding: the largest supplier of accelerator chips for data centres. Demand comes from a small number of very large buyers, which is both the case for it and the risk.</p>\n<p><strong>What has to go right:</strong> Data-centre orders stay ahead of supply, and the large buyers keep their spending plans.</p>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below 160 (level <code>inv-160</code>).</li>\n<li>A large buyer cutting its capital spending plan.</li>\n</ul>\n",
+        "notes": "<h3>2026-02-10</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     }
   },
-  "watchlist": {
-    "DRMA": {
-      "schema_version": 1,
-      "ticker": "DRMA",
-      "name": "Dermavance Animal Health",
-      "aliases": [
-        "dermavance",
-        "drma"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [],
-      "reports": [],
-      "target_account": "AF",
-      "priority": 2,
-      "bench": false,
-      "catalyst_required": false,
-      "constraints": "Only after results, and only if guidance is not cut.",
-      "suggested_size": {
-        "pct_of_book": 3,
-        "nok": 375000,
-        "approximate": true
-      },
-      "levels": [
-        {
-          "id": "buy-88",
-          "type": "buy",
-          "price": 88,
-          "action": "First position: 4,200 shares at most",
-          "condition": "At $88 or less. Planned stop: daily close below $79. Targets $97 and $104.",
-          "status": "active"
-        }
-      ],
-      "sections": {
-        "why_watching": "<p>A fictional animal-health leader at about 13 times earnings, far under its long-run multiple, after two guidance cuts.</p>\n",
-        "what_would_make_me_buy": "<p>88 or less with guidance held. Planned levels after a buy: stop on a daily close below 79; targets 97 and 104.</p>\n",
-        "notes": "<h3>2026-11-03</h3>\n<p>Demo note: added from the monthly screen.</p>\n"
-      }
-    },
-    "HXLY": {
-      "schema_version": 1,
-      "ticker": "HXLY",
-      "name": "Hexley Water Systems",
-      "aliases": [
-        "hexley",
-        "hxly"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [],
-      "reports": [],
-      "target_account": "AF",
-      "priority": 3,
-      "bench": false,
-      "catalyst_required": false,
-      "constraints": "Alternate: only if a slot is free.",
-      "suggested_size": null,
-      "levels": [
-        {
-          "id": "buy-45",
-          "type": "buy",
-          "price": 45,
-          "action": "First position: 8,000 shares at most",
-          "condition": "At $45 or less. Planned stop: daily close below $41.",
-          "status": "active"
-        }
-      ],
-      "sections": {
-        "why_watching": "<p>A fictional water-technology maker whose orders are growing faster than its revenue, so sales look delayed, not lost.</p>\n",
-        "what_would_make_me_buy": "<p>45 or less. Planned stop: daily close below 41.</p>\n",
-        "notes": "<h3>2026-11-03</h3>\n<p>Demo note: added from the monthly screen.</p>\n"
-      }
-    },
-    "KELP": {
-      "schema_version": 1,
-      "ticker": "KELP",
-      "name": "Kelpwave Energy",
-      "aliases": [
-        "kelpwave",
-        "kelp"
-      ],
-      "exchange": "NYSE",
-      "currency": "USD",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [],
-      "reports": [],
-      "target_account": "AF",
-      "priority": 1,
-      "bench": false,
-      "catalyst_required": false,
-      "constraints": "Half size until the order intake is published.",
-      "suggested_size": {
-        "pct_of_book": 3,
-        "nok": 375000,
-        "approximate": true
-      },
-      "levels": [
-        {
-          "id": "buy-14",
-          "type": "buy",
-          "price": 14,
-          "action": "First position: 26,000 shares at most",
-          "condition": "At $14 or less. Planned stop: daily close below $12.20. Targets $16.50 and $18.",
-          "status": "active"
-        }
-      ],
-      "sections": {
-        "why_watching": "<p>A fictional offshore wave-power developer with its first commercial array under construction.</p>\n",
-        "what_would_make_me_buy": "<p>A close at or below 14. Planned levels after a buy: stop on a daily close below 12.20; targets 16.50 and 18.</p>\n",
-        "notes": "<h3>2026-11-03</h3>\n<p>Demo note: added from the monthly screen.</p>\n"
-      }
-    },
-    "OSTR": {
-      "schema_version": 1,
-      "ticker": "OSTR",
-      "name": "Ostrander Travel Group",
-      "aliases": [
-        "ostrander",
-        "ostr"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [],
-      "reports": [],
-      "target_account": "AF",
-      "priority": 4,
-      "bench": false,
-      "catalyst_required": true,
-      "constraints": "Not before its next report.",
-      "suggested_size": null,
-      "levels": [
-        {
-          "id": "buy-120",
-          "type": "buy",
-          "price": 120,
-          "action": "First position: 3,000 shares at most",
-          "condition": "After its next report, at $120 or less. Planned stop: daily close below $109.",
-          "status": "active"
-        }
-      ],
-      "sections": {
-        "why_watching": "<p>A fictional online travel agent with very high returns on capital, down on a soft outlook.</p>\n",
-        "what_would_make_me_buy": "<p>After the next report, 120 or less. Planned stop: daily close below 109.</p>\n",
-        "notes": "<h3>2026-11-03</h3>\n<p>Demo note: added from the monthly screen.</p>\n"
-      }
-    },
-    "PVNE": {
-      "schema_version": 1,
-      "ticker": "PVNE",
-      "name": "Pavane Dental",
-      "aliases": [
-        "pavane",
-        "pvne"
-      ],
-      "exchange": "NASDAQ",
-      "currency": "USD",
-      "role": "tactical",
-      "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
-      "news_priority": "normal",
-      "move_threshold_pct": 12,
-      "earnings": {
-        "next": null,
-        "source": null,
-        "verified_on": null,
-        "rule": "Next earnings date is entered manually; the scan reminds when it is missing or passed."
-      },
-      "metrics": [],
-      "reports": [],
-      "target_account": "AF",
-      "priority": 5,
-      "bench": false,
-      "catalyst_required": true,
-      "constraints": "Only after the new chief executive gives a first outlook.",
-      "suggested_size": null,
-      "levels": [
-        {
-          "id": "buy-146",
-          "type": "buy",
-          "price": 146,
-          "action": "First position: 2,500 shares at most",
-          "condition": "After the new chief executive's first outlook, at $146 or less. Planned stop: daily close below $136.",
-          "status": "active"
-        }
-      ],
-      "sections": {
-        "why_watching": "<p>A fictional dental-device maker with almost no growth and a new chief executive.</p>\n",
-        "what_would_make_me_buy": "<p>After the first outlook, 146 or less. Planned stop: daily close below 136.</p>\n",
-        "notes": "<h3>2026-11-03</h3>\n<p>Demo note: added from the monthly screen.</p>\n"
-      }
-    }
-  },
+  "watchlist": {},
   "journal": {
-    "2026-06-11-VLTR-opening": {
+    "2025-12-01-AAPL-opening": {
       "schema_version": 1,
-      "id": "2026-06-11-VLTR-opening",
-      "date": "2026-06-11",
-      "ticker": "VLTR",
+      "id": "2025-12-01-AAPL-opening",
+      "date": "2025-12-01",
+      "ticker": "AAPL",
       "account": "AF",
       "action": "opening",
-      "units": 30007,
-      "gav": 9.9,
+      "units": 2480,
+      "gav": 283.1,
       "currency": "USD",
       "sections": {
         "reasoning_at_the_time": "",
         "what_i_expected": "",
         "grade_notes": "",
-        "source": "<p>Demo entry: the holding as it stood before the journal began.</p>\n"
+        "source": "<p>Model portfolio entry: the holding as the model book was opened. The size and average cost are made up.</p>\n"
       }
     },
-    "2026-07-15-VLTR-hold": {
+    "2025-12-01-AMZN-opening": {
       "schema_version": 1,
-      "id": "2026-07-15-VLTR-hold",
-      "date": "2026-07-15",
-      "ticker": "VLTR",
+      "id": "2025-12-01-AMZN-opening",
+      "date": "2025-12-01",
+      "ticker": "AMZN",
       "account": "AF",
-      "action": "hold",
-      "trigger": "VLTR fell 14% on the day after a trial update",
-      "level_ref": null,
-      "grades": [
-        {
-          "horizon": "90d",
-          "due": "2026-10-13",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        },
-        {
-          "horizon": "180d",
-          "due": "2027-01-11",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        }
-      ],
+      "action": "opening",
+      "units": 2900,
+      "gav": 233.9,
+      "currency": "USD",
       "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. The update changed the dosing schedule, not the efficacy signal. The readout is still the test, so no action.</p>\n",
-        "what_i_expected": "<p>The price to stay weak until the readout, then move on the data.</p>\n",
+        "reasoning_at_the_time": "",
+        "what_i_expected": "",
         "grade_notes": "",
-        "source": ""
+        "source": "<p>Model portfolio entry: the holding as the model book was opened. The size and average cost are made up.</p>\n"
       }
     },
-    "2026-07-24-NVRN-buy": {
+    "2025-12-01-COST-opening": {
       "schema_version": 1,
-      "id": "2026-07-24-NVRN-buy",
-      "date": "2026-07-24",
-      "ticker": "NVRN",
+      "id": "2025-12-01-COST-opening",
+      "date": "2025-12-01",
+      "ticker": "COST",
+      "account": "AF",
+      "action": "opening",
+      "units": 560,
+      "gav": 912,
+      "currency": "USD",
+      "sections": {
+        "reasoning_at_the_time": "",
+        "what_i_expected": "",
+        "grade_notes": "",
+        "source": "<p>Model portfolio entry: the holding as the model book was opened. The size and average cost are made up.</p>\n"
+      }
+    },
+    "2025-12-01-GOOGL-opening": {
+      "schema_version": 1,
+      "id": "2025-12-01-GOOGL-opening",
+      "date": "2025-12-01",
+      "ticker": "GOOGL",
+      "account": "AF",
+      "action": "opening",
+      "units": 2750,
+      "gav": 314.9,
+      "currency": "USD",
+      "sections": {
+        "reasoning_at_the_time": "",
+        "what_i_expected": "",
+        "grade_notes": "",
+        "source": "<p>Model portfolio entry: the holding as the model book was opened. The size and average cost are made up.</p>\n"
+      }
+    },
+    "2025-12-01-NVDA-opening": {
+      "schema_version": 1,
+      "id": "2025-12-01-NVDA-opening",
+      "date": "2025-12-01",
+      "ticker": "NVDA",
+      "account": "AF",
+      "action": "opening",
+      "units": 3600,
+      "gav": 179.9,
+      "currency": "USD",
+      "sections": {
+        "reasoning_at_the_time": "",
+        "what_i_expected": "",
+        "grade_notes": "",
+        "source": "<p>Model portfolio entry: the holding as the model book was opened. The size and average cost are made up.</p>\n"
+      }
+    },
+    "2026-01-20-JPM-buy": {
+      "schema_version": 1,
+      "id": "2026-01-20-JPM-buy",
+      "date": "2026-01-20",
+      "ticker": "JPM",
       "account": "AF",
       "action": "buy",
-      "units": 4513,
-      "price": 131,
+      "units": 2200,
+      "price": 302.7,
       "currency": "USD",
       "fees": 0,
       "fx_rate": null,
-      "nok_value": 591203,
-      "gav_after": 131,
-      "cash_after": 1689809.35,
+      "nok_value": 665940,
+      "gav_after": 302.7,
+      "cash_after": 526505.4,
       "level_ref": null,
       "tax_note": "A purchase is not a tax event.",
       "tool_estimate_warning": null,
       "grades": [
         {
           "horizon": "90d",
-          "due": "2026-10-22",
-          "decision_quality": "B",
-          "outcome": "A",
-          "note": "Demo grade: the order thesis held. The price recovered faster than the reasoning expected."
-        },
-        {
-          "horizon": "180d",
-          "due": "2027-01-20",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        }
-      ],
-      "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. A 20% pullback on export-rule headlines, with the order book untouched.</p>\n",
-        "what_i_expected": "<p>The pullback to reverse within a quarter as orders are confirmed.</p>\n",
-        "grade_notes": "",
-        "source": ""
-      }
-    },
-    "2026-08-07-VLTR-sell": {
-      "schema_version": 1,
-      "id": "2026-08-07-VLTR-sell",
-      "date": "2026-08-07",
-      "ticker": "VLTR",
-      "account": "AF",
-      "action": "sell",
-      "units": 30007,
-      "price": 7.4,
-      "currency": "USD",
-      "fees": 0,
-      "fx_rate": null,
-      "nok_value": 222051.8,
-      "gav_after": null,
-      "cash_after": 1911861.15,
-      "level_ref": null,
-      "tax_note": "A sale in the brokerage account: taxable result.",
-      "tool_estimate_warning": null,
-      "grades": [
-        {
-          "horizon": "90d",
-          "due": "2026-11-05",
+          "due": "2026-04-20",
           "decision_quality": "A",
           "outcome": "B",
-          "note": "Demo grade: the exit followed the written rule on the first day it applied. The price fell further afterwards."
+          "note": "Model grade. The decision followed the written plan. The close 90 days later was higher than the trade price."
         },
         {
           "horizon": "180d",
-          "due": "2027-02-03",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
+          "due": "2026-07-19",
+          "decision_quality": "A",
+          "outcome": "B",
+          "note": "Model grade. The decision followed the written plan. The close 180 days later was higher than the trade price."
         }
       ],
       "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. The trial readout missed its main goal, which was the one thing the thesis rested on. Sold the whole position the next session.</p>\n",
-        "what_i_expected": "<p>A loss on the position, and no reason to wait for a bounce.</p>\n",
+        "reasoning_at_the_time": "<p>Model portfolio entry. The book held no financial company; this adds one as a counterweight to the technology names.</p>\n",
+        "what_i_expected": "<p>A steadier holding than the rest of the stock sleeve.</p>\n",
         "grade_notes": "",
         "source": ""
       }
     },
-    "2026-09-30-MRLN-buy": {
+    "2026-02-06-AMZN-hold": {
       "schema_version": 1,
-      "id": "2026-09-30-MRLN-buy",
-      "date": "2026-09-30",
-      "ticker": "MRLN",
+      "id": "2026-02-06-AMZN-hold",
+      "date": "2026-02-06",
+      "ticker": "AMZN",
+      "account": "AF",
+      "action": "hold",
+      "trigger": "AMZN fell 5.6% on the day",
+      "level_ref": null,
+      "grades": [
+        {
+          "horizon": "90d",
+          "due": "2026-05-07",
+          "decision_quality": "A",
+          "outcome": "B",
+          "note": "Model grade. No level was crossed, so the plan said do nothing. The close 90 days later was higher than on the day of the fall."
+        },
+        {
+          "horizon": "180d",
+          "due": "2026-08-05",
+          "decision_quality": "A",
+          "outcome": "B",
+          "note": "Model grade. The close 180 days later was higher than on the day of the fall."
+        }
+      ],
+      "sections": {
+        "reasoning_at_the_time": "<p>Model portfolio entry. A large one-day fall, but the close stayed above the invalidation level, and the written plan acts on levels, not on single days. No action.</p>\n",
+        "what_i_expected": "<p>Nothing in particular: the entry records that the fall was seen and why nothing was done.</p>\n",
+        "grade_notes": "",
+        "source": ""
+      }
+    },
+    "2026-02-10-NVDA-buy": {
+      "schema_version": 1,
+      "id": "2026-02-10-NVDA-buy",
+      "date": "2026-02-10",
+      "ticker": "NVDA",
       "account": "AF",
       "action": "buy",
-      "units": 2903,
-      "price": 148.6,
+      "units": 1200,
+      "price": 188.5,
       "currency": "USD",
       "fees": 0,
       "fx_rate": null,
-      "nok_value": 431385.8,
-      "gav_after": 148.6,
-      "cash_after": 1480475.35,
+      "nok_value": 226200,
+      "gav_after": 182.1,
+      "cash_after": 300305.4,
       "level_ref": null,
       "tax_note": "A purchase is not a tax event.",
       "tool_estimate_warning": null,
       "grades": [
         {
           "horizon": "90d",
-          "due": "2026-12-29",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
+          "due": "2026-05-11",
+          "decision_quality": "A",
+          "outcome": "B",
+          "note": "Model grade. The decision followed the written plan. The close 90 days later was higher than the trade price."
         },
         {
           "horizon": "180d",
-          "due": "2027-03-29",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
+          "due": "2026-08-09",
+          "decision_quality": "A",
+          "outcome": "B",
+          "note": "Model grade. The decision followed the written plan. The close 180 days later was higher than the trade price."
         }
       ],
       "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. Cheap against its own history after two soft quarters; the new specialty panel is the reason volumes should recover.</p>\n",
-        "what_i_expected": "<p>A move toward 168 within one to three months if volumes stabilise.</p>\n",
+        "reasoning_at_the_time": "<p>Model portfolio entry. Added to an existing position while it was under its cap.</p>\n",
+        "what_i_expected": "<p>The position to stay under its cap after the purchase.</p>\n",
         "grade_notes": "",
         "source": ""
       }
     },
-    "2026-10-07-TALV-buy": {
+    "2026-03-17-GOOGL-trim": {
       "schema_version": 1,
-      "id": "2026-10-07-TALV-buy",
-      "date": "2026-10-07",
-      "ticker": "TALV",
-      "account": "AF",
-      "action": "buy",
-      "units": 1807,
-      "price": 301.4,
-      "currency": "USD",
-      "fees": 0,
-      "fx_rate": null,
-      "nok_value": 544629.8,
-      "gav_after": 301.4,
-      "cash_after": 935845.55,
-      "level_ref": null,
-      "tax_note": "A purchase is not a tax event.",
-      "tool_estimate_warning": null,
-      "grades": [
-        {
-          "horizon": "90d",
-          "due": "2027-01-05",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        },
-        {
-          "horizon": "180d",
-          "due": "2027-04-05",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        }
-      ],
-      "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. The fall priced in customers leaving, and the renewal numbers do not show that.</p>\n",
-        "what_i_expected": "<p>A recovery toward 310 and then 325 through the next results.</p>\n",
-        "grade_notes": "",
-        "source": ""
-      }
-    },
-    "2026-10-23-BRSK-buy": {
-      "schema_version": 1,
-      "id": "2026-10-23-BRSK-buy",
-      "date": "2026-10-23",
-      "ticker": "BRSK",
-      "account": "AF",
-      "action": "buy",
-      "units": 6811,
-      "price": 61.2,
-      "currency": "USD",
-      "fees": 0,
-      "fx_rate": null,
-      "nok_value": 416833.2,
-      "gav_after": 61.2,
-      "cash_after": 519012.35,
-      "level_ref": null,
-      "tax_note": "A purchase is not a tax event.",
-      "tool_estimate_warning": null,
-      "grades": [
-        {
-          "horizon": "90d",
-          "due": "2027-01-21",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        },
-        {
-          "horizon": "180d",
-          "due": "2027-04-21",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
-        }
-      ],
-      "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. The stock fell after a results beat, and the buyback is running at close to tangible book.</p>\n",
-        "what_i_expected": "<p>A return toward 68 within one to three months.</p>\n",
-        "grade_notes": "",
-        "source": ""
-      }
-    },
-    "2026-10-28-TALV-trim": {
-      "schema_version": 1,
-      "id": "2026-10-28-TALV-trim",
-      "date": "2026-10-28",
-      "ticker": "TALV",
+      "id": "2026-03-17-GOOGL-trim",
+      "date": "2026-03-17",
+      "ticker": "GOOGL",
       "account": "AF",
       "action": "trim",
-      "units": 400,
-      "price": 311.4,
+      "units": 550,
+      "price": 310.9,
       "currency": "USD",
       "fees": 0,
       "fx_rate": null,
-      "nok_value": 124560,
-      "gav_after": 301.4,
-      "cash_after": 643572.35,
-      "level_ref": "trim-310",
-      "tax_note": "A sale in the brokerage account: taxable gain on 400 shares.",
+      "nok_value": 170995,
+      "gav_after": 314.9,
+      "cash_after": 471300.4,
+      "level_ref": null,
+      "tax_note": "A sale in the brokerage account: taxable result on 550 shares.",
       "tool_estimate_warning": null,
       "grades": [
         {
           "horizon": "90d",
-          "due": "2027-01-26",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
+          "due": "2026-06-15",
+          "decision_quality": "A",
+          "outcome": "D",
+          "note": "Model grade. The decision followed the written plan. The close 90 days later was higher than the trade price."
         },
         {
           "horizon": "180d",
-          "due": "2027-04-26",
-          "decision_quality": null,
-          "outcome": null,
-          "note": null
+          "due": "2026-09-13",
+          "decision_quality": "A",
+          "outcome": "D",
+          "note": "Model grade. The decision followed the written plan. The close 180 days later was higher than the trade price."
         }
       ],
       "sections": {
-        "reasoning_at_the_time": "<p>Demo entry. First target reached. Trimmed about a fifth as planned and kept the rest for 325.</p>\n",
-        "what_i_expected": "<p>The remaining shares to reach 325 before results.</p>\n",
+        "reasoning_at_the_time": "<p>Model portfolio entry. The position had grown past its cap; trimmed a fifth to bring it back under.</p>\n",
+        "what_i_expected": "<p>The rest of the position to be held against its invalidation level.</p>\n",
         "grade_notes": "",
         "source": ""
       }

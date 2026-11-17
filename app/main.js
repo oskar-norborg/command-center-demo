@@ -117,10 +117,13 @@ export function statusPills(scan, freshness) {
   return [overduePill(freshness), text('span', `LAST RUN ${label}`, { class: `status-pill status-${status} status-last-run` })];
 }
 
+/** The demo's label (SPEC.md §5.11): what is real in it and what is not. */
+export const DEMO_BANNER = 'Demo: a model portfolio, not my holdings. Real US companies and funds at real closing prices; the sizes, costs and trades are made up.';
+
 function renderChrome(data) {
   clear(chrome);
   if (data.config?.demo) {
-    chrome.appendChild(text('div', 'Demo. All holdings, prices and names are invented.', { class: 'demo-banner', attrs: { role: 'note' } }));
+    chrome.appendChild(text('div', DEMO_BANNER, { class: 'demo-banner', attrs: { role: 'note' } }));
   }
   const now = Date.now();
   const freshness = hasScan(data.scan) ? freshnessOf(data, now) : null;
@@ -240,10 +243,7 @@ export function withLiveData(data) {
 export async function boot() {
   removeServiceWorkers();
   app.appendChild(text('p', 'Loading…', { class: 'muted' }));
-  let loaded = await loadData();
-  // A demo build keeps itself current: its invented dates move to today's latest close (demo-shift.js). The real
-  // site never loads that module.
-  if (loaded.config?.demo === true) loaded = await (await import('./demo-shift.js')).keepDemoCurrent(loaded);
+  const loaded = await loadData();
   // The book's currency and its accounts' display names, before anything is computed or drawn
   // (lib/base-currency.js): NOK and the account ids unless the state says otherwise.
   setAccounts(loaded.state?.portfolio);

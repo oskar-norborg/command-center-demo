@@ -5,11 +5,8 @@
     "type": "close",
     "started_utc": "2026-11-16T21:41:34Z",
     "finished_utc": "2026-11-16T21:41:38Z",
-    "status": "degraded",
-    "status_reasons": [
-      "CWYK valued at last good price 271 (2026-11-13), stale",
-      "CWYK: fetch failed (no source returned a usable price)"
-    ],
+    "status": "ok",
+    "status_reasons": [],
     "state_commit": "demo",
     "sessions": {
       "NYSE": {
@@ -31,333 +28,138 @@
   },
   "fx": {},
   "quotes": {
-    "AMBR": {
-      "price": 201.3,
+    "AAPL": {
+      "price": 352.78,
       "currency": "USD",
       "label": "confirmed close",
       "session_date": "2026-11-16",
-      "prev_close": 201.8,
-      "change_pct": -0.25,
+      "prev_close": 356.27,
+      "change_pct": -0.98,
       "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 201.3,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 201.3,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "BRSK": {
-      "price": 64.1,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 64.3,
-      "change_pct": -0.31,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 64.1,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 64.1,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "CWYK": {
-      "price": null,
-      "currency": "USD",
-      "label": "fetch failed",
-      "session_date": null,
-      "prev_close": null,
-      "change_pct": null,
-      "change_basis": null,
       "sources": [
         {
           "name": "fmp-profile",
           "ok": false,
-          "error": "HTTP 429"
+          "error": "not fetched in the demo"
         },
         {
           "name": "yahoo-chart",
+          "price": 352.78,
+          "ok": true,
+          "timestamp": "2026-11-16T21:04:00Z"
+        }
+      ],
+      "flags": []
+    },
+    "AMZN": {
+      "price": 257.75,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "prev_close": 266.66,
+      "change_pct": -3.34,
+      "change_basis": "prev-session",
+      "sources": [
+        {
+          "name": "fmp-profile",
           "ok": false,
-          "error": "HTTP 429"
+          "error": "not fetched in the demo"
         },
         {
-          "name": "stockanalysis",
+          "name": "yahoo-chart",
+          "price": 257.75,
+          "ok": true,
+          "timestamp": "2026-11-16T21:04:00Z"
+        }
+      ],
+      "flags": []
+    },
+    "COST": {
+      "price": 1113.74,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "prev_close": 1106.21,
+      "change_pct": 0.68,
+      "change_basis": "prev-session",
+      "sources": [
+        {
+          "name": "fmp-profile",
           "ok": false,
-          "error": "HTTP 503"
-        }
-      ],
-      "flags": [
-        "fetch-failed"
-      ],
-      "failure_reason": "no source returned a usable price",
-      "last_good": {
-        "price": 271,
-        "as_of": "2026-11-13"
-      }
-    },
-    "ELRY": {
-      "price": 812.5,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 814.3,
-      "change_pct": -0.22,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 812.5,
-          "ok": true
+          "error": "not fetched in the demo"
         },
         {
           "name": "yahoo-chart",
-          "price": 812.5,
+          "price": 1113.74,
           "ok": true,
           "timestamp": "2026-11-16T21:04:00Z"
         }
       ],
       "flags": []
     },
-    "HLDN": {
-      "price": 218.4,
+    "GOOGL": {
+      "price": 283.72,
       "currency": "USD",
       "label": "confirmed close",
       "session_date": "2026-11-16",
-      "prev_close": 218.9,
-      "change_pct": -0.23,
+      "prev_close": 295.77,
+      "change_pct": -4.07,
       "change_basis": "prev-session",
       "sources": [
         {
           "name": "fmp-profile",
-          "price": 218.4,
-          "ok": true
+          "ok": false,
+          "error": "not fetched in the demo"
         },
         {
           "name": "yahoo-chart",
-          "price": 218.4,
+          "price": 283.72,
           "ok": true,
           "timestamp": "2026-11-16T21:04:00Z"
         }
       ],
       "flags": []
     },
-    "MRLN": {
-      "price": 135.6,
+    "JPM": {
+      "price": 338.21,
       "currency": "USD",
       "label": "confirmed close",
       "session_date": "2026-11-16",
-      "prev_close": 136.2,
-      "change_pct": -0.44,
+      "prev_close": 346.19,
+      "change_pct": -2.31,
       "change_basis": "prev-session",
       "sources": [
         {
           "name": "fmp-profile",
-          "price": 135.6,
-          "ok": true
+          "ok": false,
+          "error": "not fetched in the demo"
         },
         {
           "name": "yahoo-chart",
-          "price": 135.6,
+          "price": 338.21,
           "ok": true,
           "timestamp": "2026-11-16T21:04:00Z"
         }
       ],
       "flags": []
     },
-    "NVRN": {
-      "price": 142.6,
+    "NVDA": {
+      "price": 156.14,
       "currency": "USD",
       "label": "confirmed close",
       "session_date": "2026-11-16",
-      "prev_close": 143.9,
-      "change_pct": -0.9,
+      "prev_close": 162.85,
+      "change_pct": -4.12,
       "change_basis": "prev-session",
       "sources": [
         {
           "name": "fmp-profile",
-          "price": 142.6,
-          "ok": true
+          "ok": false,
+          "error": "not fetched in the demo"
         },
         {
           "name": "yahoo-chart",
-          "price": 142.6,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "ORBQ": {
-      "price": 31.5,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 31.3,
-      "change_pct": 0.64,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 31.5,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 31.5,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "TALV": {
-      "price": 327.9,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 324.4,
-      "change_pct": 1.08,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 327.9,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 327.9,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "DRMA": {
-      "price": 90.1,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 90.6,
-      "change_pct": -0.55,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 90.1,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 90.1,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "HXLY": {
-      "price": 53,
-      "currency": "USD",
-      "label": "intraday print",
-      "session_date": "2026-11-16",
-      "prev_close": 52.8,
-      "change_pct": 0.38,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 53,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 53,
-          "ok": true,
-          "timestamp": "2026-11-16T20:25:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "KELP": {
-      "price": 13.9,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 14.1,
-      "change_pct": -1.42,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 13.9,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 13.9,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "OSTR": {
-      "price": 143.9,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 142.6,
-      "change_pct": 0.91,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 143.9,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 143.9,
-          "ok": true,
-          "timestamp": "2026-11-16T21:04:00Z"
-        }
-      ],
-      "flags": []
-    },
-    "PVNE": {
-      "price": 166.9,
-      "currency": "USD",
-      "label": "confirmed close",
-      "session_date": "2026-11-16",
-      "prev_close": 165.8,
-      "change_pct": 0.66,
-      "change_basis": "prev-session",
-      "sources": [
-        {
-          "name": "fmp-profile",
-          "price": 166.9,
-          "ok": true
-        },
-        {
-          "name": "yahoo-chart",
-          "price": 166.9,
+          "price": 156.14,
           "ok": true,
           "timestamp": "2026-11-16T21:04:00Z"
         }
@@ -366,56 +168,45 @@
     }
   },
   "book": {
-    "total_nok": 12546272.85,
-    "stocks_nok": 4872226.9,
-    "funds_nok": 6882253.2,
-    "cash_nok": 791792.75,
-    "oldest_fund_nav_date": "2026-10-26",
-    "approximate": true,
-    "day_change_nok": -5017.6,
-    "day_change_pct": -0.09,
+    "total_nok": 12481553.2,
+    "stocks_nok": 4363781.8,
+    "funds_nok": 7494070.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-11-16",
+    "approximate": false,
+    "day_change_nok": -106551.4,
+    "day_change_pct": -2.09,
     "day_change_scope": "stocks-only",
     "day_change_reason": null,
-    "day_change_excluded": [
-      {
-        "ticker": "CWYK",
-        "reason": "last-good-price"
-      }
-    ],
+    "day_change_excluded": [],
     "day_change_approximate": false,
-    "unconfirmed_prices": [
-      {
-        "ticker": "CWYK",
-        "reason": "last-good-price",
-        "as_of": "2026-11-13"
-      }
-    ],
+    "unconfirmed_prices": [],
     "allocation": {
-      "funds": 54.85,
-      "stocks": 38.83,
-      "cash": 6.31
+      "funds": 60.04,
+      "stocks": 34.96,
+      "cash": 5
     },
     "by_account": {
-      "ASK": 2611428.6,
-      "AF": 9934844.25
+      "ASK": 3899440.5,
+      "AF": 8582112.7
     },
-    "tech_pct": 25.92,
+    "tech_pct": 30.05,
     "tech_cap_pct": 45,
     "pnl": {
       "stocks": {
-        "cost_nok": 4603879.7,
-        "pnl_nok": 268347.2,
-        "pnl_pct": 5.83
+        "cost_nok": 4123918,
+        "pnl_nok": 239863.8,
+        "pnl_pct": 5.82
       },
       "funds": {
-        "cost_nok": 6479365.1,
-        "pnl_nok": 402888.1,
-        "pnl_pct": 6.22
+        "cost_nok": 6923654,
+        "pnl_nok": 570416.5,
+        "pnl_pct": 8.24
       },
       "holdings": {
-        "cost_nok": 11083244.8,
-        "pnl_nok": 671235.3,
-        "pnl_pct": 6.06
+        "cost_nok": 11047572,
+        "pnl_nok": 810280.3,
+        "pnl_pct": 7.33
       }
     }
   },
@@ -426,605 +217,356 @@
       "OSE": "2026-11-16"
     },
     "previous_caps": {
-      "AMBR": "clear",
-      "BRSK": "clear",
-      "CWYK": "clear",
-      "ELRY": "clear",
-      "HLDN": "clear",
-      "MRLN": "clear",
-      "NVRN": "clear",
-      "ORBQ": "clear",
-      "TALV": "clear"
+      "AAPL": "clear",
+      "AMZN": "clear",
+      "COST": "clear",
+      "GOOGL": "clear",
+      "JPM": "clear",
+      "NVDA": "clear"
     },
     "previous_prices": {
-      "AMBR": 201.8,
-      "BRSK": 64.3,
-      "CWYK": 271,
-      "ELRY": 814.3,
-      "HLDN": 218.9,
-      "MRLN": 136.2,
-      "NVRN": 143.9,
-      "ORBQ": 31.3,
-      "TALV": 324.4,
-      "DRMA": 90.6,
-      "HXLY": 52.8,
-      "KELP": 14.1,
-      "OSTR": 142.6,
-      "PVNE": 165.8
+      "AAPL": 356.27,
+      "AMZN": 266.66,
+      "COST": 1106.21,
+      "GOOGL": 295.77,
+      "JPM": 346.19,
+      "NVDA": 162.85
     },
     "last_good": {
-      "AMBR": {
-        "price": 201.8,
+      "AAPL": {
+        "price": 356.27,
         "as_of": "2026-11-13"
       },
-      "BRSK": {
-        "price": 64.3,
+      "AMZN": {
+        "price": 266.66,
         "as_of": "2026-11-13"
       },
-      "CWYK": {
-        "price": 271,
+      "COST": {
+        "price": 1106.21,
         "as_of": "2026-11-13"
       },
-      "ELRY": {
-        "price": 814.3,
+      "GOOGL": {
+        "price": 295.77,
         "as_of": "2026-11-13"
       },
-      "HLDN": {
-        "price": 218.9,
+      "JPM": {
+        "price": 346.19,
         "as_of": "2026-11-13"
       },
-      "MRLN": {
-        "price": 136.2,
-        "as_of": "2026-11-13"
-      },
-      "NVRN": {
-        "price": 143.9,
-        "as_of": "2026-11-13"
-      },
-      "ORBQ": {
-        "price": 31.3,
-        "as_of": "2026-11-13"
-      },
-      "TALV": {
-        "price": 324.4,
-        "as_of": "2026-11-13"
-      },
-      "DRMA": {
-        "price": 90.6,
-        "as_of": "2026-11-13"
-      },
-      "HXLY": {
-        "price": 52.8,
-        "as_of": "2026-11-13"
-      },
-      "KELP": {
-        "price": 14.1,
-        "as_of": "2026-11-13"
-      },
-      "OSTR": {
-        "price": 142.6,
-        "as_of": "2026-11-13"
-      },
-      "PVNE": {
-        "price": 165.8,
+      "NVDA": {
+        "price": 162.85,
         "as_of": "2026-11-13"
       }
     },
     "holdings": {
-      "AMBR": {
-        "units": 2411,
-        "gav": 191
+      "AAPL": {
+        "units": 2480,
+        "gav": 283.1
       },
-      "BRSK": {
-        "units": 6811,
-        "gav": 61.2
+      "AMZN": {
+        "units": 2900,
+        "gav": 233.9
       },
-      "CWYK": {
-        "units": 3207,
-        "gav": 252
+      "COST": {
+        "units": 560,
+        "gav": 912
       },
-      "ELRY": {
-        "units": 703,
-        "gav": 760
+      "GOOGL": {
+        "units": 2200,
+        "gav": 314.9
       },
-      "HLDN": {
-        "units": 2609,
-        "gav": 204
+      "JPM": {
+        "units": 2200,
+        "gav": 302.7
       },
-      "MRLN": {
-        "units": 2903,
-        "gav": 148.6
-      },
-      "NVRN": {
-        "units": 4513,
-        "gav": 131
-      },
-      "ORBQ": {
-        "units": 14021,
-        "gav": 28.9
-      },
-      "TALV": {
-        "units": 1407,
-        "gav": 301.4
+      "NVDA": {
+        "units": 4800,
+        "gav": 182.1
       }
     },
     "cash": {
       "ASK": {
-        "nok": 148220.4,
-        "as_of": "2026-11-13"
+        "nok": 152400.5,
+        "as_of": "2026-11-16"
       },
       "AF": {
-        "nok": 643572.35,
-        "as_of": "2026-10-28"
+        "nok": 471300.4,
+        "as_of": "2026-11-16"
       }
     }
   },
   "positions": {
-    "AMBR": {
-      "value_nok": 485334.3,
-      "cost_nok": 460501,
-      "pnl_nok": 24833.3,
-      "pnl_pct": 5.39,
-      "day_change_nok": -1205.5,
-      "pct_of_book": 3.87,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
+    "AAPL": {
+      "value_nok": 874894.4,
+      "cost_nok": 702088,
+      "pnl_nok": 172806.4,
+      "pnl_pct": 24.61,
+      "day_change_nok": -8655.2,
+      "pct_of_book": 7.01,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 201.3,
+        "price": 352.78,
         "as_of": "2026-11-16"
       },
-      "cap_pct": null,
+      "cap_pct": 9,
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-240",
-          "state": "clear",
-          "distance_pct": 19.2,
+          "id": "trim-360",
+          "state": "near",
+          "distance_pct": 2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -16.1
+          "price_vs_level_pct": -2
         },
         {
-          "id": "inv-160",
+          "id": "inv-290",
           "state": "clear",
-          "distance_pct": -20.5,
+          "distance_pct": -17.8,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 25.8
+          "price_vs_level_pct": 21.6
         }
       ]
     },
-    "BRSK": {
-      "value_nok": 436585.1,
-      "cost_nok": 416833.2,
-      "pnl_nok": 19751.9,
-      "pnl_pct": 4.74,
-      "day_change_nok": -1362.2,
-      "pct_of_book": 3.48,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
+    "AMZN": {
+      "value_nok": 747475,
+      "cost_nok": 678310,
+      "pnl_nok": 69165,
+      "pnl_pct": 10.2,
+      "day_change_nok": -25839,
+      "pct_of_book": 5.99,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 64.1,
+        "price": 257.75,
         "as_of": "2026-11-16"
-      },
-      "cap_pct": null,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "stop-55",
-          "state": "clear",
-          "distance_pct": -14.2,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 16.5
-        },
-        {
-          "id": "trim-68",
-          "state": "clear",
-          "distance_pct": 6.1,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -5.7
-        },
-        {
-          "id": "trim-73",
-          "state": "clear",
-          "distance_pct": 13.9,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.2
-        }
-      ]
-    },
-    "CWYK": {
-      "value_nok": 869097,
-      "cost_nok": 808164,
-      "pnl_nok": 60933,
-      "pnl_pct": 7.54,
-      "day_change_nok": null,
-      "pct_of_book": 6.93,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "last-good",
-        "price": 271,
-        "as_of": "2026-11-13"
       },
       "cap_pct": 8,
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-320",
-          "state": "not-evaluated",
-          "distance_pct": null,
+          "id": "trim-285",
+          "state": "clear",
+          "distance_pct": 10.6,
           "hit_streak_sessions": 0,
-          "reason": "fetch failed"
+          "price_vs_level_pct": -9.6
         },
         {
-          "id": "inv-205",
-          "state": "not-evaluated",
-          "distance_pct": null,
+          "id": "inv-225",
+          "state": "clear",
+          "distance_pct": -12.7,
           "hit_streak_sessions": 0,
-          "reason": "fetch failed"
+          "price_vs_level_pct": 14.6
         }
       ]
     },
-    "ELRY": {
-      "value_nok": 571187.5,
-      "cost_nok": 534280,
-      "pnl_nok": 36907.5,
-      "pnl_pct": 6.91,
-      "day_change_nok": -1265.4,
-      "pct_of_book": 4.55,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
+    "COST": {
+      "value_nok": 623694.4,
+      "cost_nok": 510720,
+      "pnl_nok": 112974.4,
+      "pnl_pct": 22.12,
+      "day_change_nok": 4216.8,
+      "pct_of_book": 5,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 812.5,
+        "price": 1113.74,
         "as_of": "2026-11-16"
       },
-      "cap_pct": null,
+      "cap_pct": 7,
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-930",
-          "state": "clear",
-          "distance_pct": 14.5,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.6
-        },
-        {
-          "id": "inv-690",
-          "state": "clear",
-          "distance_pct": -15.1,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 17.8
-        }
-      ]
-    },
-    "HLDN": {
-      "value_nok": 569805.6,
-      "cost_nok": 532236,
-      "pnl_nok": 37569.6,
-      "pnl_pct": 7.06,
-      "day_change_nok": -1304.5,
-      "pct_of_book": 4.54,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "quote",
-        "price": 218.4,
-        "as_of": "2026-11-16"
-      },
-      "cap_pct": 6,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "trim-255",
-          "state": "clear",
-          "distance_pct": 16.8,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -14.4
-        },
-        {
-          "id": "inv-182",
-          "state": "clear",
-          "distance_pct": -16.7,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 20
-        }
-      ]
-    },
-    "MRLN": {
-      "value_nok": 393646.8,
-      "cost_nok": 431385.8,
-      "pnl_nok": -37739,
-      "pnl_pct": -8.75,
-      "day_change_nok": -1741.8,
-      "pct_of_book": 3.14,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "quote",
-        "price": 135.6,
-        "as_of": "2026-11-16"
-      },
-      "cap_pct": null,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "stop-132",
-          "state": "near",
-          "distance_pct": -2.7,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 2.7
-        },
-        {
-          "id": "trim-168",
-          "state": "clear",
-          "distance_pct": 23.9,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -19.3
-        },
-        {
-          "id": "trim-182",
-          "state": "clear",
-          "distance_pct": 34.2,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -25.5
-        }
-      ]
-    },
-    "NVRN": {
-      "value_nok": 643553.8,
-      "cost_nok": 591203,
-      "pnl_nok": 52350.8,
-      "pnl_pct": 8.85,
-      "day_change_nok": -5866.9,
-      "pct_of_book": 5.13,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "quote",
-        "price": 142.6,
-        "as_of": "2026-11-16"
-      },
-      "cap_pct": 6,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "trim-165",
-          "state": "clear",
-          "distance_pct": 15.7,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -13.6
-        },
-        {
-          "id": "inv-118",
-          "state": "clear",
-          "distance_pct": -17.3,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 20.8
-        }
-      ]
-    },
-    "ORBQ": {
-      "value_nok": 441661.5,
-      "cost_nok": 405206.9,
-      "pnl_nok": 36454.6,
-      "pnl_pct": 9,
-      "day_change_nok": 2804.2,
-      "pct_of_book": 3.52,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "quote",
-        "price": 31.5,
-        "as_of": "2026-11-16"
-      },
-      "cap_pct": 4,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "trim-36",
-          "state": "clear",
-          "distance_pct": 14.3,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.5
-        },
-        {
-          "id": "inv-24",
-          "state": "clear",
-          "distance_pct": -23.8,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 31.3
-        }
-      ]
-    },
-    "TALV": {
-      "value_nok": 461355.3,
-      "cost_nok": 424069.8,
-      "pnl_nok": 37285.5,
-      "pnl_pct": 8.79,
-      "day_change_nok": 4924.5,
-      "pct_of_book": 3.68,
-      "pct_basis_date": "2026-10-26",
-      "pct_approximate": true,
-      "priced": {
-        "source": "quote",
-        "price": 327.9,
-        "as_of": "2026-11-16"
-      },
-      "cap_pct": null,
-      "cap_state": "clear",
-      "levels": [
-        {
-          "id": "stop-262",
-          "state": "clear",
-          "distance_pct": -20.1,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 25.2
-        },
-        {
-          "id": "trim-325",
+          "id": "trim-1100",
           "state": "hit",
-          "distance_pct": -0.9,
-          "hit_streak_sessions": 1,
-          "price_vs_level_pct": 0.9
+          "distance_pct": -1.2,
+          "hit_streak_sessions": 2,
+          "price_vs_level_pct": 1.2
         },
         {
-          "id": "trim-350",
+          "id": "inv-880",
           "state": "clear",
-          "distance_pct": 6.7,
+          "distance_pct": -21,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -6.3
+          "price_vs_level_pct": 26.6
+        }
+      ]
+    },
+    "GOOGL": {
+      "value_nok": 624184,
+      "cost_nok": 692780,
+      "pnl_nok": -68596,
+      "pnl_pct": -9.9,
+      "day_change_nok": -26510,
+      "pct_of_book": 5,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
+      "priced": {
+        "source": "quote",
+        "price": 283.72,
+        "as_of": "2026-11-16"
+      },
+      "cap_pct": 7,
+      "cap_state": "clear",
+      "levels": [
+        {
+          "id": "trim-360",
+          "state": "clear",
+          "distance_pct": 26.9,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": -21.2
+        },
+        {
+          "id": "inv-275",
+          "state": "clear",
+          "distance_pct": -3.1,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": 3.2
+        }
+      ]
+    },
+    "JPM": {
+      "value_nok": 744062,
+      "cost_nok": 665940,
+      "pnl_nok": 78122,
+      "pnl_pct": 11.73,
+      "day_change_nok": -17556,
+      "pct_of_book": 5.96,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
+      "priced": {
+        "source": "quote",
+        "price": 338.21,
+        "as_of": "2026-11-16"
+      },
+      "cap_pct": 8,
+      "cap_state": "clear",
+      "levels": [
+        {
+          "id": "trim-365",
+          "state": "clear",
+          "distance_pct": 7.9,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": -7.3
+        },
+        {
+          "id": "inv-300",
+          "state": "clear",
+          "distance_pct": -11.3,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": 12.7
+        }
+      ]
+    },
+    "NVDA": {
+      "value_nok": 749472,
+      "cost_nok": 874080,
+      "pnl_nok": -124608,
+      "pnl_pct": -14.26,
+      "day_change_nok": -32208,
+      "pct_of_book": 6,
+      "pct_basis_date": "2026-11-16",
+      "pct_approximate": false,
+      "priced": {
+        "source": "quote",
+        "price": 156.14,
+        "as_of": "2026-11-16"
+      },
+      "cap_pct": 8,
+      "cap_state": "clear",
+      "levels": [
+        {
+          "id": "trim-240",
+          "state": "clear",
+          "distance_pct": 53.7,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": -34.9
+        },
+        {
+          "id": "inv-160",
+          "state": "hit",
+          "distance_pct": 2.5,
+          "hit_streak_sessions": 1,
+          "price_vs_level_pct": -2.4
         }
       ]
     }
   },
   "funds": {
-    "aurora-global": {
-      "value_nok": 4074543,
-      "cost_nok": 3800817.1,
-      "pnl_nok": 273725.9,
-      "pnl_pct": 7.2,
-      "pct_of_book": 32.48,
-      "nav": 168.3,
+    "voo": {
+      "value_nok": 3741430,
+      "cost_nok": 3440250,
+      "pnl_nok": 301180,
+      "pnl_pct": 8.75,
+      "pct_of_book": 29.98,
+      "nav": 680.26,
       "nav_as_of": "2026-11-16"
     },
-    "polar-treasury": {
-      "value_nok": 880010.1,
-      "cost_nok": 875683.6,
-      "pnl_nok": 4326.5,
-      "pnl_pct": 0.49,
-      "pct_of_book": 7.01,
-      "nav": 101.7,
-      "nav_as_of": "2026-11-16"
-    },
-    "nordlys-tech": {
-      "value_nok": 1277706.3,
-      "cost_nok": 1191676.2,
-      "pnl_nok": 86030.1,
+    "qqq": {
+      "value_nok": 1502172.5,
+      "cost_nok": 1401044,
+      "pnl_nok": 101128.5,
       "pnl_pct": 7.22,
-      "pct_of_book": 10.18,
-      "nav": 521.3,
+      "pct_of_book": 12.04,
+      "nav": 661.75,
       "nav_as_of": "2026-11-16"
     },
-    "tundra-em": {
-      "value_nok": 649993.8,
-      "cost_nok": 611188.2,
-      "pnl_nok": 38805.6,
-      "pnl_pct": 6.35,
-      "pct_of_book": 5.18,
-      "nav": 13.4,
-      "nav_as_of": "2026-10-26"
+    "schd": {
+      "value_nok": 1000494,
+      "cost_nok": 767250,
+      "pnl_nok": 233244,
+      "pnl_pct": 30.4,
+      "pct_of_book": 8.02,
+      "nav": 35.86,
+      "nav_as_of": "2026-11-16"
+    },
+    "bnd": {
+      "value_nok": 1249974,
+      "cost_nok": 1315110,
+      "pnl_nok": -65136,
+      "pnl_pct": -4.95,
+      "pct_of_book": 10.01,
+      "nav": 70.62,
+      "nav_as_of": "2026-11-16"
     }
   },
-  "watchlist": {
-    "DRMA": {
-      "levels": [
-        {
-          "id": "buy-88",
-          "state": "near",
-          "distance_pct": -2.3,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 2.4
-        }
-      ]
-    },
-    "HXLY": {
-      "levels": [
-        {
-          "id": "buy-45",
-          "state": "not-evaluated",
-          "distance_pct": null,
-          "hit_streak_sessions": 0,
-          "reason": "intraday print, levels are judged on closes"
-        }
-      ]
-    },
-    "KELP": {
-      "levels": [
-        {
-          "id": "buy-14",
-          "state": "hit",
-          "distance_pct": 0.7,
-          "hit_streak_sessions": 1,
-          "price_vs_level_pct": -0.7
-        }
-      ]
-    },
-    "OSTR": {
-      "levels": [
-        {
-          "id": "buy-120",
-          "state": "clear",
-          "distance_pct": -16.6,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 19.9
-        }
-      ]
-    },
-    "PVNE": {
-      "levels": [
-        {
-          "id": "buy-146",
-          "state": "clear",
-          "distance_pct": -12.5,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": 14.3
-        }
-      ]
-    }
-  },
+  "watchlist": {},
   "alerts": [
     {
       "severity": "high",
       "kind": "hit",
-      "ticker": "TALV",
-      "level_id": "trim-325",
+      "ticker": "COST",
+      "level_id": "trim-1100",
       "level_type": "trim",
-      "price": 327.9,
+      "price": 1113.74,
       "price_label": "confirmed close",
       "price_date": "2026-11-16",
-      "level_price": 325,
-      "distance_pct": 0.9,
-      "title": "TALV 327.90 is 0.9% above trim 325",
-      "action": "Trim",
-      "condition": "At or above $325.",
+      "level_price": 1100,
+      "distance_pct": 1.2,
+      "title": "COST 1113.74 is 1.2% above trim 1100",
+      "action": "Trim a fifth",
+      "condition": "At or above $1,100.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
     },
     {
-      "severity": "medium",
-      "kind": "near",
-      "ticker": "DRMA",
-      "level_id": "buy-88",
-      "level_type": "buy",
-      "price": 90.1,
-      "price_label": "confirmed close",
-      "price_date": "2026-11-16",
-      "level_price": 88,
-      "distance_pct": 2.4,
-      "title": "DRMA 90.10 is 2.4% above buy 88",
-      "action": "First position: 4,200 shares at most",
-      "condition": "At $88 or less. Planned stop: daily close below $79. Targets $97 and $104.",
-      "decision_needed": null,
-      "informational": false,
-      "conditional": true
-    },
-    {
-      "severity": "medium",
+      "severity": "high",
       "kind": "hit",
-      "ticker": "KELP",
-      "level_id": "buy-14",
-      "level_type": "buy",
-      "price": 13.9,
+      "ticker": "NVDA",
+      "level_id": "inv-160",
+      "level_type": "invalidation",
+      "price": 156.14,
       "price_label": "confirmed close",
       "price_date": "2026-11-16",
-      "level_price": 14,
-      "distance_pct": -0.7,
-      "title": "KELP 13.90 is 0.7% below buy 14",
-      "action": "First position: 26,000 shares at most",
-      "condition": "At $14 or less. Planned stop: daily close below $12.20. Targets $16.50 and $18.",
+      "level_price": 160,
+      "distance_pct": -2.4,
+      "title": "NVDA 156.14 is 2.4% below invalidation 160",
+      "action": "Re-underwrite",
+      "condition": "Daily close below $160.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
@@ -1032,244 +574,77 @@
     {
       "severity": "medium",
       "kind": "near",
-      "ticker": "MRLN",
-      "level_id": "stop-132",
-      "level_type": "exit",
-      "price": 135.6,
+      "ticker": "AAPL",
+      "level_id": "trim-360",
+      "level_type": "trim",
+      "price": 352.78,
       "price_label": "confirmed close",
       "price_date": "2026-11-16",
-      "level_price": 132,
-      "distance_pct": 2.7,
-      "title": "MRLN 135.60 is 2.7% above exit 132",
-      "action": "Exit",
-      "condition": "Daily close below $132.",
+      "level_price": 360,
+      "distance_pct": -2,
+      "title": "AAPL 352.78 is 2.0% below trim 360",
+      "action": "Trim a fifth",
+      "condition": "At or above $360, and only if the position is over its cap.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
-    },
-    {
-      "severity": "info",
-      "kind": "earnings",
-      "ticker": "TALV",
-      "level_id": null,
-      "level_type": null,
-      "price": null,
-      "price_label": null,
-      "price_date": null,
-      "level_price": null,
-      "distance_pct": null,
-      "title": "TALV earnings 2026-11-18, in 2 days (fmp, estimated)",
-      "action": null,
-      "condition": null,
-      "decision_needed": null,
-      "informational": false,
-      "conditional": false
-    },
-    {
-      "severity": "info",
-      "kind": "pending-action",
-      "ticker": "TALV",
-      "level_id": null,
-      "level_type": null,
-      "price": 327.9,
-      "price_label": "confirmed close",
-      "price_date": "2026-11-16",
-      "level_price": 325,
-      "distance_pct": null,
-      "title": "pending action pa-talv-trim: trigger printed on 2026-11-16, cash unchanged in state — confirm or clear",
-      "action": "Trim 400 shares at 325",
-      "condition": "Limit order idea, not placed.",
-      "decision_needed": "Confirm or clear pending action pa-talv-trim.",
-      "informational": false,
-      "conditional": false
     }
   ],
   "earnings": [
     {
-      "ticker": "TALV",
-      "date": "2026-11-18",
+      "ticker": "JPM",
+      "date": "2027-01-14",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 2
+      "days_away": 59
     },
     {
-      "ticker": "BRSK",
-      "date": "2026-11-30",
+      "ticker": "GOOGL",
+      "date": "2027-02-03",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 14
+      "days_away": 79
     },
     {
-      "ticker": "CWYK",
-      "date": "2026-12-07",
+      "ticker": "AAPL",
+      "date": "2027-02-04",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 21
+      "days_away": 80
     },
     {
-      "ticker": "AMBR",
-      "date": "2026-12-10",
+      "ticker": "AMZN",
+      "date": "2027-02-04",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 24
-    },
-    {
-      "ticker": "KELP",
-      "date": "2026-12-14",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 28
-    },
-    {
-      "ticker": "ELRY",
-      "date": "2026-12-17",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 31
-    },
-    {
-      "ticker": "MRLN",
-      "date": "2026-12-21",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 35
-    },
-    {
-      "ticker": "HLDN",
-      "date": "2026-12-28",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 42
-    },
-    {
-      "ticker": "ORBQ",
-      "date": "2026-12-30",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 44
-    },
-    {
-      "ticker": "NVRN",
-      "date": "2027-01-07",
-      "source": "fmp",
-      "confidence": "estimated",
-      "days_away": 52
+      "days_away": 80
     }
   ],
   "news": {
-    "AMBR": [],
-    "BRSK": [],
-    "CWYK": [
-      {
-        "title": "Candlewyck Software names a new finance chief",
-        "url": "https://example.com/demo-news/candlewyck-software-names-a-new-finance-chief",
-        "source": "Demo Wire",
-        "published": "2026-11-11T14:00:00Z"
-      }
-    ],
-    "ELRY": [],
-    "HLDN": [
-      {
-        "title": "Halden Defense Systems wins an air-defence order from a European customer",
-        "url": "https://example.com/demo-news/halden-defense-systems-wins-an-air-defence-order-from-a-european-customer",
-        "source": "Demo Wire",
-        "published": "2026-11-12T07:30:00Z"
-      }
-    ],
-    "MRLN": [
-      {
-        "title": "Marlowe shares slip as an analyst trims estimates",
-        "url": "https://example.com/demo-news/marlowe-shares-slip-as-an-analyst-trims-estimates",
-        "source": "Demo Markets",
-        "published": "2026-11-13T18:30:00Z"
-      }
-    ],
-    "NVRN": [
-      {
-        "title": "A large cloud buyer raises its capital spending plan, lifting chip makers",
-        "url": "https://example.com/demo-news/a-large-cloud-buyer-raises-its-capital-spending-plan-lifting-chip-makers",
-        "source": "Demo Markets",
-        "published": "2026-11-13T20:40:00Z"
-      },
-      {
-        "title": "Novarion Semiconductor says accelerator supply stays tight into next year",
-        "url": "https://example.com/demo-news/novarion-semiconductor-says-accelerator-supply-stays-tight-into-next-year",
-        "source": "Demo Wire",
-        "published": "2026-11-10T13:15:00Z"
-      }
-    ],
-    "ORBQ": [
-      {
-        "title": "Orbique Launch Systems completes a static-fire test of its medium rocket",
-        "url": "https://example.com/demo-news/orbique-launch-systems-completes-a-static-fire-test-of-its-medium-rocket",
-        "source": "Demo Wire",
-        "published": "2026-11-11T16:20:00Z"
-      }
-    ],
-    "TALV": [
-      {
-        "title": "Talvera adds automated bookkeeping to its small-business product",
-        "url": "https://example.com/demo-news/talvera-adds-automated-bookkeeping-to-its-small-business-product",
-        "source": "Demo Wire",
-        "published": "2026-11-16T20:25:00Z"
-      },
-      {
-        "title": "Talvera extends its rally ahead of results",
-        "url": "https://example.com/demo-news/talvera-extends-its-rally-ahead-of-results",
-        "source": "Demo Markets",
-        "published": "2026-11-13T19:10:00Z"
-      }
-    ],
-    "DRMA": [],
-    "HXLY": [],
-    "KELP": [
-      {
-        "title": "Kelpwave Energy moves the start of its first array by a quarter",
-        "url": "https://example.com/demo-news/kelpwave-energy-moves-the-start-of-its-first-array-by-a-quarter",
-        "source": "Demo Energy",
-        "published": "2026-11-12T13:00:00Z"
-      }
-    ],
-    "OSTR": [],
-    "PVNE": []
+    "AAPL": [],
+    "AMZN": [],
+    "COST": [],
+    "GOOGL": [],
+    "JPM": [],
+    "NVDA": []
   },
   "briefing": {
     "mode": "template",
-    "text": "CLOSE SCAN 2026-11-16 · status DEGRADED · 12/14 quotes confirmed · book in USD\nBOOK ≈ 12,546,273 USD (funds as of 26 Oct; prices not at the close: CWYK last good 2026-11-13) · stocks+cash day change −5,018 USD (−0.1%), not measured: CWYK (last good price)\nTRIGGERS\n • TALV 327.90 is 0.9% above trim 325 (confirmed close, 16 Nov). Condition to check: At or above $325. Action to consider: Trim\n • DRMA 90.10 is 2.4% above buy 88 (confirmed close, 16 Nov). Condition to check: At $88 or less. Planned stop: daily close below $79. Targets $97 and $104. Action to consider: First position: 4,200 shares at most\n • KELP 13.90 is 0.7% below buy 14 (confirmed close, 16 Nov). Condition to check: At $14 or less. Planned stop: daily close below $12.20. Targets $16.50 and $18. Action to consider: First position: 26,000 shares at most\n • MRLN 135.60 is 2.7% above exit 132 (confirmed close, 16 Nov). Condition to check: Daily close below $132. Action to consider: Exit\nNOT CHECKED (levels not evaluated): CWYK (fetch failed) · HXLY (intraday print, levels are judged on closes)\nEARNINGS ≤ 14 d: TALV 18 Nov (FMP, estimated), BRSK 30 Nov (FMP, estimated)\nNEWS: 9 headlines (NVRN 2, TALV 2, CWYK 1, HLDN 1, KELP 1, MRLN 1, ORBQ 1) — see dossiers\nREVIEWS: MRLN overdue by 4 d (was due 12 Nov) · TALV due in 3 d (19 Nov)\nHOUSEKEEPING: Tundra Emerging Markets Fund NAV 21 d old · pending action pa-talv-trim (TALV): trigger printed 2026-11-16",
+    "text": "CLOSE SCAN 2026-11-16 · status OK · 6/6 quotes confirmed · book in USD\nBOOK 12,481,553 USD (funds as of 16 Nov) · stocks+cash day change −106,551 USD (−2.1%)\nTRIGGERS\n • COST 1113.74 is 1.2% above trim 1100 (confirmed close, 16 Nov). Condition to check: At or above $1,100. Action to consider: Trim a fifth\n • NVDA 156.14 is 2.4% below invalidation 160 (confirmed close, 16 Nov). Condition to check: Daily close below $160. Action to consider: Re-underwrite\n • AAPL 352.78 is 2.0% below trim 360 (confirmed close, 16 Nov). Condition to check: At or above $360, and only if the position is over its cap. Action to consider: Trim a fifth\nEARNINGS ≤ 14 d: none\nNEWS: none\nHOUSEKEEPING: COST earnings date needed · NVDA earnings date needed",
     "generated_by": "template"
   },
   "housekeeping": [
     {
-      "kind": "review-due",
-      "ticker": "MRLN",
-      "date": "2026-11-12",
-      "note": "The stop is close. Decide whether the thesis still holds.",
-      "reason": "overdue",
-      "days_overdue": 4,
-      "severity": "high"
+      "kind": "earnings-date-needed",
+      "ticker": "COST",
+      "severity": "info",
+      "reason": "no-date"
     },
     {
-      "kind": "fund-nav-stale",
-      "fund": "tundra-em",
-      "age_days": 21,
-      "reason": "stale",
-      "severity": "medium"
-    },
-    {
-      "kind": "review-due",
-      "ticker": "TALV",
-      "date": "2026-11-19",
-      "note": "Review the day after results.",
-      "reason": "soon",
-      "days_away": 3,
-      "severity": "medium"
-    },
-    {
-      "kind": "pending-action",
-      "id": "pa-talv-trim",
-      "ticker": "TALV",
-      "printed_on": "2026-11-16",
-      "severity": "info"
+      "kind": "earnings-date-needed",
+      "ticker": "NVDA",
+      "severity": "info",
+      "reason": "no-date"
     }
   ]
 }
