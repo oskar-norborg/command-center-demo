@@ -1,0 +1,383 @@
+/* Plain dark, readable base styles — SPEC.md §5.2/§5.8's HUD design system
+   is a later task. This is function-before-visuals: correct layout and
+   contrast, no glow, no animation, no custom fonts. */
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0e12; /* pre-token fallback; hud.css's atmosphere rule (docs/phase3-visual-plan.md §3.1) overrides this to var(--bg) by cascade, same pattern as .panel below T3.1b */
+  color: #e6edf3;
+  line-height: 1.4;
+  /* font-family: tokens.css (T3.1a) sets the body font now. */
+}
+
+a {
+  color: #6cc7ff;
+}
+
+.muted {
+  color: #9aa7b2;
+}
+
+.amber {
+  color: #e0a94a;
+}
+
+.red {
+  color: #ff5c72;
+}
+
+#chrome {
+  border-bottom: 1px solid #22282f;
+}
+
+.demo-banner {
+  background: #4a3a12;
+  color: #e0a94a;
+  text-align: center;
+  padding: 6px 16px;
+  font-weight: bold;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+.app-name {
+  font-weight: bold;
+}
+
+.status-pill {
+  border: 1px solid #444;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 13px;
+}
+
+.status-ok {
+  border-color: #2ee59d;
+  color: #2ee59d;
+}
+
+.status-degraded {
+  border-color: #e0a94a;
+  color: #e0a94a;
+}
+
+.status-failed,
+.status-no-scan {
+  border-color: #ff5c72;
+  color: #ff5c72;
+}
+
+.topnav {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px 12px;
+}
+
+main#app {
+  padding: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.panel {
+  border: 1px solid #22282f;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.panel p {
+  margin: 4px 0;
+}
+
+.book-total {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+table.grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.grid th,
+table.grid td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #22282f;
+  /* overflow-wrap (not word-break: break-word, which broke a short, unbreakable token like a price or a ticker
+     symbol at an arbitrary character — command view overnight fixes item 1) only splits a word as a last resort,
+     when it alone is wider than the whole column; a normal two-word phrase ("321.90 NOK", "1.5% below trim 98")
+     wraps at its own space first, the way any of these cells actually needs to. */
+  overflow-wrap: break-word;
+}
+
+.chip {
+  display: inline-block;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.chip-amber {
+  border-color: #e0a94a;
+  color: #e0a94a;
+}
+
+.alert-card {
+  border-left: 4px solid #444;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.sev-high {
+  border-left-color: #ff5c72;
+}
+
+.sev-medium {
+  border-left-color: #e0a94a;
+}
+
+.sev-info {
+  border-left-color: #6cc7ff;
+}
+
+.alert-title {
+  font-weight: bold;
+}
+
+.dot::before {
+  content: "\25CF";
+  margin-right: 4px;
+}
+
+.dot-red::before {
+  color: #ff5c72;
+}
+
+.dot-amber::before {
+  color: #e0a94a;
+}
+
+.dot-cyan::before {
+  color: #6cc7ff;
+}
+
+.dot-grey::before {
+  color: #666;
+}
+
+.dossier-header {
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dossier-footer {
+  border-top: 1px solid #22282f;
+  padding-top: 12px;
+  color: #9aa7b2;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+/* Desktop columns for the command view and the dossiers live in hud.css's
+   "Layout" section (.layout-split, layout pass 2026-09-22). */
+
+/* Level bar (SPEC.md §5.7, T1.7): functional colours by level type. `is-near`
+   and `is-hit` are hooks for the HUD pass (§5.9), not styled yet beyond a
+   heavier tick. Scoped to .level-bar so the plain level list is unaffected. */
+.level-bar-wrap {
+  margin: 8px 0 12px;
+}
+
+.level-bar {
+  display: block;
+  width: 100%;
+  height: 64px;
+  overflow: visible;
+  font-size: 10px;
+}
+
+.level-bar .level-track {
+  stroke: #3a434d;
+  stroke-width: 2;
+}
+
+.level-bar .level-marker {
+  cursor: pointer;
+  outline: none;
+}
+
+.level-bar .level-buy,
+.level-bar .level-add {
+  color: #3fb950;
+}
+
+.level-bar .level-trim {
+  color: #e0a94a;
+}
+
+.level-bar .level-exit,
+.level-bar .level-invalidation {
+  color: #f85149;
+}
+
+.level-bar .level-watchpoint {
+  color: #39c5cf;
+}
+
+.level-bar .level-tick,
+.level-bar .level-halo {
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.level-bar .level-zone {
+  fill: currentColor;
+  fill-opacity: 0.25;
+  stroke: currentColor;
+}
+
+.level-bar .is-hit .level-tick,
+.level-bar .level-marker:focus-visible .level-tick {
+  stroke-width: 4;
+}
+
+.level-bar .level-label {
+  fill: currentColor;
+}
+
+.level-bar .level-unresolved-band {
+  stroke: #e0a94a;
+}
+
+.level-bar .level-hatch-line {
+  stroke: #e0a94a;
+  stroke-width: 2;
+}
+
+.level-bar .level-question {
+  fill: #e0a94a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.level-bar .level-gav {
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.level-bar .level-gav-label,
+.level-bar .level-price-label {
+  fill: #e6edf3;
+}
+
+.level-bar .level-price {
+  fill: #fff;
+  font-size: 14px;
+}
+
+.level-popover {
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+/* T2.11: status pills, glyphs, dots and alert cards. Colours by meaning, no HUD yet. */
+.status-pill.status-ok { border-color: #39c5cf; color: #39c5cf; }
+.status-pill.status-degraded { border-color: #e0a94a; color: #e0a94a; }
+.status-pill.status-failed,
+.status-pill.status-no-scan { border-color: #f85149; color: #f85149; }
+.pill { border: 1px solid #444; border-radius: 999px; padding: 2px 10px; font-size: 12px; }
+.pill.amber { border-color: #e0a94a; }
+.last-scan { font-size: 13px; }
+.glyph { margin-right: 4px; }
+.price-none small { display: block; }
+.dot { font-size: 0; display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+.dot-green { background: #3fb950; }
+.dot-amber { background: #e0a94a; }
+.dot-red { background: #f85149; }
+.dot-cyan { background: #39c5cf; }
+.dot-grey { background: #6e7681; }
+.alert-card.sev-high { border-left-color: #f85149; }
+.alert-card.sev-medium { border-left-color: #e0a94a; }
+.alert-card.sev-info { border-left-color: #6e7681; }
+.alert-card.level-buy, .alert-card.level-add { border-left-color: #3fb950; }
+.alert-card.level-trim { border-left-color: #e0a94a; }
+.alert-card.level-exit, .alert-card.level-invalidation { border-left-color: #f85149; }
+.alert-card.level-watchpoint { border-left-color: #39c5cf; }
+.alert-chips { margin: 4px 0; }
+.chip.state-hit { border-color: #f85149; }
+.chip.state-near { border-color: #e0a94a; }
+.footnote { font-size: 12px; }
+.fix-link { font-size: 13px; }
+
+/* Audit 2026-09-19 #2: a level that was not checked is never drawn as clear. */
+.dot.dot-unchecked { font-size: 0.8rem; width: auto; height: auto; border-radius: 3px; padding: 0 6px; background: transparent; color: #e0a94a; border: 1px dashed #e0a94a; }
+.unchecked-note { margin: 0 0 8px; padding: 6px 8px; border: 1px dashed #e0a94a; color: #e0a94a; }
+.level-marker.is-unchecked .level-tick { stroke-dasharray: 3 3; opacity: 0.6; }
+.chip.state-unchecked { border-style: dashed; }
+.alert-price { font-size: 0.85em; }
+
+/* Audit 2026-09-19 #3: a scan older than expected is loud, on every page. */
+.stale-banner { margin: 8px 0; padding: 10px 12px; border: 2px solid #f85149; color: #f85149; background: rgba(248, 81, 73, 0.1); }
+.last-scan.stale { color: #f85149; font-weight: 600; }
+.status-pill.scan-overdue { background: #f85149; color: #0d1117; }
+/* #95: while overdue, an OK last run is the old run's result, not the page's state: muted, never cyan beside the red. */
+.status-pill.status-last-run.status-ok { border-color: #7f95a6; color: #7f95a6; }
+
+/* Journal (#/journal, T4.1): entries are a list for screen readers, not bullets on screen. */
+.journal-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.journal-entry {
+  margin-bottom: 16px;
+}

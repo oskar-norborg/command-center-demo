@@ -1,0 +1,221 @@
+{
+  "2026-06-11-VLTR-opening": null,
+  "2026-07-15-VLTR-hold": {
+    "entry": {
+      "kind": "reference-close",
+      "date": null,
+      "price": null,
+      "currency": null,
+      "reason": "no close scan on or before 2026-07-15"
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2026-10-13",
+        "date": "2026-10-13",
+        "price": null,
+        "reason": "not in this scan"
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-01-11",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": null,
+      "reason": "not in this scan"
+    }
+  },
+  "2026-07-24-NVRN-buy": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-07-24",
+      "price": 131,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2026-10-22",
+        "date": "2026-10-22",
+        "price": 134.7,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-10-22",
+        "basis": null,
+        "change_pct": 2.8,
+        "approx": false
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-01-20",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": 142.6,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "basis": null,
+      "change_pct": 8.9,
+      "approx": false
+    }
+  },
+  "2026-08-07-VLTR-sell": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-08-07",
+      "price": 7.4,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2026-11-05",
+        "date": "2026-11-05",
+        "price": null,
+        "reason": "not in this scan"
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-02-03",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": null,
+      "reason": "not in this scan"
+    }
+  },
+  "2026-09-30-MRLN-buy": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-09-30",
+      "price": 148.6,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2026-12-29",
+        "pending": true
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-03-29",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": 135.6,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "basis": null,
+      "change_pct": -8.7,
+      "approx": false
+    }
+  },
+  "2026-10-07-TALV-buy": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-10-07",
+      "price": 301.4,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2027-01-05",
+        "pending": true
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-04-05",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": 327.9,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "basis": null,
+      "change_pct": 8.8,
+      "approx": false
+    }
+  },
+  "2026-10-23-BRSK-buy": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-10-23",
+      "price": 61.2,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2027-01-21",
+        "pending": true
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-04-21",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": 64.1,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "basis": null,
+      "change_pct": 4.7,
+      "approx": false
+    }
+  },
+  "2026-10-28-TALV-trim": {
+    "entry": {
+      "kind": "fill",
+      "date": "2026-10-28",
+      "price": 311.4,
+      "currency": "USD",
+      "basis": null
+    },
+    "horizons": [
+      {
+        "horizon": "90d",
+        "due": "2027-01-26",
+        "pending": true
+      },
+      {
+        "horizon": "180d",
+        "due": "2027-04-26",
+        "pending": true
+      }
+    ],
+    "now": {
+      "date": "2026-11-16",
+      "price": 327.9,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-16",
+      "basis": null,
+      "change_pct": 5.3,
+      "approx": false
+    }
+  }
+}

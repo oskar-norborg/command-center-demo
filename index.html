@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#05080c" />
+  <title>Command Center</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/hud.css" />
+  <!-- No bundler (SPEC.md §2, a decision already made) means app/main.js's whole import graph is discovered one
+       ES module at a time — fetch, parse, find its imports, fetch those — instead of arriving in one file.
+       modulepreload lets the browser fetch every module this app always ends up loading in parallel from the
+       start, without changing that architecture (T3.5b, Lighthouse performance). Kept in sync by hand with the
+       app's own imports; a route that turns out unreachable just preloads for nothing, and a genuinely new import
+       this list misses still loads correctly, just one round trip later, the same as before this tag existed. -->
+  <link rel="modulepreload" href="app/router.js" />
+  <link rel="modulepreload" href="app/data.js" />
+  <link rel="modulepreload" href="app/dom.js" />
+  <link rel="modulepreload" href="app/pages/command.js" />
+  <link rel="modulepreload" href="app/pages/scan.js" />
+  <link rel="modulepreload" href="app/pages/position.js" />
+  <link rel="modulepreload" href="app/pages/watchlist.js" />
+  <link rel="modulepreload" href="app/pages/state.js" />
+  <link rel="modulepreload" href="app/pages/settings.js" />
+  <link rel="modulepreload" href="app/components/boot.js" />
+  <link rel="modulepreload" href="app/components/brand-mark.js" />
+  <link rel="modulepreload" href="app/components/cache-banner.js" />
+  <link rel="modulepreload" href="app/components/dossier-pin.js" />
+  <link rel="modulepreload" href="app/components/freshness-pill.js" />
+  <link rel="modulepreload" href="app/components/scan-age.js" />
+  <link rel="modulepreload" href="app/components/alert-card.js" />
+  <link rel="modulepreload" href="app/components/quote-price.js" />
+  <link rel="modulepreload" href="app/components/ring.js" />
+  <link rel="modulepreload" href="app/components/ring-gauge.js" />
+  <link rel="modulepreload" href="app/components/stat-tile.js" />
+  <link rel="modulepreload" href="app/components/level-bar.js" />
+  <link rel="modulepreload" href="app/components/mic.js" />
+  <link rel="modulepreload" href="app/lib/animate.js" />
+  <link rel="modulepreload" href="app/lib/pulse-budget.js" />
+  <link rel="modulepreload" href="app/lib/voice-grammar.js" />
+  <link rel="modulepreload" href="app/lib/brief.js" />
+  <link rel="modulepreload" href="lib/housekeeping.js" />
+  <link rel="modulepreload" href="lib/values.js" />
+  <link rel="modulepreload" href="lib/levels.js" />
+  <link rel="modulepreload" href="lib/freshness.js" />
+</head>
+<body>
+  <div id="chrome"></div>
+  <main id="app"></main>
+  <nav id="bottom-nav" aria-label="Primary"></nav>
+  <script type="module" src="app/main.js"></script>
+</body>
+</html>

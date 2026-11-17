@@ -1,0 +1,1697 @@
+/* Panel brackets and state borders — SPEC.md §5.8, docs/phase3-plan.md §2.3/§3,
+   T3.1b. `.panel` markup already exists on every panel across command.js,
+   position.js, watchlist.js, state.js and scan.js (dom.js's
+   `el('section', { class: 'panel' }, ...)`) — this file repaints it. No DOM
+   change; the only JS this task adds is two <body> classes main.js toggles
+   (§8 resolution 2), read below via the `body.page-overdue`/`body.page-degraded`
+   selectors. */
+
+/* --- Atmosphere (docs/phase3-visual-plan.md §3.1/V1) -----------------------
+   One static background layer on `body`: a radial glow from the top of the
+   page, plus a faint scanline+grid texture — visual-pass Q2 (resolved,
+   2026-09-22): read as a single combined layer under SPEC.md §5.9's "one
+   static 2% scanline overlay at most", not a second layer on top of it.
+   Both pieces are `--deco-*` tokens derived from --cyan only (Q3): never
+   amber/red/green, so the atmosphere can never be mistaken for a warning
+   state, and never dims or competes with one (§3.6's table). Painted on
+   `body`, not a `position: fixed` element above content — it sits *behind*
+   every panel (panels are 85% opaque `--panel`, base.css/hud.css), and
+   scrolls with the page (no `background-attachment: fixed`, which would
+   force a repaint on every scroll frame on mobile — a real Lighthouse
+   performance cost for a decoration with no functional payoff). */
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 1100px 560px at 50% -8%, var(--deco-glow), transparent 60%),
+    repeating-linear-gradient(to bottom, var(--deco-line) 0, var(--deco-line) 1px, transparent 1px, transparent 4px),
+    repeating-linear-gradient(to right, var(--deco-line) 0, var(--deco-line) 1px, transparent 1px, transparent 24px);
+}
+
+/* Panel label (docs/phase3-visual-plan.md §3.5/V3): tighter tracking-heavy mono label than tokens.css's plain
+   h1/h2 rule, still >= SPEC.md §5.8's 12px label floor. h1 (page titles: "Command", a ticker name) keeps
+   base.css's 20px — only h2 (every panel's own title, `command.js`'s `panel()` helper and its equivalents in
+   position.js/watchlist.js/scan.js) gets the denser label treatment. */
+h2 {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  margin: 0 0 var(--space-2);
+}
+
+.panel {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  /* Tighter than T3.1b's original 12px 16px / 16px (docs/phase3-visual-plan.md §3.5/V3's density pass) — spacing
+     only, never text size: every number/label inside keeps its own font-size floor from SPEC.md §5.8. */
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-3);
+  --panel-accent: var(--cyan);
+}
+
+/* Interactive panels (docs/phase3-plan.md §2.3): border and brackets move to
+   --cyan on hover or when a descendant has focus. :hover is a CSS-only
+   approximation of "interactive panels only" — the markup carries no
+   interactive/non-interactive flag, and adding one is outside this task's
+   scope (T3.1b's DoD: CSS + the two body classes, no other JS change). */
+.panel:hover,
+.panel:focus-within {
+  --panel-accent: var(--cyan);
+  border-color: var(--cyan);
+}
+
+/* Command view's two-column grid gap, tightened from base.css's 16px (docs/phase3-visual-plan.md §3.5/V3) — the
+   same @media scope base.css's own rule uses, so this only ever applies where that rule does. */
+@media (min-width: 900px) {
+  main#app.command-view {
+    gap: var(--space-3);
+  }
+}
+
+/* Four 12px L-shaped corner brackets in --panel-accent. docs/phase3-plan.md
+   §2.3 allows either four separate absolutely-positioned elements or a single
+   background-image with four repeated corner shapes ("tests only check the
+   rendered class names and CSS custom properties, not pixel output") — this
+   picks the single-::before route, since the markup can't grow new elements.
+   Eight 2px-wide background-image strips (two per corner: one horizontal leg,
+   one vertical leg) layered on one absolutely-positioned pseudo-element. */
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent)),
+    linear-gradient(var(--panel-accent), var(--panel-accent));
+  background-repeat: no-repeat;
+  background-size:
+    12px 2px, 2px 12px,
+    12px 2px, 2px 12px,
+    12px 2px, 2px 12px,
+    12px 2px, 2px 12px;
+  background-position:
+    top left, top left,
+    top right, top right,
+    bottom left, bottom left,
+    bottom right, bottom right;
+  /* Glow on the brackets only (SPEC.md §5.8: "no text glow on digits ... glow
+     only on brackets, rings, and carets"), never on the panel fill itself. */
+  filter: drop-shadow(0 0 3px var(--cyan-glow));
+}
+
+/* Top bar and demo banner get the same bracket treatment, but only on the two
+   outer corners (they span full width, so inner brackets would sit mid-page
+   for no reason) — docs/phase3-plan.md §4.1. */
+.topbar {
+  position: relative;
+  /* base.css's .topbar has no flex-wrap, so a 5th pill (the SCAN OVERDUE pill, only rendered while overdue —
+     scan-age.js's overduePill) pushes the row past 360px with nowhere to go (docs/phase3-visual-plan.md §1a,
+     item 2 — found by the V0 harness's synthetic overdue "state" set, since a plain screenshot never has that
+     5th pill to trigger it). Wrapping is the fix rather than shrinking anything: every pill and the brand mark
+     stay their real size, they just move to a second line when there isn't room on the first. */
+  flex-wrap: wrap;
+}
+
+.topbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--cyan), var(--cyan)),
+    linear-gradient(var(--cyan), var(--cyan)),
+    linear-gradient(var(--cyan), var(--cyan)),
+    linear-gradient(var(--cyan), var(--cyan));
+  background-repeat: no-repeat;
+  background-size: 12px 2px, 2px 12px, 12px 2px, 2px 12px;
+  background-position: top left, top left, top right, top right;
+  filter: drop-shadow(0 0 3px var(--cyan-glow));
+}
+
+/* --- alert-state borders, site-wide (docs/phase3-plan.md §3) --------------- */
+
+/* Overdue: the whole page's frame goes red, not just the stale banner —
+   every panel's border and brackets switch from --cyan to --red while the
+   body carries this class. No pulse (§3: already the loudest state by
+   colour + a persistent banner). */
+body.page-overdue .panel,
+body.page-overdue .panel:hover,
+body.page-overdue .panel:focus-within {
+  --panel-accent: var(--red);
+  border-color: var(--red);
+}
+
+/* Degraded: chrome-only, one tier down, and never touches every panel's
+   frame ("trust prices less," not "this page is stale" — docs/phase3-plan.md
+   §3). A persistent 3px amber strip along #chrome's top edge. An inset
+   box-shadow, not a border, so the class toggling on/off across renders
+   never shifts #chrome's height. */
+body.page-degraded #chrome {
+  box-shadow: inset 0 3px 0 0 var(--amber);
+}
+
+/* --- StatTile (docs/phase3-plan.md §2.4, T3.2) ----------------------------- */
+
+.stat-tile {
+  margin: 4px 0;
+}
+
+.stat-tile-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.stat-positive {
+  color: var(--green);
+}
+
+.stat-negative {
+  color: var(--red);
+}
+
+/* --- Ring (SPEC.md §5.8, T3.2) --------------------------------------------- */
+
+.ring-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.ring-row-small {
+  gap: 8px;
+}
+
+.ring-row p {
+  margin: 0;
+  flex: 1;
+}
+
+.ring {
+  flex: none;
+}
+
+.ring-track {
+  fill: none;
+  stroke: var(--line);
+}
+
+.ring-segment {
+  fill: none;
+  stroke-linecap: butt;
+  transition: stroke-dashoffset 500ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* --- Ring gauge (docs/phase3-visual-plan.md §3.4/V4) ----------------------- */
+/* site/app/components/ring-gauge.js wraps ring.js's SVG in this div — everything below is decoration (the div
+   itself is aria-hidden), never a new number. */
+
+.ring-gauge {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+
+/* Tick ring: a static ring of evenly-spaced --line ticks just outside the allocation ring's own edge — pure CSS
+   (a masked conic gradient), no new SVG/DOM. */
+.ring-gauge::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: repeating-conic-gradient(var(--line) 0deg 2deg, transparent 2deg 15deg);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+  pointer-events: none;
+}
+
+/* Dashed outer ring: SPEC.md §5.9's one narrow exception to "no continuous background animation" (visual-pass
+   Q1, resolved 2026-09-22) — cyan-dim only (never a warning colour), paused via body.ring-gauge-paused
+   (ring-gauge.js's own visibilitychange listener) and under either reduced-motion signal below. Never pulses, so
+   it never touches the separate 3-pulse budget (.pulsing, further down this file). */
+.ring-gauge::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border: 1px dashed var(--cyan-dim);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ring-gauge-spin 36s linear infinite;
+}
+
+@keyframes ring-gauge-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.ring-gauge-paused .ring-gauge::after {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring-gauge::after {
+    animation: none;
+  }
+}
+
+body.reduced-motion .ring-gauge::after {
+  animation: none;
+}
+
+.ring-gauge-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+/* Colour swatches on the allocation sentence (§3.4) — key the ring's segment colours to the words that already
+   name them (command.js's bookPanel). Empty, aria-hidden spans; a circle via border-radius, no new glyph. */
+.alloc-swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: var(--space-1);
+  vertical-align: middle;
+}
+
+.alloc-swatch-funds {
+  background: var(--cyan);
+}
+
+.alloc-swatch-stocks {
+  background: var(--green);
+}
+
+.alloc-swatch-cash {
+  background: var(--text-muted);
+}
+
+/* --- Positions/watchlist grid: cramped headers and tickers, status dots out
+   of line with rows (overnight fixes item 1). Two root causes:
+   1. base.css used `word-break: break-word`, which breaks a word *inside
+      itself* the moment its column is narrower than it — wrong for a single
+      unbreakable token ("TICKER", "ABC.OL", a price like "123.45"), so it
+      produced "TICK ER" / "ABC.O L" / a price split mid-digit. Fixed at the
+      source in base.css (`overflow-wrap: break-word`, last resort only,
+      prefers the token's own word boundaries — the space in "1.5% below
+      trim 98" or "321.90 NOK" — over breaking a token that doesn't need to).
+      `white-space: nowrap` below on th and `.ticker-cell` is an extra floor
+      for the two places any wrap at all (even at a space) would look wrong.
+   2. The status dot sat off-row because the old markup put the `.dot`
+      classes (font-size:0, display:inline-block, fixed width/height)
+      directly on the `<td>`, switching that cell out of `display:
+      table-cell` and so out of the row's normal vertical alignment; the dot
+      is now a `<span>` inside a plain `<td>` (command.js). */
+table.grid th {
+  white-space: nowrap;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  padding: var(--space-1) var(--space-1);
+}
+
+table.grid td {
+  vertical-align: middle;
+  /* Denser rows (docs/phase3-visual-plan.md §3.5/V3): trimmed from base.css's 6px 8px, and every number-bearing
+     cell gets tabular-nums (design-system.md's own "pending" item, closed here) so a column of prices/percentages
+     lines up digit-for-digit instead of drifting with each row's own digit widths. */
+  padding: var(--space-1) var(--space-2);
+  font-variant-numeric: tabular-nums;
+}
+
+table.grid .ticker-cell,
+table.grid .ticker-cell a {
+  white-space: nowrap;
+}
+
+table.grid .ticker-cell a {
+  font-family: var(--font-mono);
+}
+
+/* table.grid overflowed 360px viewports even on a plain view — a second, independent overflow source from
+   .topnav/.topbar (docs/phase3-visual-plan.md §1a item 3, found by the V0 harness, deferred here since this is
+   the task that already owns table.grid's spacing). table-layout: fixed was tried first and reverted: forcing
+   five columns into equal shares of 360px makes "321.9 NOK" or "69.89 USD" break mid-digit (overflow-wrap's own
+   last resort, now reached because the column itself is too narrow, not just tight) — a real readability
+   regression, not just a layout one, for numbers this app's whole point is showing clearly. site/app/dom.js's
+   scrollWrap (used at every table.grid call site, command.js/position.js/scan.js/watchlist.js/state.js) is the
+   fix instead: the table keeps its natural width and every number its natural, unbroken format, and the wrapper
+   div scrolls sideways *within its own panel* on a phone — the same "the component scrolls, not the page"
+   pattern .topnav already uses. */
+.grid-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.dot {
+  vertical-align: middle;
+}
+
+/* --- Level bar (SPEC.md §5.7/§5.8, docs/phase3-plan.md §2.3/T3.3a) --------- */
+/* CSS only: level-bar.js already emits the right classes per type/state
+   (T1.7) — this repaints base.css's plain functional colours with the HUD
+   tokens and adds the halo/hatch/popover treatment §3 calls for. */
+
+.level-bar .level-buy,
+.level-bar .level-add {
+  color: var(--green);
+}
+
+.level-bar .level-trim {
+  color: var(--amber);
+}
+
+.level-bar .level-exit,
+.level-bar .level-invalidation {
+  color: var(--red);
+}
+
+.level-bar .level-watchpoint {
+  color: var(--cyan);
+}
+
+.level-bar .level-track {
+  stroke: var(--line);
+}
+
+.level-bar .level-tick,
+.level-bar .level-halo {
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* A hit tick is drawn heavier and glows (SPEC.md §5.8: glow is allowed on
+   "brackets, rings, and carets" — a hit level tick is functionally this
+   view's caret-equivalent alert marker, the one glowing exception besides
+   the price caret itself below). */
+.level-bar .is-hit .level-tick {
+  stroke-width: 4;
+  filter: drop-shadow(0 0 3px currentColor);
+}
+
+.level-bar .level-marker:focus-visible .level-tick {
+  stroke-width: 4;
+}
+
+.level-bar .level-marker:focus-visible {
+  outline: none;
+}
+
+.level-bar .level-marker:focus-visible .level-track,
+.level-bar g.level-marker:focus-visible {
+  filter: drop-shadow(0 0 2px var(--focus-ring));
+}
+
+/* "near" always reads amber regardless of the level's own type (§3: near is
+   a distance warning, not the type's colour) — static, never pulses. */
+.level-bar .level-halo {
+  stroke: var(--amber);
+  fill: none;
+}
+
+.level-bar .level-zone {
+  fill: currentColor;
+  fill-opacity: 0.25;
+  stroke: currentColor;
+}
+
+.level-bar .level-label,
+.level-bar .level-gav-label,
+.level-bar .level-price-label {
+  fill: var(--text);
+  font-family: var(--font-mono);
+}
+
+.level-bar .level-price {
+  fill: var(--white);
+  font-size: 14px;
+  filter: drop-shadow(0 0 3px var(--cyan-glow));
+}
+
+.level-bar .level-gav {
+  stroke: var(--white);
+  stroke-width: 2;
+}
+
+/* Unresolved candidates: the one shared "no answer yet" hatch pattern (§3),
+   reused verbatim by the not-checked grid rows below. */
+.level-bar .level-unresolved-band {
+  stroke: var(--amber);
+  fill-opacity: 0.9;
+}
+
+.level-bar .level-hatch-line {
+  stroke: var(--amber);
+  stroke-width: 2;
+}
+
+.level-bar .level-question {
+  fill: var(--amber);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.level-marker.is-unchecked .level-tick {
+  stroke-dasharray: 3 3;
+  opacity: 0.6;
+}
+
+/* --- Level bar rework, phone-only vertical list (2026-09-22) --------------- */
+/* svg.level-bar (the existing bar, unchanged above) and .level-vertical (new,
+   below) are both always in the DOM (level-bar.js) — this is the only place
+   that decides which one a given screen actually sees, so nothing is ever
+   shown twice and a level bar never has to know its own rendered width. */
+svg.level-bar {
+  display: block;
+}
+
+.level-vertical {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 899.98px) {
+  svg.level-bar {
+    display: none;
+  }
+
+  .level-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.level-vertical-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 15px; /* SPEC.md §5.8's secondary-number floor — every row here is a price */
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.level-vertical-marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+/* The current-price marker is the SVG bar's own ▼ caret shape, not the round level/GAV dot — reusing one glyph
+   for "this is the price, not a level" everywhere in the component. */
+.level-vertical-row.level-vertical-now .level-vertical-marker {
+  width: 11px;
+  height: 8px;
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+/* Same three type colours the SVG bar uses (docs/design-system.md's colour table) — a level reads identically
+   whichever representation a screen shows. */
+.level-vertical .level-buy,
+.level-vertical .level-add {
+  color: var(--green);
+}
+
+.level-vertical .level-trim {
+  color: var(--amber);
+}
+
+.level-vertical .level-exit,
+.level-vertical .level-invalidation {
+  color: var(--red);
+}
+
+.level-vertical .level-watchpoint {
+  color: var(--cyan);
+}
+
+/* GAV and the current price are never a level type's colour — white, same as the SVG's own GAV ring / price
+   caret, so "findable at a glance" means the same thing in both representations. */
+.level-vertical-row.level-vertical-gav,
+.level-vertical-row.level-vertical-now {
+  color: var(--white);
+}
+
+/* Where the current price sits has to be obvious at a glance — this row is a divider, not just another entry:
+   every level above it in the list is above the price, everything below is below (the list is already sorted
+   high to low, so row order alone carries that; this is what makes it *visible* without reading each price).
+   Cyan (never a warning colour — this state means "here", not near/hit/unchecked), same background tint
+   .cache-banner already uses for an informational cyan band. Full-bleed: .level-vertical-row has no horizontal
+   padding of its own, so the tint and borders already reach the panel's own edges. */
+.level-vertical-row.level-vertical-now {
+  font-weight: 700;
+  background: rgba(42, 208, 255, 0.1);
+  border-top: 1px solid var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  padding-top: calc(var(--space-2) + 1px);
+  padding-bottom: calc(var(--space-2) + 1px);
+}
+
+/* "near" always reads amber regardless of the level's own type (§3) — a static ring around the dot, mirroring
+   the SVG's separate, non-pulsing .level-halo (the dot itself keeps its own type colour, same as there). */
+.level-vertical-row.is-near .level-vertical-marker {
+  box-shadow: 0 0 0 3px var(--amber);
+}
+
+/* A hit marker glows, same reasoning as the SVG tick (SPEC.md §5.8: glow allowed on this view's caret-equivalent
+   alert marker); the actual pulse animation is the shared, tag-independent .pulsing rule further down this file,
+   added by position.js's existing pulse-budget wiring — this component only needs to carry `.level-marker` and
+   `data-level-id` so that query finds these rows too, which it already does. */
+.level-vertical-row.is-hit .level-vertical-marker {
+  filter: drop-shadow(0 0 3px currentColor);
+}
+
+/* Not checked: same language as the SVG tick (dashed, dimmed, own type colour kept) — not amber, since here
+   "not checked" is a data-integrity state, not the type's own meaning (SPEC.md §3's texture-not-just-colour rule). */
+.level-vertical-row.is-unchecked .level-vertical-marker {
+  background: transparent;
+  border: 1.5px dashed currentColor;
+  opacity: 0.6;
+}
+
+/* Popover: a Panel-lite card (SPEC.md §5.8's Popover component) — same
+   bracket-and-border language as .panel, without the corner brackets (a
+   transient tap target, not a persistent frame). */
+.level-popover {
+  background: var(--panel);
+  border: 1px solid var(--cyan);
+  border-radius: 2px;
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text);
+  box-shadow: 0 0 8px var(--cyan-glow);
+}
+
+/* --- AlertCard (SPEC.md §5.8, docs/phase3-plan.md §2.4/T3.3) -------------- */
+
+.alert-card {
+  border-left: 4px solid var(--line);
+  border-radius: 2px;
+  padding: var(--space-2) var(--space-3); /* tighter than 10px 14px (docs/phase3-visual-plan.md §3.5/V3) — padding only, colours/pulse/collapse unchanged */
+  margin-bottom: var(--space-2);
+  background: var(--panel);
+}
+
+.alert-card.sev-high {
+  border-left-color: var(--red);
+}
+
+.alert-card.sev-medium {
+  border-left-color: var(--amber);
+}
+
+.alert-card.sev-info {
+  border-left-color: var(--cyan-dim);
+}
+
+.alert-card.level-buy,
+.alert-card.level-add {
+  border-left-color: var(--green);
+}
+
+.alert-card.level-trim {
+  border-left-color: var(--amber);
+}
+
+.alert-card.level-exit,
+.alert-card.level-invalidation {
+  border-left-color: var(--red);
+}
+
+.alert-card.level-watchpoint {
+  border-left-color: var(--cyan);
+}
+
+.alert-title {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* Overnight fixes item 3: condition/action collapsed behind a tap, full text
+   still in textContent (native <details> — nothing here should be tested by
+   asserting visibility, only content, per the plan's own "class names and
+   custom properties, not pixel output" allowance). */
+.alert-detail summary {
+  cursor: pointer;
+  color: var(--cyan);
+  font-size: 13px;
+  margin: 6px 0 2px;
+  list-style: revert;
+}
+
+.alert-detail summary span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.alert-detail[open] summary {
+  margin-bottom: 6px;
+}
+
+.alert-condition,
+.alert-action,
+.alert-decision {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* --- Pulse budget (SPEC.md §5.9, docs/phase3-plan.md §2.5, T3.3b) ---------- */
+/* lib/pulse-budget.js decides which `hit` markers (an AlertCard, a positions-
+   grid dot, a watchlist row's buy-level cell, a level-bar tick) get this
+   class, at most 3 page-wide; this only supplies the motion. Colour is
+   whatever the element's own severity/type class already gives it (red for
+   exit/invalidation/trim, green for buy/add) — opacity is the only thing
+   pulsing animates (SPEC.md §5.9: "only transform and opacity animate"). */
+.pulsing {
+  animation: pulse-opacity 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-opacity {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Reduced motion — the OS setting, or T3.4's settings override (same
+   `body.reduced-motion` class lib/animate.js's own `prefersReducedMotion()`
+   will read once that toggle exists) — shows the static colour at full
+   opacity, never frozen at the dim 0.55 floor (SPEC.md §5.9: "everything
+   must remain readable with animations off"). */
+@media (prefers-reduced-motion: reduce) {
+  .pulsing {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+body.reduced-motion .pulsing {
+  animation: none;
+  opacity: 1;
+}
+
+/* --- Focus ring (SPEC.md §5.8, T3.4): every interactive element, not just
+   the level markers that already had it. --token was defined in tokens.css
+   (T3.1a) but left unused outside the level bar until settings' checkboxes
+   and radios (below) needed one too — one rule now covers both plus
+   anything later. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* --- Boot (SPEC.md §5.9, T3.4) ---------------------------------------------- */
+
+.boot-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.boot-lines {
+  text-align: center;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.boot-lines p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.boot-lines p:last-child {
+  color: var(--cyan);
+}
+
+.boot-skip {
+  position: absolute;
+  bottom: 24px;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin: 0;
+}
+
+/* --- Settings (SPEC.md §5.1/§4.7, T3.4) ------------------------------------ */
+
+.settings-toggle,
+.settings-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.settings-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* --- Mobile layout: bottom nav, sticky dossier header, touch targets
+   (SPEC.md §5.2/§5, docs/phase3-plan.md §4.1/§4.3/§5, T3.5a) ------------- */
+
+#bottom-nav {
+  display: none;
+}
+
+@media (max-width: 899.98px) {
+  #bottom-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    /* Solid, not --panel's translucent fill: this bar sits over scrolling content the whole time (only the very
+       end of the page, past main#app's own reserved padding-bottom below, is ever fully clear of it), so it needs
+       to stay legible against whatever is scrolling underneath, not show it through. */
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Room at the foot of the page so the fixed nav never sits over the last panel's content. */
+  main#app {
+    padding-bottom: calc(44px + env(safe-area-inset-bottom, 0px) + 16px);
+  }
+}
+
+.bottom-nav-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+/* Filled active state (docs/phase3-visual-plan.md §3.3/V2), same treatment as .topnav a[aria-current="page"]
+   below — consistent active-state language across both navs. background-color, not the shorthand background:
+   #bottom-nav's own rule already sets `background: var(--bg)` and this only needs to override the colour on the
+   active item, not repaint over that rule's other properties. */
+.bottom-nav-item.active {
+  background-color: var(--cyan);
+  color: var(--bg);
+}
+
+@media (max-width: 899.98px) {
+  /* Pinned on scroll, phone only — the desktop page is short enough that a pinned row adds chrome for no benefit
+     (docs/phase3-plan.md §5). #59 (2026-09-30): the whole header used to be sticky, 281–310px of a 740px screen.
+     Now the full header scrolls with the page and, once it has gone, a one-line row pins what SPEC.md §5.4 keeps
+     in view: the ticker, the price with its label glyph, and the day change (components/dossier-pin.js). Fixed, not
+     sticky, so it appearing never shifts the page. An opaque background, since panels scroll underneath it. */
+  .dossier-pin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+    padding: 10px 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Appearing (the owner's phone test, 2026-09-30: it used to pop in): 150 ms, opacity and transform only (§5.9), a few
+     pixels down from the top edge. The `hidden` attribute stays the switch, but a hidden row stays laid out, invisible
+     and out of the accessibility tree (visibility), so it can transition; visibility flips at the end of a fade-out and
+     at the start of a fade-in. Fixed, so nothing on the page moves either way. Triggered by the header leaving the
+     screen, not tied to the scroll position: it plays once and is done. */
+  .dossier-pin {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: opacity 150ms ease-out, transform 150ms ease-out, visibility 0s linear 0s;
+  }
+
+  .dossier-pin[hidden] {
+    display: flex;
+    opacity: 0;
+    transform: translateY(-6px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 150ms ease-in, transform 150ms ease-in, visibility 0s linear 150ms;
+  }
+
+  .dossier-pin .pin-ticker {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .dossier-pin .price-cell {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .dossier-pin .price-cell small {
+    font-size: 13px;
+    font-weight: normal;
+    white-space: normal;
+  }
+
+  .dossier-pin .pin-change {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .dossier-pin .pin-label {
+    flex-basis: 100%;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 900px) {
+  .dossier-pin,
+  .dossier-pin[hidden] {
+    display: none;
+  }
+}
+
+/* Reduced motion — the OS setting, or the settings override (`body.reduced-motion`): the row just appears. */
+@media (prefers-reduced-motion: reduce) {
+  .dossier-pin,
+  .dossier-pin[hidden] {
+    transition: none;
+    transform: none;
+  }
+}
+
+body.reduced-motion .dossier-pin,
+body.reduced-motion .dossier-pin[hidden] {
+  transition: none;
+  transform: none;
+}
+
+/* Segmented nav, filled active state (docs/phase3-visual-plan.md §3.3/V2, §1a). base.css's .topnav is
+   `display: flex; gap: 16px` with no wrap/scroll/mobile-hide rule — at 360px five links plus that gap don't fit,
+   overflowing the page by ~14px on every route (found by the V0 screenshot harness, §1a; not fixed there since
+   this is the task that rebuilds the nav anyway). Fixed here two ways at once: `overflow-x: auto` lets the strip
+   itself scroll sideways without the *page* ever needing to (docs/phase3-visual-plan.md rule "no horizontal
+   scroll", which is about the page, not a component that owns its own scroll region — same idea as the mockup's
+   own `nav { overflow-x: auto }`), and `gap: 0` because segmented tabs share a border instead of a gap. */
+.topnav {
+  gap: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Touch targets ≥44px (SPEC.md §5): standalone nav-style links. Dense grid cells (positions/watchlist tickers,
+   fix-links inline in a housekeeping sentence) keep their compact size — inflating every inline link to 44px would
+   break the HUD table layout T3.2's fixes just settled; those are covered by the Lighthouse pass instead (T3.5b,
+   docs/phase3-plan.md's own deferral) and by the row itself being the practical tap target on a touch device. */
+.topnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 4px 14px;
+  margin-right: -1px; /* shared border between segments, not doubled */
+  border: 1px solid var(--line);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.topnav a:last-child {
+  margin-right: 0;
+}
+
+/* Filled active state (SPEC.md §5.8's Chip precedent: a filled state reads as "on"). aria-current="page" is set
+   in main.js's renderChrome, one link at a time — the CSS hook and the accessibility signal are the same
+   attribute, not a separate .active class plus a redundant aria one. --bg text on --cyan fill is the same pairing
+   .bottom-nav-item.active uses above, for one consistent active-state language across both navs. */
+.topnav a[aria-current="page"] {
+  background: var(--cyan);
+  color: var(--bg);
+  border-color: var(--cyan);
+}
+
+/* --- Brand mark (docs/phase3-visual-plan.md §3.2/V2) ----------------------- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-mark {
+  flex: none;
+}
+
+/* --- Offline / PWA (SPEC.md §7.1/phase 3.5, docs/phase3-plan.md §5, T3.5b) - */
+
+/* Same shape as .stale-banner (base.css) but cyan: "offline, showing what I
+   last saw" is calmer than "the scan is late" or "the quote failed" and must
+   not be mistaken for either (§3's colour+texture rule — this is the one
+   banner in the app that is cyan, never reused for a warning). */
+.cache-banner {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+  background: rgba(42, 208, 255, 0.1);
+}
+
+.settings-button {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  min-height: 44px;
+  padding: 0 16px;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.settings-button:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.settings-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* --- Voice (SPEC.md §5.10, docs/phase3-plan.md T3.6) ----------------------- */
+
+.bottom-nav-mic {
+  flex: none;
+  width: 56px;
+}
+
+.mic-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.mic-button {
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  min-width: 44px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mic-button.listening {
+  color: var(--red);
+  animation: pulse-opacity 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mic-button.listening {
+    animation: none;
+  }
+}
+
+body.reduced-motion .mic-button.listening {
+  animation: none;
+}
+
+.mic-status {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 240px;
+  margin-bottom: 8px;
+  background: var(--panel);
+  border: 1px solid var(--cyan);
+  border-radius: 2px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.mic-status p {
+  margin: 4px 0;
+}
+
+.trigger-filter-note {
+  display: block;
+  width: fit-content;
+  margin: 0 0 10px;
+}
+
+.trigger-filter-note a {
+  margin-left: 4px;
+}
+
+/* --- Layout: main column + right rail (layout pass 2026-09-22, option A; docs/design-system.md "Layout") --------
+   site/app/dom.js's splitLayout builds the markup: panels in SPEC.md order, the rail panels in one .layout-rail
+   wrapper, each item's SPEC.md position as its inline `order`, and the grid rows inline (one auto row per main
+   panel, then a 1fr row the rail also spans, so a long rail never opens gaps between main-column panels). */
+
+/* Phone and tablet: one column in SPEC.md order. The rail wrapper disappears from layout so its panels take part
+   in main#app's own flex ordering; the inline grid-row/grid-template-rows only mean anything in the grid below. */
+main#app.layout-split {
+  display: flex;
+  flex-direction: column;
+}
+
+main#app.layout-split > .layout-rail {
+  display: contents;
+}
+
+@media (min-width: 900px) {
+  /* Wider than the 900px reading width the other pages keep (state, scan, settings, watchlist list are mostly
+     prose or one table) — the split pages are the ones with enough panels to fill it. */
+  main#app.layout-split {
+    display: grid;
+    max-width: 1248px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.55fr);
+    column-gap: var(--space-3);
+    row-gap: 0; /* panels keep their own margin-bottom; a row gap would also open under the empty 1fr row */
+    align-items: start;
+  }
+
+  main#app.layout-split > h1,
+  main#app.layout-split > .dossier-header {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+
+  main#app.layout-split > .panel {
+    grid-column: 1;
+  }
+
+  main#app.layout-split > .layout-rail {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    min-width: 0;
+  }
+
+  main#app.layout-split > .layout-full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* --- Top nav at phone width (layout pass 2026-09-22) -------------------------------------------------------------
+   Five segments at 14px side padding and 0.08em tracking measured 447px against a 360px screen, so SETTINGS sat
+   off the right edge behind the strip's own scroll. Below 400px the segments share the row (flex: 1) with tighter
+   padding and tracking; the text stays 12px (the label floor) and each segment stays 44px tall. */
+@media (max-width: 399.98px) {
+  .topnav a {
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 4px 6px;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* --- Command view: the brief, the labelled ring, holdings (2026-09-23; SPEC.md §5.3, docs/command-view-proposal.md,
+   option B with option A's holding rows). Sizes keep SPEC.md §5.8's floors: 17px for a price or value, 15px for a
+   secondary number, 12px for a label. Categories use cyan, green and grey only; green and red otherwise only ever
+   mean a signed change, amber a warning. ------------------------------------------------------------------------- */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.panel-head h2 {
+  margin: 0;
+}
+
+.panel-note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.brief-sec {
+  border-top: 1px solid var(--line);
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+}
+
+.brief-h {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin: 0 0 6px;
+}
+
+.brief-attention .brief-h {
+  color: var(--amber);
+}
+
+.brief-stale {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.brief-news-head,
+.brief-others,
+.brief-item {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 4px 0;
+}
+
+.brief-news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.brief-news {
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.brief-news-meta {
+  font-size: 13px;
+}
+
+.brief-book {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.brief-total {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.brief-day,
+.brief-pnl,
+.book-pnl {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+}
+
+.brief-sessions {
+  font-size: 13px;
+}
+
+.brief-zone {
+  color: var(--green);
+}
+
+.hud-chip {
+  font-family: var(--font-mono);
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+.hud-chip-new {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.hud-chip-amber {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.hud-chip-news {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+/* Day moves as bars centred on zero: width is the move's size against the day's largest; the number beside it says it. */
+.move,
+.move-head {
+  display: grid;
+  grid-template-columns: 80px minmax(40px, 1fr) 76px 72px;
+  align-items: center;
+  column-gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.move {
+  min-height: 28px;
+}
+
+.move-head {
+  grid-template-columns: 1fr 76px 72px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 6px 0 2px;
+}
+
+.move-head span:nth-child(n + 2),
+.move-pct,
+.move-nok {
+  text-align: right;
+}
+
+.move-tk {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.move.is-held .move-tk {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.move-track {
+  position: relative;
+  height: 10px;
+}
+
+.move-track::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  bottom: -3px;
+  width: 1px;
+  background: var(--line);
+}
+
+.move-bar {
+  position: absolute;
+  top: 0;
+  height: 10px;
+}
+
+.move-bar.up {
+  background: var(--green);
+}
+
+.move-bar.down {
+  background: var(--red);
+}
+
+.move-pct,
+.move-nok {
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+
+/* A move whose price is not the session's confirmed close (pre-publish audit H1): the ≈ is on the number, the reason
+   on a line of its own under the row, so the four columns keep their widths. */
+.move-note {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* The allocation ring with each part labelled on the chart (ring-gauge.js ringLabelLayout places them clear of the
+   spinning dashed ring, so decoration never touches a number). */
+.ring-chart {
+  position: relative;
+  width: 100%;
+  max-width: 330px;
+  margin: var(--space-2) auto;
+}
+
+.ring-chart > .ring-gauge {
+  position: absolute;
+}
+
+.ring-label {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 10px auto;
+  grid-template-areas:
+    "sw name"
+    "value value";
+  column-gap: 6px;
+  align-items: center;
+  align-content: center;
+  height: 40px;
+  white-space: nowrap;
+}
+
+.ring-label.is-left {
+  transform: translateX(-100%);
+  grid-template-columns: auto 10px;
+  grid-template-areas:
+    "name sw"
+    "value value";
+  justify-items: end;
+}
+
+.ring-label-sw {
+  grid-area: sw;
+  width: 10px;
+  height: 10px;
+}
+
+.ring-label-name {
+  grid-area: name;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.ring-label-value {
+  grid-area: value;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.book-history {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.book-history p {
+  margin: 0;
+  flex: 1;
+  font-size: 15px;
+}
+
+.spark {
+  flex: none;
+}
+
+.spark-line {
+  fill: none;
+  stroke: var(--cyan);
+  stroke-width: 1.5;
+}
+
+/* Holdings: on a phone each row is three wrapped lines (name and value; price, day and P&L; weight, level, marks);
+   at >= 900px the same elements line up as a table. One DOM, the breakpoint decides. */
+.hold-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 6px;
+  row-gap: 2px;
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+
+.hold-br {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.hold-head {
+  display: none;
+}
+
+.hold-val,
+.hold-pnl {
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.hold-tk a,
+.hold-group-name {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hold-group-name {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hold-val {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.hold-price {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  color: var(--white);
+}
+
+.hold-price-num {
+  font-size: 17px;
+}
+
+.hold-unit {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.hold-chg,
+.hold-pnl {
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+
+.hold-sub {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.hold-meta {
+  flex-basis: 100%;
+  font-size: 15px;
+}
+
+.hold-meta > * {
+  margin-right: 6px;
+}
+
+.hold-meta .dot {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.hold-row.is-unchecked {
+  background-image: repeating-linear-gradient(45deg, var(--amber-dim) 0 2px, transparent 2px 8px);
+}
+
+.hold-funds summary,
+.todo-quiet summary {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hold-funds summary > span:first-child,
+.todo-quiet summary > span:first-child {
+  color: var(--cyan);
+}
+
+.hold-fund-list li {
+  font-size: 15px;
+  margin: 3px 0;
+}
+
+.hold-fund-name {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (min-width: 900px) {
+  .holdings .hold-row {
+    display: grid;
+    grid-template-columns: 96px 112px 132px 72px 176px minmax(0, 1fr);
+    grid-template-areas:
+      "tk val px chg pnl ."
+      ". meta meta meta meta meta";
+    column-gap: 10px;
+    align-items: baseline;
+  }
+
+  .holdings .hold-br {
+    display: none;
+  }
+
+  .holdings .hold-tk { grid-area: tk; }
+  .holdings .hold-val { grid-area: val; margin: 0; }
+  .holdings .hold-px { grid-area: px; }
+  .holdings .hold-chg { grid-area: chg; text-align: right; }
+  .holdings .hold-pnl { grid-area: pnl; margin: 0; }
+  .holdings .hold-meta { grid-area: meta; font-size: 14px; }
+
+  .holdings .hold-head {
+    grid-template-areas: "tk val px chg pnl .";
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .holdings .hold-head > div {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+}
+
+/* A price in any table is a price: SPEC.md §5.8's 17px floor (base.css's table.grid is 14px). */
+table.grid .price-cell {
+  font-size: 17px;
+}
+
+table.grid .price-cell small {
+  font-size: 13px;
+}
+
+/* --- Experimental visuals (components/charts.js, 2026-11-16) ----------------------------------------------------
+   A line chart is an SVG stretched to its box with HTML labels placed by percentage, so text keeps its size at any
+   width. Colour follows the tokens: cyan for the first series, muted for the second; amber, red and green keep
+   their meanings (target, stop, buy). */
+.chart { outline: none; }
+.chart:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 4px; }
+.chart-box { position: relative; margin: var(--space-2) 0 0 0; padding: 0; touch-action: pan-y; cursor: crosshair; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.chart-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.chart-grid { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; opacity: 0.6; }
+.chart-line { fill: none; stroke: var(--cyan); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart-line.is-b { stroke: var(--text-muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.chart-area { fill: var(--cyan); opacity: 0.08; stroke: none; }
+.chart-mark { stroke: var(--text-muted); stroke-width: 1; stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
+.chart-mark.is-trim { stroke: var(--amber); }
+.chart-mark.is-exit { stroke: var(--red); }
+.chart-mark.is-buy { stroke: var(--green); }
+.chart-mark.is-gav { stroke: var(--cyan-dim); stroke-dasharray: 1 3; }
+.chart-ytick, .chart-marklabel { position: absolute; transform: translateY(-50%); font: 12px/1 var(--font-mono); color: var(--text-muted); pointer-events: none; white-space: nowrap; }
+.chart-ytick { left: 4px; background: var(--bg); padding: 1px 3px; opacity: 0.85; }
+.chart-marklabel { right: 4px; background: var(--bg); padding: 1px 4px; border-radius: 2px; }
+.chart-marklabel.is-trim { color: var(--amber); }
+.chart-marklabel.is-exit { color: var(--red); }
+.chart-marklabel.is-buy { color: var(--green); }
+.chart-marklabel.is-gav { color: var(--cyan-dim); }
+.chart-cursor { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--cyan-dim); pointer-events: none; }
+.chart-dot { position: absolute; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 2px var(--bg); pointer-events: none; }
+.chart-dot.is-b { background: var(--text-muted); }
+.chart-xaxis { display: flex; justify-content: space-between; font: 12px/1.6 var(--font-mono); color: var(--text-muted); }
+.chart-readout { margin: var(--space-1) 0 0 0; font: 15px/1.4 var(--font-mono); color: var(--white); min-height: 1.4em; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: var(--space-4); font: 12px/1.4 var(--font-mono); color: var(--text-muted); }
+.chart-key { display: inline-flex; align-items: center; gap: 6px; }
+.chart-swatch { display: inline-block; width: 16px; height: 0; border-top: 2px solid var(--cyan); }
+.chart-swatch.is-b { border-top: 2px dashed var(--text-muted); }
+.chart-ranges { display: flex; gap: var(--space-2); margin: 0 0 var(--space-2) 0; }
+.chart-range { min-height: 44px; min-width: 44px; padding: 0 var(--space-4); background: transparent; color: var(--text-muted); border: 1px solid var(--line); border-radius: 2px; font: 12px/1 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; }
+.chart-range.is-on { color: var(--cyan); border-color: var(--cyan-dim); }
+.chart-range:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.chart-caption { margin-top: var(--space-2); }
+
+.ltrack-list { list-style: none; margin: 0; padding: 0; }
+.ltrack-row { display: grid; grid-template-columns: 4.5em 1fr; gap: var(--space-4); align-items: start; padding: var(--space-3) 0; border-top: 1px solid var(--line); }
+.ltrack-row:first-child { border-top: 0; }
+.ltrack-name { font: 600 15px/1.2 var(--font-mono); color: var(--white); text-decoration: none; min-height: 44px; display: flex; align-items: center; }
+.ltrack-name:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.ltrack-scale { display: flex; justify-content: space-between; font: 12px/1.3 var(--font-mono); color: var(--text-muted); }
+.ltrack-now { color: var(--white); }
+.ltrack { position: relative; height: 10px; margin: 4px 0 6px 0; background: linear-gradient(90deg, var(--line), var(--line)) center / 100% 2px no-repeat; }
+.ltrack-end { position: absolute; top: 0; width: 3px; height: 10px; background: var(--text-muted); }
+.ltrack-lo { left: 0; }
+.ltrack-hi { right: 0; }
+.ltrack-end.is-exit, .ltrack-end.is-invalidation { background: var(--red); }
+.ltrack-end.is-trim { background: var(--amber); }
+.ltrack-end.is-buy, .ltrack-end.is-add { background: var(--green); }
+.ltrack-end.is-open { background: transparent; }
+.ltrack-gav { position: absolute; top: 2px; width: 1px; height: 6px; background: var(--cyan-dim); }
+.ltrack-price { position: absolute; top: -1px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 2px var(--bg); }
+.ltrack-row.is-near .ltrack-price { background: var(--amber); }
+.ltrack-words { margin: 0; font: 12px/1.5 var(--font-mono); color: var(--text-muted); }

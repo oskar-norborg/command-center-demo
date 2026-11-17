@@ -1,0 +1,92 @@
+/* Design tokens — SPEC.md §5.8, docs/phase3-plan.md §2. T3.1a's own scope:
+   the colour and type tokens, and the self-hosted fonts, as CSS custom
+   properties. Nothing here repaints a panel, a border or a component — that
+   is T3.1b onward (docs/phase3-plan.md §2.4's file mapping). The two rules
+   below (`body`, headings/labels/table headers) are the one exception:
+   assigning the two type families to text is "type" (SPEC.md §5.8), the same
+   task as the tokens, not a component skin pass.
+
+   Self-hosted (SPEC.md §7.1: no third-party font request): both files are
+   variable fonts (`fvar` wght axis) subset to Google's standard Latin range
+   (digits, ASCII punctuation, Latin letters — not the several-hundred-KB
+   full multi-script font). A hand-picked glyph list (just tickers and
+   Appendix B's fixed vocabulary, per docs/phase3-plan.md §2.2) was ruled out:
+   thesis/notes/journal prose in Space Grotesk is free text the owner types, so a
+   fixed subset risks a missing glyph falling back silently mid-sentence. */
+
+:root {
+  color-scheme: dark;
+
+  /* --- colour (SPEC.md §5.8, dark only) --- */
+  --bg: #05080c;              /* page */
+  --panel: rgba(10, 18, 28, 0.85); /* panel fill */
+  --line: #163244;            /* panel borders */
+  --cyan: #2ad0ff;            /* primary accents, brackets, rings */
+  --cyan-dim: #128aab;        /* secondary lines */
+  --cyan-glow: rgba(42, 208, 255, 0.35); /* box-shadow on brackets only */
+  --amber: #ffb02e;           /* warnings, trim levels, near states, stale labels */
+  --red: #ff3b5c;             /* exit, invalidation, failed */
+  --green: #2ee59d;           /* buy, add, positive change */
+  --text: #dbe7f0;            /* body text */
+  --text-muted: #7f95a6;      /* labels */
+  --white: #f4f9fc;           /* primary numbers */
+
+  /* --- derived (docs/phase3-plan.md §2.1, not in SPEC.md's table) --- */
+  --amber-dim: rgba(255, 176, 46, 0.12); /* unchecked hatch fill, degraded strip background */
+  --red-dim: rgba(255, 59, 92, 0.10);    /* overdue banner background */
+  --focus-ring: var(--cyan);             /* :focus-visible outline colour, every interactive element */
+
+  /* --- decoration only (docs/phase3-visual-plan.md §3.1/Q3): never text, never a warning state's colour.
+     Both derived from --cyan so the visual-pass atmosphere reads as "the same HUD, quieter", not a second
+     palette — amber/red/green stay reserved for meaning (overdue, degraded, stale, hit, near). --- */
+  --deco-glow: rgba(42, 208, 255, 0.10);  /* body's radial glow, top of page */
+  --deco-line: rgba(42, 208, 255, 0.05);  /* body's scanline/grid texture lines */
+
+  /* --- type (SPEC.md §5.8, §5.9's "everything readable" needs a fallback
+     that will not reflow the page while the woff2 is still loading: each
+     stack's first fallback is a metrics-close system font, not a mismatched
+     serif or a narrower sans). --- */
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Consolas, 'Liberation Mono', monospace;
+  --font-sans: 'Space Grotesk', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* --- spacing (docs/phase3-visual-plan.md §3.5/V3): a 4px scale, so the density pass tightens panel/grid/row
+     spacing from one set of values instead of scattered edits. Never applied below the 44px touch-target floor
+     (SPEC.md mobile rule) or the 17px/15px/12px minimum text sizes (§5.8) — those stay hard floors, not tokens,
+     since a token here could be redefined smaller later without anyone re-checking either rule. --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 10px;
+  --space-4: 14px;
+  --space-5: 20px;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 800; /* the variable font's own wght axis (400–800) covers regular and bold from one file */
+  font-display: swap;
+  src: url('../assets/fonts/jetbrains-mono.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700; /* the variable font's own wght axis (300–700) */
+  font-display: swap;
+  src: url('../assets/fonts/space-grotesk.woff2') format('woff2');
+}
+
+/* Prose default (SPEC.md §5.8: "Space Grotesk for prose"). Panel titles and
+   table headers are "panel labels" (§5.8: "JetBrains Mono for every number,
+   ticker, and panel label"), uppercase with the spec's 0.08em tracking. */
+body {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+table.grid th {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
