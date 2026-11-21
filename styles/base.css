@@ -381,3 +381,37 @@ pre {
 .journal-entry {
   margin-bottom: 16px;
 }
+
+/* Position-size panel (SPEC.md §5.4a). */
+.sizer-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin: 4px 0 8px;
+}
+.sizer-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.sizer-field input {
+  width: 9em;
+  min-height: 36px;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.sizer-risk {
+  display: flex;
+  gap: 6px;
+}
+.sizer-shares strong {
+  font-size: 18px;
+  color: var(--white);
+}

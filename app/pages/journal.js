@@ -5,6 +5,7 @@
 import { el, text, clear } from '../dom.js';
 import { shortDate, todayEt } from '../data.js';
 import { journalLine } from '../lib/journal.js';
+import { scorecard } from '../lib/scorecard.js';
 
 /** Shown when data/journal/ is empty (kept word for word from the placeholder the route had before T4.1). */
 export const JOURNAL_PLACEHOLDER = 'No journal entries yet. Trades and holds appear here once a /log-trade pull request is merged.';
@@ -83,6 +84,39 @@ function entryItem(entry, outcome, today) {
   ]);
 }
 
+/** "3 of 4 your way, avg +5.2%" for one cell, or "—". The average is in the decision's favour: + means it paid. */
+export function moveCellText(c) {
+  if (!c.count) return '—';
+  return `${c.yourWay} of ${c.count}, ${c.avg > 0 ? '+' : ''}${c.avg}%`;
+}
+
+/** The scorecard panel above the list (SPEC §5.6a). */
+export function scorecardPanel(entries, outcomes, today) {
+  const s = scorecard(entries, outcomes, today);
+  if (!s.rows.length) return null;
+  const panel = el('section', { class: 'panel journal-scorecard' }, [text('h2', 'Scorecard')]);
+  const status = s.graded
+    ? `${s.graded} grade${s.graded === 1 ? '' : 's'} given across ${s.decisions} decisions.`
+    : `No decision graded yet across ${s.decisions} decisions.`;
+  panel.appendChild(text('p', `${status}${s.due ? ` ${s.due} grade${s.due === 1 ? ' is' : 's are'} due.` : ''}${s.next ? ` Next grade due ${shortDate(s.next)}.` : ''}`, { class: s.due ? 'amber' : 'muted' }));
+  const table = el('table', { class: 'grid' });
+  table.appendChild(el('tr', {}, ['Decision', 'Entries', 'Decision grade', 'Outcome grade', 'Price your way: 90d', '180d', 'So far'].map((h) => text('th', h, { attrs: { scope: 'col' } }))));
+  for (const r of s.rows) {
+    table.appendChild(el('tr', {}, [
+      text('th', r.label, { attrs: { scope: 'row' } }),
+      text('td', String(r.entries)),
+      text('td', r.decision ? `${r.decision} (${r.graded})` : '—'),
+      text('td', r.outcome ?? '—'),
+      text('td', moveCellText(r.d90)),
+      text('td', moveCellText(r.d180)),
+      text('td', moveCellText(r.now)),
+    ]));
+  }
+  panel.appendChild(el('div', { class: 'grid-scroll' }, [table]));
+  panel.appendChild(text('p', '"Your way" is up after a buy, add or hold, and down after a trim, a sale or staying out; the average is in the decision\'s favour, so + means it paid. Grades are averaged on A = 4 to D = 1. "So far" uses the newest close in this build.', { class: 'muted' }));
+  return panel;
+}
+
 export function renderJournal(container, { state, outcomes }, nowMs = Date.now()) {
   clear(container);
   container.appendChild(text('h1', 'Journal'));
@@ -92,6 +126,8 @@ export function renderJournal(container, { state, outcomes }, nowMs = Date.now()
     return;
   }
   const today = todayEt(nowMs);
+  const card = scorecardPanel(entries.filter((e) => e.action !== 'opening'), outcomes, today);
+  if (card) container.appendChild(card);
   const list = el('ul', { class: 'journal-list' });
   for (const entry of entries) list.appendChild(entryItem(entry, outcomes?.[entry.id] ?? null, today));
   container.appendChild(list);

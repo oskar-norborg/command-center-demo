@@ -14,6 +14,7 @@ import { reviewDue } from '../../lib/housekeeping.js';
 import { dossierPin, watchHeader } from '../components/dossier-pin.js';
 import { visualsOn } from '../components/charts.js';
 import { priceChartPanel } from './visuals.js';
+import { sizerPanel } from '../components/sizer.js';
 
 export function levelLine(level, levelState) {
   const priceLabel =
@@ -275,6 +276,7 @@ export function renderPosition(container, { state, scan, findings, lastClose, se
     [levels, 'main'],
     ...(chart ? [[chart, 'main']] : []),
     [tile, 'main'],
+    [sizerPanel({ entry: position, price: view.kind === 'price' ? view.price : null, state, scan, heldUnits: position.units, account: position.account }), 'main'],
     [el('section', { class: 'panel' }, [text('h2', 'Thesis'), el('div', { html: position.sections?.thesis ?? '' })]), 'main'],
     [el('section', { class: 'panel' }, [
       text('h2', 'What would break it'),

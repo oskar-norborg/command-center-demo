@@ -9,6 +9,7 @@ import { levelsPanel } from './position.js';
 import { dossierPin, watchHeader } from '../components/dossier-pin.js';
 import { visualsOn } from '../components/charts.js';
 import { priceChartPanel } from './visuals.js';
+import { sizerPanel } from '../components/sizer.js';
 
 /**
  * The buy level cell (moved here from the command view's watchlist strip, 2026-09-23): the distance in the scan's own
@@ -99,6 +100,7 @@ export function renderWatchlistDossier(container, { state, scan, lastClose, seri
   // SPEC.md §5.5 order on the phone; on desktop watch details and notes move to the right rail (layout pass, option A).
   const items = [
     [levels, 'main'],
+    [sizerPanel({ entry, price: view.kind === 'price' ? view.price : null, state, scan, account: entry.target_account }), 'main'],
     [info, 'rail'],
     [el('section', { class: 'panel' }, [
       text('h2', "Why I'm watching"),
