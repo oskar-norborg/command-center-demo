@@ -16,16 +16,26 @@
       {
         "horizon": "90d",
         "due": "2026-04-20",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-01-20 and 2026-04-20"
+        "date": "2026-04-20",
+        "price": 316.99,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-04-20",
+        "basis": null,
+        "change_pct": 4.7,
+        "approx": false
       },
       {
         "horizon": "180d",
         "due": "2026-07-19",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-01-20 and 2026-07-19"
+        "date": "2026-07-17",
+        "price": 341.1,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-07-17",
+        "basis": null,
+        "change_pct": 12.7,
+        "approx": false
       }
     ],
     "now": {
@@ -42,25 +52,35 @@
   "2026-02-06-AMZN-hold": {
     "entry": {
       "kind": "reference-close",
-      "date": null,
-      "price": null,
-      "currency": null,
-      "reason": "no close scan on or before 2026-02-06"
+      "date": "2026-02-06",
+      "price": 210.32,
+      "currency": "USD",
+      "basis": null
     },
     "horizons": [
       {
         "horizon": "90d",
         "due": "2026-05-07",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-02-06 and 2026-05-07"
+        "date": "2026-05-07",
+        "price": 271.17,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-05-07",
+        "basis": null,
+        "change_pct": 28.9,
+        "approx": false
       },
       {
         "horizon": "180d",
         "due": "2026-08-05",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-02-06 and 2026-08-05"
+        "date": "2026-08-05",
+        "price": 272.65,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-08-05",
+        "basis": null,
+        "change_pct": 29.6,
+        "approx": false
       }
     ],
     "now": {
@@ -69,7 +89,9 @@
       "currency": "USD",
       "label": "confirmed close",
       "session_date": "2026-11-20",
-      "basis": null
+      "basis": null,
+      "change_pct": 17.4,
+      "approx": false
     }
   },
   "2026-02-10-NVDA-buy": {
@@ -84,16 +106,26 @@
       {
         "horizon": "90d",
         "due": "2026-05-11",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-02-10 and 2026-05-11"
+        "date": "2026-05-11",
+        "price": 219.44,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-05-11",
+        "basis": null,
+        "change_pct": 16.4,
+        "approx": false
       },
       {
         "horizon": "180d",
         "due": "2026-08-09",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-02-10 and 2026-08-09"
+        "date": "2026-08-07",
+        "price": 223.96,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-08-07",
+        "basis": null,
+        "change_pct": 18.8,
+        "approx": false
       }
     ],
     "now": {
@@ -119,9 +151,14 @@
       {
         "horizon": "90d",
         "due": "2026-06-15",
-        "date": null,
-        "price": null,
-        "reason": "no close scan between 2026-03-17 and 2026-06-15"
+        "date": "2026-06-15",
+        "price": 369.35,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-06-15",
+        "basis": null,
+        "change_pct": 18.8,
+        "approx": false
       },
       {
         "horizon": "180d",

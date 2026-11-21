@@ -9,7 +9,7 @@ levels are made up. The real one runs on my own portfolio and stays private.
 
 **[Open the live demo](https://oskar-norborg.github.io/command-center-demo/)** · last published with the closes of 20 Nov 2026
 
-![The command view](screenshots/command.jpg)
+![A walkthrough: the command view, the book over the year, a position page, the watchlist and the journal](screenshots/walkthrough.gif)
 
 ## What it does
 
@@ -27,7 +27,8 @@ levels are made up. The real one runs on my own portfolio and stays private.
 
 - A model book of about 12.5 million USD: six companies (AAPL, NVDA, AMZN, GOOGL, JPM, COST), four funds (VOO, QQQ,
   SCHD, BND) and cash, plus a watchlist of three candidates (HD, XOM, PG) with buy levels.
-- The last sixty market closes, at real prices. Which levels are hit or near, and which positions are over their
+- Every market close since the model book opened on 1 Dec 2025, at real prices, so each journal entry is graded
+  against what the price actually did 90 and 180 days later. Which levels are hit or near, and which positions are over their
   cap, is worked out from those prices by the same rules the private version uses. The levels themselves are model
   choices, re-set at the start of each quarter from that day's close.
 - Charts drawn from the same closes: the book over time against its largest fund, the distance from each price to
@@ -35,7 +36,7 @@ levels are made up. The real one runs on my own portfolio and stays private.
 
 Nothing in the demo is advice, and a model book's results say nothing about mine.
 
-![A position page](screenshots/position.jpg)
+![The command view](screenshots/command.jpg)
 
 ## How it stays current
 

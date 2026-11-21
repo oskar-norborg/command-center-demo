@@ -3,8 +3,8 @@
   "run": {
     "id": "2026-11-19-close",
     "type": "close",
-    "started_utc": "2026-11-19T21:41:31Z",
-    "finished_utc": "2026-11-19T21:41:35Z",
+    "started_utc": "2026-11-19T21:41:39Z",
+    "finished_utc": "2026-11-19T21:41:43Z",
     "status": "ok",
     "status_reasons": [],
     "state_commit": "demo",

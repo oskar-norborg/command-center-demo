@@ -1,5 +1,5585 @@
 [
   {
+    "session": "2025-12-01",
+    "run_id": "2025-12-01-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11673190.9,
+    "stocks_nok": 3404697.1,
+    "funds_nok": 6923647.9,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-01",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -35.9,
+        "pnl_pct": 0
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -6.1,
+        "pnl_pct": 0
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -42,
+        "pnl_pct": 0
+      }
+    }
+  },
+  {
+    "session": "2025-12-02",
+    "run_id": "2025-12-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11710539.4,
+    "stocks_nok": 3427639.5,
+    "funds_nok": 6938054,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 22906.5,
+        "pnl_pct": 0.67
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 14400,
+        "pnl_pct": 0.21
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 37306.5,
+        "pnl_pct": 0.36
+      }
+    }
+  },
+  {
+    "session": "2025-12-03",
+    "run_id": "2025-12-03-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11732068.4,
+    "stocks_nok": 3420566.1,
+    "funds_nok": 6966656.4,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-03",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 15833.1,
+        "pnl_pct": 0.47
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 43002.4,
+        "pnl_pct": 0.62
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 58835.5,
+        "pnl_pct": 0.57
+      }
+    }
+  },
+  {
+    "session": "2025-12-04",
+    "run_id": "2025-12-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11705087.3,
+    "stocks_nok": 3395859.6,
+    "funds_nok": 6964381.8,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -8873.4,
+        "pnl_pct": -0.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 40727.8,
+        "pnl_pct": 0.59
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 31854.4,
+        "pnl_pct": 0.31
+      }
+    }
+  },
+  {
+    "session": "2025-12-05",
+    "run_id": "2025-12-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11716975.2,
+    "stocks_nok": 3398200.7,
+    "funds_nok": 6973928.6,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -6532.3,
+        "pnl_pct": -0.19
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 50274.6,
+        "pnl_pct": 0.73
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 43742.3,
+        "pnl_pct": 0.42
+      }
+    }
+  },
+  {
+    "session": "2025-12-08",
+    "run_id": "2025-12-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11675060.9,
+    "stocks_nok": 3374869.4,
+    "funds_nok": 6955345.6,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -29863.6,
+        "pnl_pct": -0.88
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 31691.6,
+        "pnl_pct": 0.46
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 1828,
+        "pnl_pct": 0.02
+      }
+    }
+  },
+  {
+    "session": "2025-12-09",
+    "run_id": "2025-12-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11678664.2,
+    "stocks_nok": 3383762.8,
+    "funds_nok": 6950055.5,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -20970.2,
+        "pnl_pct": -0.62
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 26401.5,
+        "pnl_pct": 0.38
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 5431.3,
+        "pnl_pct": 0.05
+      }
+    }
+  },
+  {
+    "session": "2025-12-10",
+    "run_id": "2025-12-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11725397.1,
+    "stocks_nok": 3395391.5,
+    "funds_nok": 6985159.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -9341.5,
+        "pnl_pct": -0.27
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 61505.7,
+        "pnl_pct": 0.89
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 52164.2,
+        "pnl_pct": 0.51
+      }
+    }
+  },
+  {
+    "session": "2025-12-11",
+    "run_id": "2025-12-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11700157.2,
+    "stocks_nok": 3363165.7,
+    "funds_nok": 6992145.6,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -41567.3,
+        "pnl_pct": -1.22
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 68491.6,
+        "pnl_pct": 0.99
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 26924.3,
+        "pnl_pct": 0.26
+      }
+    }
+  },
+  {
+    "session": "2025-12-12",
+    "run_id": "2025-12-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11590159.4,
+    "stocks_nok": 3322008.1,
+    "funds_nok": 6923305.4,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -82724.9,
+        "pnl_pct": -2.43
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -348.6,
+        "pnl_pct": -0.01
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -83073.5,
+        "pnl_pct": -0.8
+      }
+    }
+  },
+  {
+    "session": "2025-12-15",
+    "run_id": "2025-12-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11549301.1,
+    "stocks_nok": 3289321.4,
+    "funds_nok": 6915133.8,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -115411.6,
+        "pnl_pct": -3.39
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -8520.2,
+        "pnl_pct": -0.12
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -123931.8,
+        "pnl_pct": -1.2
+      }
+    }
+  },
+  {
+    "session": "2025-12-16",
+    "run_id": "2025-12-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11538623.1,
+    "stocks_nok": 3291134.7,
+    "funds_nok": 6902642.5,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -113598.3,
+        "pnl_pct": -3.34
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -21011.5,
+        "pnl_pct": -0.3
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -134609.8,
+        "pnl_pct": -1.3
+      }
+    }
+  },
+  {
+    "session": "2025-12-17",
+    "run_id": "2025-12-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11417583.8,
+    "stocks_nok": 3230294.2,
+    "funds_nok": 6842443.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -174438.8,
+        "pnl_pct": -5.12
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -81210.3,
+        "pnl_pct": -1.17
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -255649.1,
+        "pnl_pct": -2.48
+      }
+    }
+  },
+  {
+    "session": "2025-12-18",
+    "run_id": "2025-12-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11499282.2,
+    "stocks_nok": 3271554.6,
+    "funds_nok": 6882881.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -133178.4,
+        "pnl_pct": -3.91
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -40772.3,
+        "pnl_pct": -0.59
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -173950.7,
+        "pnl_pct": -1.68
+      }
+    }
+  },
+  {
+    "session": "2025-12-19",
+    "run_id": "2025-12-19-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11587189.2,
+    "stocks_nok": 3313417.8,
+    "funds_nok": 6928925.5,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-19",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -91315.2,
+        "pnl_pct": -2.68
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 5271.5,
+        "pnl_pct": 0.08
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -86043.7,
+        "pnl_pct": -0.83
+      }
+    }
+  },
+  {
+    "session": "2025-12-22",
+    "run_id": "2025-12-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11618351.2,
+    "stocks_nok": 3323631.6,
+    "funds_nok": 6949873.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -81101.4,
+        "pnl_pct": -2.38
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 26219.7,
+        "pnl_pct": 0.38
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -54881.7,
+        "pnl_pct": -0.53
+      }
+    }
+  },
+  {
+    "session": "2025-12-23",
+    "run_id": "2025-12-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11688023.3,
+    "stocks_nok": 3372959.7,
+    "funds_nok": 6970217.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -31773.3,
+        "pnl_pct": -0.93
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 46563.7,
+        "pnl_pct": 0.67
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 14790.4,
+        "pnl_pct": 0.14
+      }
+    }
+  },
+  {
+    "session": "2025-12-24",
+    "run_id": "2025-12-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11721269.9,
+    "stocks_nok": 3383935.9,
+    "funds_nok": 6992488.1,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -20797.1,
+        "pnl_pct": -0.61
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 68834.1,
+        "pnl_pct": 0.99
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 48037,
+        "pnl_pct": 0.47
+      }
+    }
+  },
+  {
+    "session": "2025-12-26",
+    "run_id": "2025-12-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11726491.7,
+    "stocks_nok": 3389476.5,
+    "funds_nok": 6992169.3,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -15256.5,
+        "pnl_pct": -0.45
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 68515.3,
+        "pnl_pct": 0.99
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 53258.8,
+        "pnl_pct": 0.52
+      }
+    }
+  },
+  {
+    "session": "2025-12-29",
+    "run_id": "2025-12-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11697029,
+    "stocks_nok": 3377800.2,
+    "funds_nok": 6974382.9,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -26932.8,
+        "pnl_pct": -0.79
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 50728.9,
+        "pnl_pct": 0.73
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 23796.1,
+        "pnl_pct": 0.23
+      }
+    }
+  },
+  {
+    "session": "2025-12-30",
+    "run_id": "2025-12-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11685438.9,
+    "stocks_nok": 3374570.9,
+    "funds_nok": 6966022.1,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -30162.1,
+        "pnl_pct": -0.89
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 42368.1,
+        "pnl_pct": 0.61
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 12206,
+        "pnl_pct": 0.12
+      }
+    }
+  },
+  {
+    "session": "2025-12-31",
+    "run_id": "2025-12-31-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11623531.8,
+    "stocks_nok": 3358651.2,
+    "funds_nok": 6920034.7,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2025-12-31",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -46081.8,
+        "pnl_pct": -1.35
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -3619.3,
+        "pnl_pct": -0.05
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -49701.1,
+        "pnl_pct": -0.48
+      }
+    }
+  },
+  {
+    "session": "2026-01-02",
+    "run_id": "2026-01-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11630450.6,
+    "stocks_nok": 3353997.3,
+    "funds_nok": 6931607.4,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -50735.7,
+        "pnl_pct": -1.49
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 7953.4,
+        "pnl_pct": 0.11
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": -42782.3,
+        "pnl_pct": -0.41
+      }
+    }
+  },
+  {
+    "session": "2026-01-05",
+    "run_id": "2026-01-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11694698.4,
+    "stocks_nok": 3376810.2,
+    "funds_nok": 6973042.3,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -27922.8,
+        "pnl_pct": -0.82
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 49388.3,
+        "pnl_pct": 0.71
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 21465.5,
+        "pnl_pct": 0.21
+      }
+    }
+  },
+  {
+    "session": "2026-01-06",
+    "run_id": "2026-01-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11741606.1,
+    "stocks_nok": 3385744.8,
+    "funds_nok": 7011015.4,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": -18988.2,
+        "pnl_pct": -0.56
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 87361.4,
+        "pnl_pct": 1.26
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 68373.2,
+        "pnl_pct": 0.66
+      }
+    }
+  },
+  {
+    "session": "2026-01-07",
+    "run_id": "2026-01-07-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11748746.5,
+    "stocks_nok": 3406628.2,
+    "funds_nok": 6997272.4,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-07",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 1895.2,
+        "pnl_pct": 0.06
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 73618.4,
+        "pnl_pct": 1.06
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 75513.6,
+        "pnl_pct": 0.73
+      }
+    }
+  },
+  {
+    "session": "2026-01-08",
+    "run_id": "2026-01-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11775999.6,
+    "stocks_nok": 3430337.8,
+    "funds_nok": 7000815.9,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 25604.8,
+        "pnl_pct": 0.75
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 77161.9,
+        "pnl_pct": 1.11
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 102766.7,
+        "pnl_pct": 0.99
+      }
+    }
+  },
+  {
+    "session": "2026-01-09",
+    "run_id": "2026-01-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11837160.3,
+    "stocks_nok": 3447635.9,
+    "funds_nok": 7044678.5,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 42902.9,
+        "pnl_pct": 1.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 121024.5,
+        "pnl_pct": 1.75
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 163927.4,
+        "pnl_pct": 1.59
+      }
+    }
+  },
+  {
+    "session": "2026-01-12",
+    "run_id": "2026-01-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11860442.6,
+    "stocks_nok": 3466706.8,
+    "funds_nok": 7048889.9,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 61973.8,
+        "pnl_pct": 1.82
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 125235.9,
+        "pnl_pct": 1.81
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 187209.7,
+        "pnl_pct": 1.81
+      }
+    }
+  },
+  {
+    "session": "2026-01-13",
+    "run_id": "2026-01-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11860088,
+    "stocks_nok": 3471258.3,
+    "funds_nok": 7043983.8,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 66525.3,
+        "pnl_pct": 1.95
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 120329.8,
+        "pnl_pct": 1.74
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 186855.1,
+        "pnl_pct": 1.81
+      }
+    }
+  },
+  {
+    "session": "2026-01-14",
+    "run_id": "2026-01-14-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11817420,
+    "stocks_nok": 3446398.6,
+    "funds_nok": 7026175.5,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-14",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 41665.6,
+        "pnl_pct": 1.22
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 102521.5,
+        "pnl_pct": 1.48
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 144187.1,
+        "pnl_pct": 1.4
+      }
+    }
+  },
+  {
+    "session": "2026-01-15",
+    "run_id": "2026-01-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11838485.3,
+    "stocks_nok": 3455387.8,
+    "funds_nok": 7038251.6,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 50654.8,
+        "pnl_pct": 1.49
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 114597.6,
+        "pnl_pct": 1.66
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 165252.4,
+        "pnl_pct": 1.6
+      }
+    }
+  },
+  {
+    "session": "2026-01-16",
+    "run_id": "2026-01-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11817963.1,
+    "stocks_nok": 3444712,
+    "funds_nok": 7028405.2,
+    "cash_nok": 1344845.9,
+    "oldest_fund_nav_date": "2026-01-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 3404733,
+        "pnl_nok": 39979,
+        "pnl_pct": 1.17
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 104751.2,
+        "pnl_pct": 1.51
+      },
+      "holdings": {
+        "cost_nok": 10328387,
+        "pnl_nok": 144730.2,
+        "pnl_pct": 1.4
+      }
+    }
+  },
+  {
+    "session": "2026-01-20",
+    "run_id": "2026-01-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11610099.7,
+    "stocks_nok": 4014281.6,
+    "funds_nok": 6916912.2,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": -56391.4,
+        "pnl_pct": -1.39
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -6741.8,
+        "pnl_pct": -0.1
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": -63133.2,
+        "pnl_pct": -0.57
+      }
+    }
+  },
+  {
+    "session": "2026-01-21",
+    "run_id": "2026-01-21-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11732877.1,
+    "stocks_nok": 4062857.6,
+    "funds_nok": 6991113.6,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-21",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": -7815.4,
+        "pnl_pct": -0.19
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 67459.6,
+        "pnl_pct": 0.97
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 59644.2,
+        "pnl_pct": 0.54
+      }
+    }
+  },
+  {
+    "session": "2026-01-22",
+    "run_id": "2026-01-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11783862.3,
+    "stocks_nok": 4084544.2,
+    "funds_nok": 7020412.2,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 13871.2,
+        "pnl_pct": 0.34
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 96758.2,
+        "pnl_pct": 1.4
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 110629.4,
+        "pnl_pct": 1.01
+      }
+    }
+  },
+  {
+    "session": "2026-01-23",
+    "run_id": "2026-01-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11797503,
+    "stocks_nok": 4091726.7,
+    "funds_nok": 7026870.4,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 21053.7,
+        "pnl_pct": 0.52
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 103216.4,
+        "pnl_pct": 1.49
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 124270.1,
+        "pnl_pct": 1.13
+      }
+    }
+  },
+  {
+    "session": "2026-01-26",
+    "run_id": "2026-01-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11855010.1,
+    "stocks_nok": 4122375,
+    "funds_nok": 7053729.2,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 51702,
+        "pnl_pct": 1.27
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 130075.2,
+        "pnl_pct": 1.88
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 181777.2,
+        "pnl_pct": 1.65
+      }
+    }
+  },
+  {
+    "session": "2026-01-27",
+    "run_id": "2026-01-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11916904.9,
+    "stocks_nok": 4152804.9,
+    "funds_nok": 7085194.1,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 82131.9,
+        "pnl_pct": 2.02
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 161540.1,
+        "pnl_pct": 2.33
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 243672,
+        "pnl_pct": 2.22
+      }
+    }
+  },
+  {
+    "session": "2026-01-28",
+    "run_id": "2026-01-28-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11919740.8,
+    "stocks_nok": 4153930.5,
+    "funds_nok": 7086904.4,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-28",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 83257.5,
+        "pnl_pct": 2.05
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 163250.4,
+        "pnl_pct": 2.36
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 246507.9,
+        "pnl_pct": 2.24
+      }
+    }
+  },
+  {
+    "session": "2026-01-29",
+    "run_id": "2026-01-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11924539.3,
+    "stocks_nok": 4172517.3,
+    "funds_nok": 7073116.1,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 101844.3,
+        "pnl_pct": 2.5
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 149462.1,
+        "pnl_pct": 2.16
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 251306.4,
+        "pnl_pct": 2.29
+      }
+    }
+  },
+  {
+    "session": "2026-01-30",
+    "run_id": "2026-01-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11890156.2,
+    "stocks_nok": 4154546.4,
+    "funds_nok": 7056703.9,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-01-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 83873.4,
+        "pnl_pct": 2.06
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 133049.9,
+        "pnl_pct": 1.92
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 216923.3,
+        "pnl_pct": 1.97
+      }
+    }
+  },
+  {
+    "session": "2026-02-02",
+    "run_id": "2026-02-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11971432.6,
+    "stocks_nok": 4207741.9,
+    "funds_nok": 7084784.8,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 137068.9,
+        "pnl_pct": 3.37
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 161130.8,
+        "pnl_pct": 2.33
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 298199.7,
+        "pnl_pct": 2.71
+      }
+    }
+  },
+  {
+    "session": "2026-02-03",
+    "run_id": "2026-02-03-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11909782.4,
+    "stocks_nok": 4184040.1,
+    "funds_nok": 7046836.4,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-03",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 113367.1,
+        "pnl_pct": 2.78
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 123182.4,
+        "pnl_pct": 1.78
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 236549.5,
+        "pnl_pct": 2.15
+      }
+    }
+  },
+  {
+    "session": "2026-02-04",
+    "run_id": "2026-02-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11847352.6,
+    "stocks_nok": 4150180.2,
+    "funds_nok": 7018266.5,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 79507.2,
+        "pnl_pct": 1.95
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 94612.5,
+        "pnl_pct": 1.37
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 174119.7,
+        "pnl_pct": 1.58
+      }
+    }
+  },
+  {
+    "session": "2026-02-05",
+    "run_id": "2026-02-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11735088.7,
+    "stocks_nok": 4096117.7,
+    "funds_nok": 6960065.1,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 25444.7,
+        "pnl_pct": 0.63
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 36411.1,
+        "pnl_pct": 0.53
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 61855.8,
+        "pnl_pct": 0.56
+      }
+    }
+  },
+  {
+    "session": "2026-02-06",
+    "run_id": "2026-02-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11873451.6,
+    "stocks_nok": 4124936.2,
+    "funds_nok": 7069609.5,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 54263.2,
+        "pnl_pct": 1.33
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 145955.5,
+        "pnl_pct": 2.11
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 200218.7,
+        "pnl_pct": 1.82
+      }
+    }
+  },
+  {
+    "session": "2026-02-09",
+    "run_id": "2026-02-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11902207.3,
+    "stocks_nok": 4129640,
+    "funds_nok": 7093661.4,
+    "cash_nok": 678905.9,
+    "oldest_fund_nav_date": "2026-02-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4070673,
+        "pnl_nok": 58967,
+        "pnl_pct": 1.45
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 170007.4,
+        "pnl_pct": 2.46
+      },
+      "holdings": {
+        "cost_nok": 10994327,
+        "pnl_nok": 228974.4,
+        "pnl_pct": 2.08
+      }
+    }
+  },
+  {
+    "session": "2026-02-10",
+    "run_id": "2026-02-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11836654,
+    "stocks_nok": 4304102.2,
+    "funds_nok": 7079845.9,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": 6989.2,
+        "pnl_pct": 0.16
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 156191.9,
+        "pnl_pct": 2.26
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 163181.1,
+        "pnl_pct": 1.45
+      }
+    }
+  },
+  {
+    "session": "2026-02-11",
+    "run_id": "2026-02-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11816625,
+    "stocks_nok": 4274014.4,
+    "funds_nok": 7089904.7,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -23098.6,
+        "pnl_pct": -0.54
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 166250.7,
+        "pnl_pct": 2.4
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 143152.1,
+        "pnl_pct": 1.28
+      }
+    }
+  },
+  {
+    "session": "2026-02-12",
+    "run_id": "2026-02-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11657883.7,
+    "stocks_nok": 4200162,
+    "funds_nok": 7005015.8,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -96951,
+        "pnl_pct": -2.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 81361.8,
+        "pnl_pct": 1.18
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -15589.2,
+        "pnl_pct": -0.14
+      }
+    }
+  },
+  {
+    "session": "2026-02-13",
+    "run_id": "2026-02-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11639256.5,
+    "stocks_nok": 4165002.2,
+    "funds_nok": 7021548.4,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -132110.8,
+        "pnl_pct": -3.07
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 97894.4,
+        "pnl_pct": 1.41
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -34216.4,
+        "pnl_pct": -0.3
+      }
+    }
+  },
+  {
+    "session": "2026-02-17",
+    "run_id": "2026-02-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11672021.3,
+    "stocks_nok": 4198602.4,
+    "funds_nok": 7020713,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -98510.6,
+        "pnl_pct": -2.29
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 97059,
+        "pnl_pct": 1.4
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -1451.6,
+        "pnl_pct": -0.01
+      }
+    }
+  },
+  {
+    "session": "2026-02-18",
+    "run_id": "2026-02-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11726542.5,
+    "stocks_nok": 4223061.3,
+    "funds_nok": 7050775.3,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -74051.7,
+        "pnl_pct": -1.72
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 127121.3,
+        "pnl_pct": 1.84
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 53069.6,
+        "pnl_pct": 0.47
+      }
+    }
+  },
+  {
+    "session": "2026-02-19",
+    "run_id": "2026-02-19-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11696093.9,
+    "stocks_nok": 4205979.1,
+    "funds_nok": 7037408.9,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-19",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -91133.9,
+        "pnl_pct": -2.12
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 113754.9,
+        "pnl_pct": 1.64
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 22621,
+        "pnl_pct": 0.2
+      }
+    }
+  },
+  {
+    "session": "2026-02-20",
+    "run_id": "2026-02-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11806168.2,
+    "stocks_nok": 4278297.6,
+    "funds_nok": 7075164.7,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -18815.4,
+        "pnl_pct": -0.44
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 151510.7,
+        "pnl_pct": 2.19
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 132695.3,
+        "pnl_pct": 1.18
+      }
+    }
+  },
+  {
+    "session": "2026-02-23",
+    "run_id": "2026-02-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11715019.7,
+    "stocks_nok": 4238492.1,
+    "funds_nok": 7023821.7,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -58620.9,
+        "pnl_pct": -1.36
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 100167.7,
+        "pnl_pct": 1.45
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 41546.8,
+        "pnl_pct": 0.37
+      }
+    }
+  },
+  {
+    "session": "2026-02-24",
+    "run_id": "2026-02-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11792309.8,
+    "stocks_nok": 4273567,
+    "funds_nok": 7066036.9,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -23546,
+        "pnl_pct": -0.55
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 142382.9,
+        "pnl_pct": 2.06
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 118836.9,
+        "pnl_pct": 1.06
+      }
+    }
+  },
+  {
+    "session": "2026-02-25",
+    "run_id": "2026-02-25-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11878455.5,
+    "stocks_nok": 4314435,
+    "funds_nok": 7111314.6,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-25",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": 17322,
+        "pnl_pct": 0.4
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 187660.6,
+        "pnl_pct": 2.71
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 204982.6,
+        "pnl_pct": 1.83
+      }
+    }
+  },
+  {
+    "session": "2026-02-26",
+    "run_id": "2026-02-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11768100.1,
+    "stocks_nok": 4238711.4,
+    "funds_nok": 7076682.8,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -58401.6,
+        "pnl_pct": -1.36
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 153028.8,
+        "pnl_pct": 2.21
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 94627.2,
+        "pnl_pct": 0.84
+      }
+    }
+  },
+  {
+    "session": "2026-02-27",
+    "run_id": "2026-02-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11717587,
+    "stocks_nok": 4198720.8,
+    "funds_nok": 7066160.3,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-02-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -98392.2,
+        "pnl_pct": -2.29
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 142506.3,
+        "pnl_pct": 2.06
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 44114.1,
+        "pnl_pct": 0.39
+      }
+    }
+  },
+  {
+    "session": "2026-03-02",
+    "run_id": "2026-03-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11710986,
+    "stocks_nok": 4195853.8,
+    "funds_nok": 7062426.3,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -101259.2,
+        "pnl_pct": -2.36
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 138772.3,
+        "pnl_pct": 2
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 37513.1,
+        "pnl_pct": 0.33
+      }
+    }
+  },
+  {
+    "session": "2026-03-03",
+    "run_id": "2026-03-03-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11644250.7,
+    "stocks_nok": 4183425.2,
+    "funds_nok": 7008119.6,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-03",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -113687.8,
+        "pnl_pct": -2.65
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 84465.6,
+        "pnl_pct": 1.22
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -29222.2,
+        "pnl_pct": -0.26
+      }
+    }
+  },
+  {
+    "session": "2026-03-04",
+    "run_id": "2026-03-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11718350.9,
+    "stocks_nok": 4214459.5,
+    "funds_nok": 7051185.5,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -82653.5,
+        "pnl_pct": -1.92
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 127531.5,
+        "pnl_pct": 1.84
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": 44878,
+        "pnl_pct": 0.4
+      }
+    }
+  },
+  {
+    "session": "2026-03-05",
+    "run_id": "2026-03-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11654305,
+    "stocks_nok": 4183946.4,
+    "funds_nok": 7017652.7,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -113166.6,
+        "pnl_pct": -2.63
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 93998.7,
+        "pnl_pct": 1.36
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -19167.9,
+        "pnl_pct": -0.17
+      }
+    }
+  },
+  {
+    "session": "2026-03-06",
+    "run_id": "2026-03-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11525146.2,
+    "stocks_nok": 4127067.8,
+    "funds_nok": 6945372.5,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -170045.2,
+        "pnl_pct": -3.96
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 21718.5,
+        "pnl_pct": 0.31
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -148326.7,
+        "pnl_pct": -1.32
+      }
+    }
+  },
+  {
+    "session": "2026-03-09",
+    "run_id": "2026-03-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11630069.5,
+    "stocks_nok": 4183625.4,
+    "funds_nok": 6993738.2,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -113487.6,
+        "pnl_pct": -2.64
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 70084.2,
+        "pnl_pct": 1.01
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -43403.4,
+        "pnl_pct": -0.39
+      }
+    }
+  },
+  {
+    "session": "2026-03-10",
+    "run_id": "2026-03-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11626506.8,
+    "stocks_nok": 4193399,
+    "funds_nok": 6980401.9,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -103714,
+        "pnl_pct": -2.41
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 56747.9,
+        "pnl_pct": 0.82
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -46966.1,
+        "pnl_pct": -0.42
+      }
+    }
+  },
+  {
+    "session": "2026-03-11",
+    "run_id": "2026-03-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11619635.8,
+    "stocks_nok": 4193555.6,
+    "funds_nok": 6973374.3,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -103557.4,
+        "pnl_pct": -2.41
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 49720.3,
+        "pnl_pct": 0.72
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -53837.1,
+        "pnl_pct": -0.48
+      }
+    }
+  },
+  {
+    "session": "2026-03-12",
+    "run_id": "2026-03-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11480161.6,
+    "stocks_nok": 4139973.5,
+    "funds_nok": 6887482.2,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -157139.5,
+        "pnl_pct": -3.66
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -36171.8,
+        "pnl_pct": -0.52
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -193311.3,
+        "pnl_pct": -1.72
+      }
+    }
+  },
+  {
+    "session": "2026-03-13",
+    "run_id": "2026-03-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11418899.7,
+    "stocks_nok": 4107299.4,
+    "funds_nok": 6858894.4,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -189813.6,
+        "pnl_pct": -4.42
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -64759.6,
+        "pnl_pct": -0.94
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -254573.2,
+        "pnl_pct": -2.27
+      }
+    }
+  },
+  {
+    "session": "2026-03-16",
+    "run_id": "2026-03-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11518489.5,
+    "stocks_nok": 4151312,
+    "funds_nok": 6914471.6,
+    "cash_nok": 452705.9,
+    "oldest_fund_nav_date": "2026-03-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4297113,
+        "pnl_nok": -145801,
+        "pnl_pct": -3.39
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -9182.4,
+        "pnl_pct": -0.13
+      },
+      "holdings": {
+        "cost_nok": 11220767,
+        "pnl_nok": -154983.4,
+        "pnl_pct": -1.38
+      }
+    }
+  },
+  {
+    "session": "2026-03-17",
+    "run_id": "2026-03-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11559926.6,
+    "stocks_nok": 4000866,
+    "funds_nok": 6935359.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -123052,
+        "pnl_pct": -2.98
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 11705.7,
+        "pnl_pct": 0.17
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -111346.3,
+        "pnl_pct": -1.01
+      }
+    }
+  },
+  {
+    "session": "2026-03-18",
+    "run_id": "2026-03-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11430627.3,
+    "stocks_nok": 3953095.4,
+    "funds_nok": 6853831,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -170822.6,
+        "pnl_pct": -4.14
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -69823,
+        "pnl_pct": -1.01
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -240645.6,
+        "pnl_pct": -2.18
+      }
+    }
+  },
+  {
+    "session": "2026-03-19",
+    "run_id": "2026-03-19-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11401003.9,
+    "stocks_nok": 3935009.6,
+    "funds_nok": 6842293.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-19",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -188908.4,
+        "pnl_pct": -4.58
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -81360.6,
+        "pnl_pct": -1.18
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -270269,
+        "pnl_pct": -2.45
+      }
+    }
+  },
+  {
+    "session": "2026-03-20",
+    "run_id": "2026-03-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11253322.1,
+    "stocks_nok": 3876685,
+    "funds_nok": 6752936.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -247233,
+        "pnl_pct": -6
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -170717.8,
+        "pnl_pct": -2.47
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -417950.8,
+        "pnl_pct": -3.78
+      }
+    }
+  },
+  {
+    "session": "2026-03-23",
+    "run_id": "2026-03-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11354272.9,
+    "stocks_nok": 3919316,
+    "funds_nok": 6811256,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -204602,
+        "pnl_pct": -4.96
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -112398,
+        "pnl_pct": -1.62
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -317000,
+        "pnl_pct": -2.87
+      }
+    }
+  },
+  {
+    "session": "2026-03-24",
+    "run_id": "2026-03-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11307593.9,
+    "stocks_nok": 3893610.4,
+    "funds_nok": 6790282.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -230307.6,
+        "pnl_pct": -5.58
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -133371.4,
+        "pnl_pct": -1.93
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -363679,
+        "pnl_pct": -3.29
+      }
+    }
+  },
+  {
+    "session": "2026-03-25",
+    "run_id": "2026-03-25-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11376918.5,
+    "stocks_nok": 3934012.2,
+    "funds_nok": 6819205.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-25",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -189905.8,
+        "pnl_pct": -4.6
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -104448.6,
+        "pnl_pct": -1.51
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -294354.4,
+        "pnl_pct": -2.66
+      }
+    }
+  },
+  {
+    "session": "2026-03-26",
+    "run_id": "2026-03-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11205874.4,
+    "stocks_nok": 3859265.2,
+    "funds_nok": 6722908.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -264652.8,
+        "pnl_pct": -6.42
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -200745.7,
+        "pnl_pct": -2.9
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -465398.5,
+        "pnl_pct": -4.21
+      }
+    }
+  },
+  {
+    "session": "2026-03-27",
+    "run_id": "2026-03-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11026324.1,
+    "stocks_nok": 3775963.6,
+    "funds_nok": 6626659.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -347954.4,
+        "pnl_pct": -8.44
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -296994.4,
+        "pnl_pct": -4.29
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -644948.8,
+        "pnl_pct": -5.84
+      }
+    }
+  },
+  {
+    "session": "2026-03-30",
+    "run_id": "2026-03-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11008391.7,
+    "stocks_nok": 3771292.2,
+    "funds_nok": 6613398.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -352625.8,
+        "pnl_pct": -8.55
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -310255.4,
+        "pnl_pct": -4.48
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -662881.2,
+        "pnl_pct": -6
+      }
+    }
+  },
+  {
+    "session": "2026-03-31",
+    "run_id": "2026-03-31-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11288111.5,
+    "stocks_nok": 3908287,
+    "funds_nok": 6756123.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-03-31",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -215631,
+        "pnl_pct": -5.23
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -167530.4,
+        "pnl_pct": -2.42
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -383161.4,
+        "pnl_pct": -3.47
+      }
+    }
+  },
+  {
+    "session": "2026-04-01",
+    "run_id": "2026-04-01-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11363880.6,
+    "stocks_nok": 3950383,
+    "funds_nok": 6789796.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-01",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -173535,
+        "pnl_pct": -4.21
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -133857.3,
+        "pnl_pct": -1.93
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -307392.3,
+        "pnl_pct": -2.78
+      }
+    }
+  },
+  {
+    "session": "2026-04-02",
+    "run_id": "2026-04-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11384718.7,
+    "stocks_nok": 3961678.2,
+    "funds_nok": 6799339.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -162239.8,
+        "pnl_pct": -3.93
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -124314.4,
+        "pnl_pct": -1.8
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -286554.2,
+        "pnl_pct": -2.59
+      }
+    }
+  },
+  {
+    "session": "2026-04-06",
+    "run_id": "2026-04-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11438147.7,
+    "stocks_nok": 3992091.8,
+    "funds_nok": 6822355,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -131826.2,
+        "pnl_pct": -3.2
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -101299,
+        "pnl_pct": -1.46
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -233125.2,
+        "pnl_pct": -2.11
+      }
+    }
+  },
+  {
+    "session": "2026-04-07",
+    "run_id": "2026-04-07-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11445192.8,
+    "stocks_nok": 3997182.6,
+    "funds_nok": 6824309.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-07",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -126735.4,
+        "pnl_pct": -3.07
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": -99344.7,
+        "pnl_pct": -1.43
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": -226080.1,
+        "pnl_pct": -2.05
+      }
+    }
+  },
+  {
+    "session": "2026-04-08",
+    "run_id": "2026-04-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11693003.4,
+    "stocks_nok": 4110270.2,
+    "funds_nok": 6959032.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": -13647.8,
+        "pnl_pct": -0.33
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 35378.3,
+        "pnl_pct": 0.51
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 21730.5,
+        "pnl_pct": 0.2
+      }
+    }
+  },
+  {
+    "session": "2026-04-09",
+    "run_id": "2026-04-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11782752.2,
+    "stocks_nok": 4167709,
+    "funds_nok": 6991342.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 43791,
+        "pnl_pct": 1.06
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 67688.3,
+        "pnl_pct": 0.98
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 111479.3,
+        "pnl_pct": 1.01
+      }
+    }
+  },
+  {
+    "session": "2026-04-10",
+    "run_id": "2026-04-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11783683.4,
+    "stocks_nok": 4181501.6,
+    "funds_nok": 6978480.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 57583.6,
+        "pnl_pct": 1.4
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 54826.9,
+        "pnl_pct": 0.79
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 112410.5,
+        "pnl_pct": 1.02
+      }
+    }
+  },
+  {
+    "session": "2026-04-13",
+    "run_id": "2026-04-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11851481.2,
+    "stocks_nok": 4193439,
+    "funds_nok": 7034341.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 69521,
+        "pnl_pct": 1.69
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 110687.3,
+        "pnl_pct": 1.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 180208.3,
+        "pnl_pct": 1.63
+      }
+    }
+  },
+  {
+    "session": "2026-04-14",
+    "run_id": "2026-04-14-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 11997861.3,
+    "stocks_nok": 4270058.4,
+    "funds_nok": 7104102,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-14",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 146140.4,
+        "pnl_pct": 3.54
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 180448,
+        "pnl_pct": 2.61
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 326588.4,
+        "pnl_pct": 2.96
+      }
+    }
+  },
+  {
+    "session": "2026-04-15",
+    "run_id": "2026-04-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12074527.3,
+    "stocks_nok": 4302142.4,
+    "funds_nok": 7148684,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 178224.4,
+        "pnl_pct": 4.32
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 225030,
+        "pnl_pct": 3.25
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 403254.4,
+        "pnl_pct": 3.65
+      }
+    }
+  },
+  {
+    "session": "2026-04-16",
+    "run_id": "2026-04-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12093039.4,
+    "stocks_nok": 4303413.6,
+    "funds_nok": 7165924.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 179495.6,
+        "pnl_pct": 4.35
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 242270.9,
+        "pnl_pct": 3.5
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 421766.5,
+        "pnl_pct": 3.82
+      }
+    }
+  },
+  {
+    "session": "2026-04-17",
+    "run_id": "2026-04-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12223168.2,
+    "stocks_nok": 4359130.8,
+    "funds_nok": 7240336.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 235212.8,
+        "pnl_pct": 5.7
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 316682.5,
+        "pnl_pct": 4.57
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 551895.3,
+        "pnl_pct": 5
+      }
+    }
+  },
+  {
+    "session": "2026-04-20",
+    "run_id": "2026-04-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12216654.6,
+    "stocks_nok": 4365556.4,
+    "funds_nok": 7227397.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 241638.4,
+        "pnl_pct": 5.86
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 303743.3,
+        "pnl_pct": 4.39
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 545381.7,
+        "pnl_pct": 4.94
+      }
+    }
+  },
+  {
+    "session": "2026-04-21",
+    "run_id": "2026-04-21-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12143609.2,
+    "stocks_nok": 4327156.2,
+    "funds_nok": 7192752.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-21",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 203238.2,
+        "pnl_pct": 4.93
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 269098.1,
+        "pnl_pct": 3.89
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 472336.3,
+        "pnl_pct": 4.28
+      }
+    }
+  },
+  {
+    "session": "2026-04-22",
+    "run_id": "2026-04-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12266977.2,
+    "stocks_nok": 4387225.6,
+    "funds_nok": 7256050.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 263307.6,
+        "pnl_pct": 6.38
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 332396.7,
+        "pnl_pct": 4.8
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 595704.3,
+        "pnl_pct": 5.39
+      }
+    }
+  },
+  {
+    "session": "2026-04-23",
+    "run_id": "2026-04-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12241432.5,
+    "stocks_nok": 4375439.2,
+    "funds_nok": 7242292.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 251521.2,
+        "pnl_pct": 6.1
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 318638.4,
+        "pnl_pct": 4.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 570159.6,
+        "pnl_pct": 5.16
+      }
+    }
+  },
+  {
+    "session": "2026-04-24",
+    "run_id": "2026-04-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12358456.3,
+    "stocks_nok": 4439635.8,
+    "funds_nok": 7295119.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 315717.8,
+        "pnl_pct": 7.66
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 371465.6,
+        "pnl_pct": 5.37
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 687183.4,
+        "pnl_pct": 6.22
+      }
+    }
+  },
+  {
+    "session": "2026-04-27",
+    "run_id": "2026-04-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12397346.4,
+    "stocks_nok": 4475868.4,
+    "funds_nok": 7297777.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 351950.4,
+        "pnl_pct": 8.53
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 374123.1,
+        "pnl_pct": 5.4
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 726073.5,
+        "pnl_pct": 6.57
+      }
+    }
+  },
+  {
+    "session": "2026-04-28",
+    "run_id": "2026-04-28-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12352215.2,
+    "stocks_nok": 4459052.8,
+    "funds_nok": 7269461.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-28",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 335134.8,
+        "pnl_pct": 8.13
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 345807.5,
+        "pnl_pct": 4.99
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 680942.3,
+        "pnl_pct": 6.16
+      }
+    }
+  },
+  {
+    "session": "2026-04-29",
+    "run_id": "2026-04-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12346953.6,
+    "stocks_nok": 4446710.8,
+    "funds_nok": 7276541.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 322792.8,
+        "pnl_pct": 7.83
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 352887.9,
+        "pnl_pct": 5.1
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 675680.7,
+        "pnl_pct": 6.12
+      }
+    }
+  },
+  {
+    "session": "2026-04-30",
+    "run_id": "2026-04-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12471724.5,
+    "stocks_nok": 4503360.8,
+    "funds_nok": 7344662.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-04-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 379442.8,
+        "pnl_pct": 9.2
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 421008.8,
+        "pnl_pct": 6.08
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 800451.6,
+        "pnl_pct": 7.25
+      }
+    }
+  },
+  {
+    "session": "2026-05-01",
+    "run_id": "2026-05-01-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12513012.6,
+    "stocks_nok": 4527765.2,
+    "funds_nok": 7361546.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-01",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 403847.2,
+        "pnl_pct": 9.79
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 437892.5,
+        "pnl_pct": 6.32
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 841739.7,
+        "pnl_pct": 7.62
+      }
+    }
+  },
+  {
+    "session": "2026-05-04",
+    "run_id": "2026-05-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12470583.3,
+    "stocks_nok": 4515329.8,
+    "funds_nok": 7331552.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 391411.8,
+        "pnl_pct": 9.49
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 407898.6,
+        "pnl_pct": 5.89
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 799310.4,
+        "pnl_pct": 7.24
+      }
+    }
+  },
+  {
+    "session": "2026-05-05",
+    "run_id": "2026-05-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12556287.2,
+    "stocks_nok": 4545682.6,
+    "funds_nok": 7386903.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 421764.6,
+        "pnl_pct": 10.23
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 463249.7,
+        "pnl_pct": 6.69
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 885014.3,
+        "pnl_pct": 8.01
+      }
+    }
+  },
+  {
+    "session": "2026-05-06",
+    "run_id": "2026-05-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12733045.6,
+    "stocks_nok": 4634167.8,
+    "funds_nok": 7475176.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 510249.8,
+        "pnl_pct": 12.37
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 551522.9,
+        "pnl_pct": 7.97
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1061772.7,
+        "pnl_pct": 9.61
+      }
+    }
+  },
+  {
+    "session": "2026-05-07",
+    "run_id": "2026-05-07-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12709192.5,
+    "stocks_nok": 4630569.8,
+    "funds_nok": 7454921.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-07",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 506651.8,
+        "pnl_pct": 12.29
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 531267.8,
+        "pnl_pct": 7.67
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1037919.6,
+        "pnl_pct": 9.4
+      }
+    }
+  },
+  {
+    "session": "2026-05-08",
+    "run_id": "2026-05-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12813914,
+    "stocks_nok": 4662468,
+    "funds_nok": 7527745.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 538550,
+        "pnl_pct": 13.06
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 604091.1,
+        "pnl_pct": 8.73
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1142641.1,
+        "pnl_pct": 10.34
+      }
+    }
+  },
+  {
+    "session": "2026-05-11",
+    "run_id": "2026-05-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12798643.8,
+    "stocks_nok": 4633940.6,
+    "funds_nok": 7541002.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 510022.6,
+        "pnl_pct": 12.37
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 617348.3,
+        "pnl_pct": 8.92
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1127370.9,
+        "pnl_pct": 10.2
+      }
+    }
+  },
+  {
+    "session": "2026-05-12",
+    "run_id": "2026-05-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12799564.5,
+    "stocks_nok": 4656884.8,
+    "funds_nok": 7518978.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 532966.8,
+        "pnl_pct": 12.92
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 595324.8,
+        "pnl_pct": 8.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1128291.6,
+        "pnl_pct": 10.21
+      }
+    }
+  },
+  {
+    "session": "2026-05-13",
+    "run_id": "2026-05-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12913856,
+    "stocks_nok": 4733397.4,
+    "funds_nok": 7556757.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 609479.4,
+        "pnl_pct": 14.78
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 633103.7,
+        "pnl_pct": 9.14
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1242583.1,
+        "pnl_pct": 11.25
+      }
+    }
+  },
+  {
+    "session": "2026-05-14",
+    "run_id": "2026-05-14-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12993598,
+    "stocks_nok": 4771306.8,
+    "funds_nok": 7598590.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-14",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 647388.8,
+        "pnl_pct": 15.7
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 674936.3,
+        "pnl_pct": 9.75
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1322325.1,
+        "pnl_pct": 11.97
+      }
+    }
+  },
+  {
+    "session": "2026-05-15",
+    "run_id": "2026-05-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12850000.4,
+    "stocks_nok": 4707622.4,
+    "funds_nok": 7518677.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 583704.4,
+        "pnl_pct": 14.15
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 595023.1,
+        "pnl_pct": 8.59
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1178727.5,
+        "pnl_pct": 10.67
+      }
+    }
+  },
+  {
+    "session": "2026-05-18",
+    "run_id": "2026-05-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12852152.9,
+    "stocks_nok": 4711570.4,
+    "funds_nok": 7516881.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 587652.4,
+        "pnl_pct": 14.25
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 593227.6,
+        "pnl_pct": 8.57
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1180880,
+        "pnl_pct": 10.69
+      }
+    }
+  },
+  {
+    "session": "2026-05-19",
+    "run_id": "2026-05-19-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12773044.8,
+    "stocks_nok": 4668670.8,
+    "funds_nok": 7480673.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-19",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 544752.8,
+        "pnl_pct": 13.21
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 557019.1,
+        "pnl_pct": 8.05
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1101771.9,
+        "pnl_pct": 9.97
+      }
+    }
+  },
+  {
+    "session": "2026-05-20",
+    "run_id": "2026-05-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12888948,
+    "stocks_nok": 4712168.6,
+    "funds_nok": 7553078.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 588250.6,
+        "pnl_pct": 14.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 629424.5,
+        "pnl_pct": 9.09
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1217675.1,
+        "pnl_pct": 11.02
+      }
+    }
+  },
+  {
+    "session": "2026-05-21",
+    "run_id": "2026-05-21-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12888155.8,
+    "stocks_nok": 4696261.2,
+    "funds_nok": 7568193.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-21",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 572343.2,
+        "pnl_pct": 13.88
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 644539.7,
+        "pnl_pct": 9.31
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1216882.9,
+        "pnl_pct": 11.01
+      }
+    }
+  },
+  {
+    "session": "2026-05-22",
+    "run_id": "2026-05-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12895268.7,
+    "stocks_nok": 4664170,
+    "funds_nok": 7607397.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 540252,
+        "pnl_pct": 13.1
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 683743.8,
+        "pnl_pct": 9.88
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1223995.8,
+        "pnl_pct": 11.08
+      }
+    }
+  },
+  {
+    "session": "2026-05-26",
+    "run_id": "2026-05-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12941133.7,
+    "stocks_nok": 4657332.2,
+    "funds_nok": 7660100.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 533414.2,
+        "pnl_pct": 12.93
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 736446.6,
+        "pnl_pct": 10.64
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1269860.8,
+        "pnl_pct": 11.49
+      }
+    }
+  },
+  {
+    "session": "2026-05-27",
+    "run_id": "2026-05-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12935194.8,
+    "stocks_nok": 4655661.4,
+    "funds_nok": 7655832.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 531743.4,
+        "pnl_pct": 12.89
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 732178.5,
+        "pnl_pct": 10.58
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1263921.9,
+        "pnl_pct": 11.44
+      }
+    }
+  },
+  {
+    "session": "2026-05-28",
+    "run_id": "2026-05-28-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12986357.7,
+    "stocks_nok": 4666428.8,
+    "funds_nok": 7696228,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-28",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 542510.8,
+        "pnl_pct": 13.16
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 772574,
+        "pnl_pct": 11.16
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1315084.8,
+        "pnl_pct": 11.9
+      }
+    }
+  },
+  {
+    "session": "2026-05-29",
+    "run_id": "2026-05-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12934857.6,
+    "stocks_nok": 4603006,
+    "funds_nok": 7708150.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-05-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 479088,
+        "pnl_pct": 11.62
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 784496.7,
+        "pnl_pct": 11.33
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1263584.7,
+        "pnl_pct": 11.44
+      }
+    }
+  },
+  {
+    "session": "2026-06-01",
+    "run_id": "2026-06-01-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12942521.1,
+    "stocks_nok": 4604542.4,
+    "funds_nok": 7714277.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-01",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 480624.4,
+        "pnl_pct": 11.65
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 790623.8,
+        "pnl_pct": 11.42
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1271248.2,
+        "pnl_pct": 11.51
+      }
+    }
+  },
+  {
+    "session": "2026-06-02",
+    "run_id": "2026-06-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12944390.3,
+    "stocks_nok": 4587713.2,
+    "funds_nok": 7732976.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 463795.2,
+        "pnl_pct": 11.25
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 809322.2,
+        "pnl_pct": 11.69
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1273117.4,
+        "pnl_pct": 11.52
+      }
+    }
+  },
+  {
+    "session": "2026-06-03",
+    "run_id": "2026-06-03-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12838398.2,
+    "stocks_nok": 4515575.6,
+    "funds_nok": 7699121.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-03",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 391657.6,
+        "pnl_pct": 9.5
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 775467.7,
+        "pnl_pct": 11.2
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1167125.3,
+        "pnl_pct": 10.56
+      }
+    }
+  },
+  {
+    "session": "2026-06-04",
+    "run_id": "2026-06-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12942110,
+    "stocks_nok": 4604701.4,
+    "funds_nok": 7713707.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 480783.4,
+        "pnl_pct": 11.66
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 790053.7,
+        "pnl_pct": 11.41
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1270837.1,
+        "pnl_pct": 11.5
+      }
+    }
+  },
+  {
+    "session": "2026-06-05",
+    "run_id": "2026-06-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12645845.5,
+    "stocks_nok": 4502397.4,
+    "funds_nok": 7519747.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 378479.4,
+        "pnl_pct": 9.18
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 596093.2,
+        "pnl_pct": 8.61
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 974572.6,
+        "pnl_pct": 8.82
+      }
+    }
+  },
+  {
+    "session": "2026-06-08",
+    "run_id": "2026-06-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12667061,
+    "stocks_nok": 4490013.2,
+    "funds_nok": 7553346.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 366095.2,
+        "pnl_pct": 8.88
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 629692.9,
+        "pnl_pct": 9.09
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 995788.1,
+        "pnl_pct": 9.01
+      }
+    }
+  },
+  {
+    "session": "2026-06-09",
+    "run_id": "2026-06-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12612824.4,
+    "stocks_nok": 4459749.4,
+    "funds_nok": 7529374.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 335831.4,
+        "pnl_pct": 8.14
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 605720.1,
+        "pnl_pct": 8.75
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 941551.5,
+        "pnl_pct": 8.52
+      }
+    }
+  },
+  {
+    "session": "2026-06-10",
+    "run_id": "2026-06-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12447878.8,
+    "stocks_nok": 4390165.6,
+    "funds_nok": 7434012.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 266247.6,
+        "pnl_pct": 6.46
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 510358.3,
+        "pnl_pct": 7.37
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 776605.9,
+        "pnl_pct": 7.03
+      }
+    }
+  },
+  {
+    "session": "2026-06-11",
+    "run_id": "2026-06-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12627432.1,
+    "stocks_nok": 4440075.8,
+    "funds_nok": 7563655.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 316157.8,
+        "pnl_pct": 7.67
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 640001.4,
+        "pnl_pct": 9.24
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 956159.2,
+        "pnl_pct": 8.65
+      }
+    }
+  },
+  {
+    "session": "2026-06-12",
+    "run_id": "2026-06-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12669599.1,
+    "stocks_nok": 4445705.4,
+    "funds_nok": 7600192.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 321787.4,
+        "pnl_pct": 7.8
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 676538.8,
+        "pnl_pct": 9.77
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 998326.2,
+        "pnl_pct": 9.04
+      }
+    }
+  },
+  {
+    "session": "2026-06-15",
+    "run_id": "2026-06-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12868514.5,
+    "stocks_nok": 4532081.6,
+    "funds_nok": 7712732,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 408163.6,
+        "pnl_pct": 9.9
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 789078,
+        "pnl_pct": 11.4
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1197241.6,
+        "pnl_pct": 10.84
+      }
+    }
+  },
+  {
+    "session": "2026-06-16",
+    "run_id": "2026-06-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12834334.1,
+    "stocks_nok": 4553282,
+    "funds_nok": 7657351.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 429364,
+        "pnl_pct": 10.41
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 733697.2,
+        "pnl_pct": 10.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1163061.2,
+        "pnl_pct": 10.53
+      }
+    }
+  },
+  {
+    "session": "2026-06-17",
+    "run_id": "2026-06-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12676685,
+    "stocks_nok": 4479706.4,
+    "funds_nok": 7573277.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 355788.4,
+        "pnl_pct": 8.63
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 649623.7,
+        "pnl_pct": 9.38
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1005412.1,
+        "pnl_pct": 9.1
+      }
+    }
+  },
+  {
+    "session": "2026-06-18",
+    "run_id": "2026-06-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12793595.1,
+    "stocks_nok": 4517069.8,
+    "funds_nok": 7652824.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 393151.8,
+        "pnl_pct": 9.53
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 729170.4,
+        "pnl_pct": 10.53
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1122322.2,
+        "pnl_pct": 10.16
+      }
+    }
+  },
+  {
+    "session": "2026-06-22",
+    "run_id": "2026-06-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12701210.2,
+    "stocks_nok": 4444503.8,
+    "funds_nok": 7633005.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 320585.8,
+        "pnl_pct": 7.77
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 709351.5,
+        "pnl_pct": 10.25
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1029937.3,
+        "pnl_pct": 9.32
+      }
+    }
+  },
+  {
+    "session": "2026-06-23",
+    "run_id": "2026-06-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12554778.2,
+    "stocks_nok": 4401869.8,
+    "funds_nok": 7529207.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 277951.8,
+        "pnl_pct": 6.74
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 605553.5,
+        "pnl_pct": 8.75
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 883505.3,
+        "pnl_pct": 8
+      }
+    }
+  },
+  {
+    "session": "2026-06-24",
+    "run_id": "2026-06-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12532786.1,
+    "stocks_nok": 4392859.8,
+    "funds_nok": 7516225.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 268941.8,
+        "pnl_pct": 6.52
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 592571.4,
+        "pnl_pct": 8.56
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 861513.2,
+        "pnl_pct": 7.8
+      }
+    }
+  },
+  {
+    "session": "2026-06-25",
+    "run_id": "2026-06-25-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12462025.9,
+    "stocks_nok": 4301333.4,
+    "funds_nok": 7536991.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-25",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 177415.4,
+        "pnl_pct": 4.3
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 613337.6,
+        "pnl_pct": 8.86
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 790753,
+        "pnl_pct": 7.16
+      }
+    }
+  },
+  {
+    "session": "2026-06-26",
+    "run_id": "2026-06-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12415511.1,
+    "stocks_nok": 4302309.8,
+    "funds_nok": 7489500.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 178391.8,
+        "pnl_pct": 4.33
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 565846.4,
+        "pnl_pct": 8.17
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 744238.2,
+        "pnl_pct": 6.74
+      }
+    }
+  },
+  {
+    "session": "2026-06-29",
+    "run_id": "2026-06-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12572237.5,
+    "stocks_nok": 4363806,
+    "funds_nok": 7584730.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 239888,
+        "pnl_pct": 5.82
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 661076.6,
+        "pnl_pct": 9.55
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 900964.6,
+        "pnl_pct": 8.16
+      }
+    }
+  },
+  {
+    "session": "2026-06-30",
+    "run_id": "2026-06-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12656283.9,
+    "stocks_nok": 4399434,
+    "funds_nok": 7633149,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-06-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 275516,
+        "pnl_pct": 6.68
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 709495,
+        "pnl_pct": 10.25
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 985011,
+        "pnl_pct": 8.92
+      }
+    }
+  },
+  {
+    "session": "2026-07-01",
+    "run_id": "2026-07-01-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12648451.4,
+    "stocks_nok": 4426807.6,
+    "funds_nok": 7597942.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-01",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 302889.6,
+        "pnl_pct": 7.34
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 674288.9,
+        "pnl_pct": 9.74
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 977178.5,
+        "pnl_pct": 8.85
+      }
+    }
+  },
+  {
+    "session": "2026-07-02",
+    "run_id": "2026-07-02-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12670551.5,
+    "stocks_nok": 4464900.6,
+    "funds_nok": 7581950,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-02",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 340982.6,
+        "pnl_pct": 8.27
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 658296,
+        "pnl_pct": 9.51
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 999278.6,
+        "pnl_pct": 9.05
+      }
+    }
+  },
+  {
+    "session": "2026-07-06",
+    "run_id": "2026-07-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12760423.1,
+    "stocks_nok": 4503436.8,
+    "funds_nok": 7633285.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 379518.8,
+        "pnl_pct": 9.2
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 709631.4,
+        "pnl_pct": 10.25
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1089150.2,
+        "pnl_pct": 9.86
+      }
+    }
+  },
+  {
+    "session": "2026-07-07",
+    "run_id": "2026-07-07-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12723750.8,
+    "stocks_nok": 4513392.8,
+    "funds_nok": 7586657.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-07",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 389474.8,
+        "pnl_pct": 9.44
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 663003.1,
+        "pnl_pct": 9.58
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1052477.9,
+        "pnl_pct": 9.53
+      }
+    }
+  },
+  {
+    "session": "2026-07-08",
+    "run_id": "2026-07-08-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12717497.7,
+    "stocks_nok": 4520822,
+    "funds_nok": 7572974.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-08",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 396904,
+        "pnl_pct": 9.62
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 649320.8,
+        "pnl_pct": 9.38
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1046224.8,
+        "pnl_pct": 9.47
+      }
+    }
+  },
+  {
+    "session": "2026-07-09",
+    "run_id": "2026-07-09-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12766327.3,
+    "stocks_nok": 4512840.8,
+    "funds_nok": 7629785.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-09",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 388922.8,
+        "pnl_pct": 9.43
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 706131.6,
+        "pnl_pct": 10.2
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1095054.4,
+        "pnl_pct": 9.91
+      }
+    }
+  },
+  {
+    "session": "2026-07-10",
+    "run_id": "2026-07-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12824045.2,
+    "stocks_nok": 4545217.6,
+    "funds_nok": 7655126.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 421299.6,
+        "pnl_pct": 10.22
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 731472.7,
+        "pnl_pct": 10.56
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1152772.3,
+        "pnl_pct": 10.43
+      }
+    }
+  },
+  {
+    "session": "2026-07-13",
+    "run_id": "2026-07-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12729135.3,
+    "stocks_nok": 4511360.6,
+    "funds_nok": 7594073.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 387442.6,
+        "pnl_pct": 9.4
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 670419.8,
+        "pnl_pct": 9.68
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1057862.4,
+        "pnl_pct": 9.58
+      }
+    }
+  },
+  {
+    "session": "2026-07-14",
+    "run_id": "2026-07-14-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12820291,
+    "stocks_nok": 4576673.8,
+    "funds_nok": 7619916.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-14",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 452755.8,
+        "pnl_pct": 10.98
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 696262.3,
+        "pnl_pct": 10.06
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1149018.1,
+        "pnl_pct": 10.4
+      }
+    }
+  },
+  {
+    "session": "2026-07-15",
+    "run_id": "2026-07-15-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12924143.1,
+    "stocks_nok": 4664072.4,
+    "funds_nok": 7636369.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-15",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 540154.4,
+        "pnl_pct": 13.1
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 712715.8,
+        "pnl_pct": 10.29
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1252870.2,
+        "pnl_pct": 11.34
+      }
+    }
+  },
+  {
+    "session": "2026-07-16",
+    "run_id": "2026-07-16-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12843454.7,
+    "stocks_nok": 4610947,
+    "funds_nok": 7608806.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-16",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 487029,
+        "pnl_pct": 11.81
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 685152.8,
+        "pnl_pct": 9.9
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1172181.8,
+        "pnl_pct": 10.61
+      }
+    }
+  },
+  {
+    "session": "2026-07-17",
+    "run_id": "2026-07-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12725677.4,
+    "stocks_nok": 4558331.4,
+    "funds_nok": 7543645.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 434413.4,
+        "pnl_pct": 10.53
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 619991.1,
+        "pnl_pct": 8.95
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1054404.5,
+        "pnl_pct": 9.54
+      }
+    }
+  },
+  {
+    "session": "2026-07-20",
+    "run_id": "2026-07-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12710671.3,
+    "stocks_nok": 4554598.2,
+    "funds_nok": 7532372.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 430680.2,
+        "pnl_pct": 10.44
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 608718.2,
+        "pnl_pct": 8.79
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1039398.4,
+        "pnl_pct": 9.41
+      }
+    }
+  },
+  {
+    "session": "2026-07-21",
+    "run_id": "2026-07-21-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12784911.2,
+    "stocks_nok": 4569281.4,
+    "funds_nok": 7591928.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-21",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 445363.4,
+        "pnl_pct": 10.8
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 668274.9,
+        "pnl_pct": 9.65
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1113638.3,
+        "pnl_pct": 10.08
+      }
+    }
+  },
+  {
+    "session": "2026-07-22",
+    "run_id": "2026-07-22-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12777014.2,
+    "stocks_nok": 4574113.8,
+    "funds_nok": 7579199.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-22",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 450195.8,
+        "pnl_pct": 10.92
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 655545.5,
+        "pnl_pct": 9.47
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1105741.3,
+        "pnl_pct": 10.01
+      }
+    }
+  },
+  {
+    "session": "2026-07-23",
+    "run_id": "2026-07-23-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12585420.5,
+    "stocks_nok": 4464670.4,
+    "funds_nok": 7497049.2,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-23",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 340752.4,
+        "pnl_pct": 8.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 573395.2,
+        "pnl_pct": 8.28
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 914147.6,
+        "pnl_pct": 8.27
+      }
+    }
+  },
+  {
+    "session": "2026-07-24",
+    "run_id": "2026-07-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12616798.4,
+    "stocks_nok": 4495947.4,
+    "funds_nok": 7497150.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 372029.4,
+        "pnl_pct": 9.02
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 573496.1,
+        "pnl_pct": 8.28
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 945525.5,
+        "pnl_pct": 8.56
+      }
+    }
+  },
+  {
+    "session": "2026-07-27",
+    "run_id": "2026-07-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12608329.9,
+    "stocks_nok": 4484772.6,
+    "funds_nok": 7499856.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 360854.6,
+        "pnl_pct": 8.75
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 576202.4,
+        "pnl_pct": 8.32
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 937057,
+        "pnl_pct": 8.48
+      }
+    }
+  },
+  {
+    "session": "2026-07-28",
+    "run_id": "2026-07-28-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12653671.4,
+    "stocks_nok": 4520069.2,
+    "funds_nok": 7509901.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-28",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 396151.2,
+        "pnl_pct": 9.61
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 586247.3,
+        "pnl_pct": 8.47
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 982398.5,
+        "pnl_pct": 8.89
+      }
+    }
+  },
+  {
+    "session": "2026-07-29",
+    "run_id": "2026-07-29-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12491901,
+    "stocks_nok": 4452625,
+    "funds_nok": 7415575.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-29",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 328707,
+        "pnl_pct": 7.97
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 491921.1,
+        "pnl_pct": 7.1
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 820628.1,
+        "pnl_pct": 7.43
+      }
+    }
+  },
+  {
+    "session": "2026-07-30",
+    "run_id": "2026-07-30-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12625483,
+    "stocks_nok": 4486305.6,
+    "funds_nok": 7515476.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-30",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 362387.6,
+        "pnl_pct": 8.79
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 591822.5,
+        "pnl_pct": 8.55
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 954210.1,
+        "pnl_pct": 8.64
+      }
+    }
+  },
+  {
+    "session": "2026-07-31",
+    "run_id": "2026-07-31-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12782058.4,
+    "stocks_nok": 4607761.2,
+    "funds_nok": 7550596.3,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-07-31",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 483843.2,
+        "pnl_pct": 11.73
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 626942.3,
+        "pnl_pct": 9.06
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1110785.5,
+        "pnl_pct": 10.05
+      }
+    }
+  },
+  {
+    "session": "2026-08-03",
+    "run_id": "2026-08-03-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12956265.2,
+    "stocks_nok": 4699826.4,
+    "funds_nok": 7632737.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-03",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 575908.4,
+        "pnl_pct": 13.97
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 709083.9,
+        "pnl_pct": 10.24
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1284992.3,
+        "pnl_pct": 11.63
+      }
+    }
+  },
+  {
+    "session": "2026-08-04",
+    "run_id": "2026-08-04-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13130095.8,
+    "stocks_nok": 4737262.4,
+    "funds_nok": 7769132.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-04",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 613344.4,
+        "pnl_pct": 14.87
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 845478.5,
+        "pnl_pct": 12.21
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1458822.9,
+        "pnl_pct": 13.2
+      }
+    }
+  },
+  {
+    "session": "2026-08-05",
+    "run_id": "2026-08-05-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13094279.3,
+    "stocks_nok": 4729409.4,
+    "funds_nok": 7741169,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-05",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 605491.4,
+        "pnl_pct": 14.68
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 817515,
+        "pnl_pct": 11.81
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1423006.4,
+        "pnl_pct": 12.88
+      }
+    }
+  },
+  {
+    "session": "2026-08-06",
+    "run_id": "2026-08-06-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13068128.2,
+    "stocks_nok": 4717916.8,
+    "funds_nok": 7726510.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-06",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 593998.8,
+        "pnl_pct": 14.4
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 802856.5,
+        "pnl_pct": 11.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1396855.3,
+        "pnl_pct": 12.64
+      }
+    }
+  },
+  {
+    "session": "2026-08-07",
+    "run_id": "2026-08-07-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13146015.6,
+    "stocks_nok": 4744841.6,
+    "funds_nok": 7777473.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-07",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 620923.6,
+        "pnl_pct": 15.06
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 853819.1,
+        "pnl_pct": 12.33
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1474742.7,
+        "pnl_pct": 13.35
+      }
+    }
+  },
+  {
+    "session": "2026-08-10",
+    "run_id": "2026-08-10-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13126414.6,
+    "stocks_nok": 4726807.8,
+    "funds_nok": 7775905.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-10",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 602889.8,
+        "pnl_pct": 14.62
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 852251.9,
+        "pnl_pct": 12.31
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1455141.7,
+        "pnl_pct": 13.17
+      }
+    }
+  },
+  {
+    "session": "2026-08-11",
+    "run_id": "2026-08-11-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13056569.4,
+    "stocks_nok": 4671427,
+    "funds_nok": 7761441.5,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-11",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 547509,
+        "pnl_pct": 13.28
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 837787.5,
+        "pnl_pct": 12.1
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1385296.5,
+        "pnl_pct": 12.54
+      }
+    }
+  },
+  {
+    "session": "2026-08-12",
+    "run_id": "2026-08-12-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13098917.7,
+    "stocks_nok": 4691272.8,
+    "funds_nok": 7783944,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-12",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 567354.8,
+        "pnl_pct": 13.76
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 860290,
+        "pnl_pct": 12.43
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1427644.8,
+        "pnl_pct": 12.92
+      }
+    }
+  },
+  {
+    "session": "2026-08-13",
+    "run_id": "2026-08-13-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13168049.6,
+    "stocks_nok": 4706831.8,
+    "funds_nok": 7837516.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-13",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 582913.8,
+        "pnl_pct": 14.13
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 913862.9,
+        "pnl_pct": 13.2
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1496776.7,
+        "pnl_pct": 13.55
+      }
+    }
+  },
+  {
+    "session": "2026-08-14",
+    "run_id": "2026-08-14-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13149683.2,
+    "stocks_nok": 4698603.4,
+    "funds_nok": 7827378.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-14",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 574685.4,
+        "pnl_pct": 13.94
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 903724.9,
+        "pnl_pct": 13.05
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1478410.3,
+        "pnl_pct": 13.38
+      }
+    }
+  },
+  {
+    "session": "2026-08-17",
+    "run_id": "2026-08-17-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13101496,
+    "stocks_nok": 4680582.2,
+    "funds_nok": 7797212.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-17",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 556664.2,
+        "pnl_pct": 13.5
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 873558.9,
+        "pnl_pct": 12.62
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1430223.1,
+        "pnl_pct": 12.95
+      }
+    }
+  },
+  {
+    "session": "2026-08-18",
+    "run_id": "2026-08-18-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13044049,
+    "stocks_nok": 4670777.4,
+    "funds_nok": 7749570.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-18",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 546859.4,
+        "pnl_pct": 13.26
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 825916.7,
+        "pnl_pct": 11.93
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1372776.1,
+        "pnl_pct": 12.43
+      }
+    }
+  },
+  {
+    "session": "2026-08-19",
+    "run_id": "2026-08-19-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13081763.3,
+    "stocks_nok": 4681232.8,
+    "funds_nok": 7776829.6,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-19",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 557314.8,
+        "pnl_pct": 13.51
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 853175.6,
+        "pnl_pct": 12.32
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1410490.4,
+        "pnl_pct": 12.77
+      }
+    }
+  },
+  {
+    "session": "2026-08-20",
+    "run_id": "2026-08-20-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12958114.6,
+    "stocks_nok": 4612872.6,
+    "funds_nok": 7721541.1,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-20",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 488954.6,
+        "pnl_pct": 11.86
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 797887.1,
+        "pnl_pct": 11.52
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1286841.7,
+        "pnl_pct": 11.65
+      }
+    }
+  },
+  {
+    "session": "2026-08-21",
+    "run_id": "2026-08-21-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12982340.1,
+    "stocks_nok": 4610685.4,
+    "funds_nok": 7747953.8,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-21",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 486767.4,
+        "pnl_pct": 11.8
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 824299.8,
+        "pnl_pct": 11.91
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1311067.2,
+        "pnl_pct": 11.87
+      }
+    }
+  },
+  {
+    "session": "2026-08-24",
+    "run_id": "2026-08-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12974544.5,
+    "stocks_nok": 4624124.2,
+    "funds_nok": 7726719.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 500206.2,
+        "pnl_pct": 12.13
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 803065.4,
+        "pnl_pct": 11.6
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1303271.6,
+        "pnl_pct": 11.8
+      }
+    }
+  },
+  {
+    "session": "2026-08-25",
+    "run_id": "2026-08-25-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13008874.9,
+    "stocks_nok": 4633901.6,
+    "funds_nok": 7751272.4,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-25",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 509983.6,
+        "pnl_pct": 12.37
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 827618.4,
+        "pnl_pct": 11.95
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1337602,
+        "pnl_pct": 12.11
+      }
+    }
+  },
+  {
+    "session": "2026-08-26",
+    "run_id": "2026-08-26-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12984835,
+    "stocks_nok": 4610663.2,
+    "funds_nok": 7750470.9,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-26",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 486745.2,
+        "pnl_pct": 11.8
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 826816.9,
+        "pnl_pct": 11.94
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1313562.1,
+        "pnl_pct": 11.89
+      }
+    }
+  },
+  {
+    "session": "2026-08-27",
+    "run_id": "2026-08-27-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 13084200.6,
+    "stocks_nok": 4669740,
+    "funds_nok": 7790759.7,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-08-27",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 545822,
+        "pnl_pct": 13.24
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 867105.7,
+        "pnl_pct": 12.52
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 1412927.7,
+        "pnl_pct": 12.79
+      }
+    }
+  },
+  {
     "session": "2026-08-28",
     "run_id": "2026-08-28-close",
     "type": "close",
