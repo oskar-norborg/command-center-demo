@@ -88,18 +88,18 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-360",
+          "id": "trim",
           "state": "clear",
-          "distance_pct": 3.1,
+          "distance_pct": 3.9,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -3
+          "price_vs_level_pct": -3.8
         },
         {
-          "id": "inv-290",
+          "id": "inv",
           "state": "clear",
-          "distance_pct": -17,
+          "distance_pct": -16.7,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 20.4
+          "price_vs_level_pct": 20
         }
       ]
     },
@@ -121,18 +121,18 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-285",
+          "id": "trim",
           "state": "clear",
-          "distance_pct": 10.7,
+          "distance_pct": 8,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -9.7
+          "price_vs_level_pct": -7.4
         },
         {
-          "id": "inv-225",
+          "id": "inv",
           "state": "clear",
-          "distance_pct": -12.6,
+          "distance_pct": -15.3,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 14.4
+          "price_vs_level_pct": 18.1
         }
       ]
     },
@@ -154,18 +154,18 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-1100",
-          "state": "near",
-          "distance_pct": 0.6,
-          "hit_streak_sessions": 0,
-          "price_vs_level_pct": -0.6
+          "id": "trim",
+          "state": "hit",
+          "distance_pct": -9.5,
+          "hit_streak_sessions": 16,
+          "price_vs_level_pct": 10.5
         },
         {
-          "id": "inv-880",
+          "id": "inv",
           "state": "clear",
-          "distance_pct": -19.5,
+          "distance_pct": -23.2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 24.3
+          "price_vs_level_pct": 30.2
         }
       ]
     },
@@ -187,18 +187,18 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-360",
+          "id": "trim",
           "state": "clear",
-          "distance_pct": 32,
+          "distance_pct": 41.6,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -24.3
+          "price_vs_level_pct": -29.4
         },
         {
-          "id": "inv-275",
+          "id": "inv",
           "state": "hit",
-          "distance_pct": 0.9,
-          "hit_streak_sessions": 1,
-          "price_vs_level_pct": -0.9
+          "distance_pct": 9.3,
+          "hit_streak_sessions": 5,
+          "price_vs_level_pct": -8.5
         }
       ]
     },
@@ -220,18 +220,18 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-365",
+          "id": "trim",
           "state": "clear",
-          "distance_pct": 14,
+          "distance_pct": 13.4,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.3
+          "price_vs_level_pct": -11.8
         },
         {
-          "id": "inv-300",
+          "id": "inv",
           "state": "clear",
-          "distance_pct": -6.3,
+          "distance_pct": -5.4,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 6.7
+          "price_vs_level_pct": 5.7
         }
       ]
     },
@@ -253,38 +253,90 @@
       "cap_state": "clear",
       "levels": [
         {
-          "id": "trim-240",
+          "id": "trim",
           "state": "clear",
-          "distance_pct": 64.4,
+          "distance_pct": 86.3,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -39.2
+          "price_vs_level_pct": -46.3
         },
         {
-          "id": "inv-160",
+          "id": "inv",
           "state": "hit",
-          "distance_pct": 9.6,
-          "hit_streak_sessions": 4,
-          "price_vs_level_pct": -8.8
+          "distance_pct": 34.3,
+          "hit_streak_sessions": 11,
+          "price_vs_level_pct": -25.5
         }
       ]
     }
   },
-  "watchlist": {},
+  "watchlist": {
+    "HD": {
+      "levels": [
+        {
+          "id": "buy",
+          "state": "clear",
+          "distance_pct": -21,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": 26.6
+        }
+      ]
+    },
+    "PG": {
+      "levels": [
+        {
+          "id": "buy",
+          "state": "clear",
+          "distance_pct": -17.8,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": 21.6
+        }
+      ]
+    },
+    "XOM": {
+      "levels": [
+        {
+          "id": "buy",
+          "state": "near",
+          "distance_pct": -1.8,
+          "hit_streak_sessions": 0,
+          "price_vs_level_pct": 1.9
+        }
+      ]
+    }
+  },
   "alerts": [
     {
       "severity": "high",
       "kind": "hit",
+      "ticker": "COST",
+      "level_id": "trim",
+      "level_type": "trim",
+      "price": 1093.83,
+      "price_label": "confirmed close",
+      "price_date": "2026-11-19",
+      "level_price": 990,
+      "distance_pct": 10.5,
+      "title": "COST 1093.83 is 10.5% above trim 990",
+      "action": "Trim a fifth",
+      "condition": "A daily close at or above the trim level.",
+      "decision_needed": null,
+      "informational": false,
+      "conditional": true
+    },
+    {
+      "severity": "high",
+      "kind": "hit",
       "ticker": "GOOGL",
-      "level_id": "inv-275",
+      "level_id": "inv",
       "level_type": "invalidation",
       "price": 272.66,
       "price_label": "confirmed close",
       "price_date": "2026-11-19",
-      "level_price": 275,
-      "distance_pct": -0.9,
-      "title": "GOOGL 272.66 is 0.9% below invalidation 275",
+      "level_price": 298,
+      "distance_pct": -8.5,
+      "title": "GOOGL 272.66 is 8.5% below invalidation 298",
       "action": "Re-underwrite",
-      "condition": "Daily close below $275.",
+      "condition": "A daily close below the invalidation level.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
@@ -293,16 +345,16 @@
       "severity": "high",
       "kind": "hit",
       "ticker": "NVDA",
-      "level_id": "inv-160",
+      "level_id": "inv",
       "level_type": "invalidation",
       "price": 145.98,
       "price_label": "confirmed close",
       "price_date": "2026-11-19",
-      "level_price": 160,
-      "distance_pct": -8.8,
-      "title": "NVDA 145.98 is 8.8% below invalidation 160",
+      "level_price": 196,
+      "distance_pct": -25.5,
+      "title": "NVDA 145.98 is 25.5% below invalidation 196",
       "action": "Re-underwrite",
-      "condition": "Daily close below $160.",
+      "condition": "A daily close below the invalidation level.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
@@ -310,17 +362,17 @@
     {
       "severity": "medium",
       "kind": "near",
-      "ticker": "COST",
-      "level_id": "trim-1100",
-      "level_type": "trim",
-      "price": 1093.83,
+      "ticker": "XOM",
+      "level_id": "buy",
+      "level_type": "buy",
+      "price": 158.93,
       "price_label": "confirmed close",
       "price_date": "2026-11-19",
-      "level_price": 1100,
-      "distance_pct": -0.6,
-      "title": "COST 1093.83 is 0.6% below trim 1100",
-      "action": "Trim a fifth",
-      "condition": "At or above $1,100.",
+      "level_price": 156,
+      "distance_pct": 1.9,
+      "title": "XOM 158.93 is 1.9% above buy 156",
+      "action": "First position: about 2% of the book",
+      "condition": "A daily close at or below the buy level.",
       "decision_needed": null,
       "informational": false,
       "conditional": true
@@ -368,6 +420,27 @@
       "label": "confirmed close",
       "session_date": "2026-11-19",
       "change_pct": -3.3
+    },
+    "HD": {
+      "price": 336.68,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-19",
+      "change_pct": -0.28
+    },
+    "PG": {
+      "price": 167.85,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-19",
+      "change_pct": -1.43
+    },
+    "XOM": {
+      "price": 158.93,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-19",
+      "change_pct": -1.03
     }
   }
 }

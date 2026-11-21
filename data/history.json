@@ -1294,18 +1294,18 @@
     "run_id": "2026-10-29-close",
     "type": "close",
     "source": "published",
-    "status": "degraded",
-    "total_nok": 13021022.3,
-    "stocks_nok": 4626294.6,
+    "status": "ok",
+    "total_nok": 12930668.3,
+    "stocks_nok": 4535940.6,
     "funds_nok": 7771026.8,
     "cash_nok": 623700.9,
     "oldest_fund_nav_date": "2026-10-29",
-    "approximate": true,
+    "approximate": false,
     "pnl": {
       "stocks": {
         "cost_nok": 4123918,
-        "pnl_nok": 502376.6,
-        "pnl_pct": 12.18
+        "pnl_nok": 412022.6,
+        "pnl_pct": 9.99
       },
       "funds": {
         "cost_nok": 6923654,
@@ -1314,8 +1314,8 @@
       },
       "holdings": {
         "cost_nok": 11047572,
-        "pnl_nok": 1349749.4,
-        "pnl_pct": 12.22
+        "pnl_nok": 1259395.4,
+        "pnl_pct": 11.4
       }
     }
   },
@@ -1774,18 +1774,18 @@
     "run_id": "2026-11-20-close",
     "type": "close",
     "source": "published",
-    "status": "degraded",
-    "total_nok": 11859858.2,
-    "stocks_nok": 4150038.8,
+    "status": "ok",
+    "total_nok": 11761698.2,
+    "stocks_nok": 4051878.8,
     "funds_nok": 7086118.5,
     "cash_nok": 623700.9,
     "oldest_fund_nav_date": "2026-11-20",
-    "approximate": true,
+    "approximate": false,
     "pnl": {
       "stocks": {
         "cost_nok": 4123918,
-        "pnl_nok": 26120.8,
-        "pnl_pct": 0.63
+        "pnl_nok": -72039.2,
+        "pnl_pct": -1.75
       },
       "funds": {
         "cost_nok": 6923654,
@@ -1794,8 +1794,8 @@
       },
       "holdings": {
         "cost_nok": 11047572,
-        "pnl_nok": 188585.3,
-        "pnl_pct": 1.71
+        "pnl_nok": 90425.3,
+        "pnl_pct": 0.82
       }
     }
   }

@@ -4,7 +4,7 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
         "price": 342.56,
         "currency": "USD",
@@ -49,7 +49,7 @@
         {
           "severity": "medium",
           "kind": "near",
-          "title": "AAPL 352.45 is 2.1% below trim 360"
+          "title": "AAPL 352.45 is 2.9% below trim 363"
         }
       ],
       "news": []
@@ -67,13 +67,7 @@
         "change_pct": -0.25,
         "change_basis": "prev-session"
       },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "AAPL 351.91 is 2.2% below trim 360"
-        }
-      ],
+      "alerts": [],
       "news": []
     },
     {
@@ -93,7 +87,7 @@
         {
           "severity": "medium",
           "kind": "near",
-          "title": "AAPL 352.78 is 2.0% below trim 360"
+          "title": "AAPL 352.78 is 2.8% below trim 363"
         }
       ],
       "news": []
@@ -115,7 +109,7 @@
         {
           "severity": "medium",
           "kind": "near",
-          "title": "AAPL 356.27 is 1.0% below trim 360"
+          "title": "AAPL 356.27 is 1.9% below trim 363"
         }
       ],
       "news": []
@@ -137,7 +131,7 @@
         {
           "severity": "medium",
           "kind": "near",
-          "title": "AAPL 354.88 is 1.4% below trim 360"
+          "title": "AAPL 354.88 is 2.2% below trim 363"
         }
       ],
       "news": []
@@ -159,7 +153,7 @@
         {
           "severity": "medium",
           "kind": "near",
-          "title": "AAPL 355.63 is 1.2% below trim 360"
+          "title": "AAPL 355.63 is 2.0% below trim 363"
         }
       ],
       "news": []
@@ -193,13 +187,7 @@
         "change_pct": 2.43,
         "change_basis": "prev-session"
       },
-      "alerts": [
-        {
-          "severity": "medium",
-          "kind": "near",
-          "title": "AAPL 350.69 is 2.6% below trim 360"
-        }
-      ],
+      "alerts": [],
       "news": []
     }
   ],
@@ -208,7 +196,7 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
         "price": 246.82,
         "currency": "USD",
@@ -345,7 +333,13 @@
         "change_pct": 1.48,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "AMZN 270.87 is 2.6% below trim 278"
+        }
+      ],
       "news": []
     },
     {
@@ -370,7 +364,7 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
         "price": 1102.15,
         "currency": "USD",
@@ -383,7 +377,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "COST 1102.15 is 0.2% above trim 1100"
+          "title": "COST 1102.15 is 11.3% above trim 990"
         }
       ],
       "news": []
@@ -403,9 +397,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "COST 1093.83 is 0.6% below trim 1100"
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1093.83 is 10.5% above trim 990"
         }
       ],
       "news": []
@@ -425,9 +419,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "COST 1096.62 is 0.3% below trim 1100"
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1096.62 is 10.8% above trim 990"
         }
       ],
       "news": []
@@ -449,7 +443,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "COST 1110.08 is 0.9% above trim 1100"
+          "title": "COST 1110.08 is 12.1% above trim 990"
         }
       ],
       "news": []
@@ -471,7 +465,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "COST 1113.74 is 1.2% above trim 1100"
+          "title": "COST 1113.74 is 12.5% above trim 990"
         }
       ],
       "news": []
@@ -493,7 +487,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "COST 1106.21 is 0.6% above trim 1100"
+          "title": "COST 1106.21 is 11.7% above trim 990"
         }
       ],
       "news": []
@@ -513,9 +507,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "COST 1092.21 is 0.7% below trim 1100"
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1092.21 is 10.3% above trim 990"
         }
       ],
       "news": []
@@ -535,9 +529,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "COST 1087.61 is 1.1% below trim 1100"
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1087.61 is 9.9% above trim 990"
         }
       ],
       "news": []
@@ -555,7 +549,13 @@
         "change_pct": 0,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1066.14 is 7.7% above trim 990"
+        }
+      ],
       "news": []
     },
     {
@@ -571,7 +571,13 @@
         "change_pct": 1.2,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "COST 1066.18 is 7.7% above trim 990"
+        }
+      ],
       "news": []
     }
   ],
@@ -580,7 +586,7 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
         "price": 265.29,
         "currency": "USD",
@@ -593,7 +599,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "GOOGL 265.29 is 3.5% below invalidation 275"
+          "title": "GOOGL 265.29 is 11.0% below invalidation 298"
         }
       ],
       "news": []
@@ -615,7 +621,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "GOOGL 272.66 is 0.9% below invalidation 275"
+          "title": "GOOGL 272.66 is 8.5% below invalidation 298"
         }
       ],
       "news": []
@@ -635,9 +641,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "GOOGL 282.44 is 2.7% above invalidation 275"
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 282.44 is 5.2% below invalidation 298"
         }
       ],
       "news": []
@@ -657,9 +663,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "GOOGL 280.20 is 1.9% above invalidation 275"
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 280.20 is 6.0% below invalidation 298"
         }
       ],
       "news": []
@@ -677,7 +683,13 @@
         "change_pct": -4.07,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 283.72 is 4.8% below invalidation 298"
+        }
+      ],
       "news": []
     },
     {
@@ -693,7 +705,13 @@
         "change_pct": -0.98,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 295.77 is 0.7% below invalidation 298"
+        }
+      ],
       "news": []
     },
     {
@@ -709,7 +727,13 @@
         "change_pct": 1.79,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "GOOGL 298.70 is 0.2% above invalidation 298"
+        }
+      ],
       "news": []
     },
     {
@@ -725,7 +749,13 @@
         "change_pct": 2.11,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 293.45 is 1.5% below invalidation 298"
+        }
+      ],
       "news": []
     },
     {
@@ -741,7 +771,13 @@
         "change_pct": -0.27,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 287.38 is 3.6% below invalidation 298"
+        }
+      ],
       "news": []
     },
     {
@@ -757,7 +793,13 @@
         "change_pct": 1.18,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "GOOGL 288.15 is 3.3% below invalidation 298"
+        }
+      ],
       "news": []
     }
   ],
@@ -766,7 +808,7 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
         "price": 310.53,
         "currency": "USD",
@@ -775,7 +817,13 @@
         "change_pct": -3.03,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "JPM 310.53 is 2.5% above invalidation 303"
+        }
+      ],
       "news": []
     },
     {
@@ -928,25 +976,20 @@
       "run_id": "2026-11-20-close",
       "type": "close",
       "date": "2026-11-20",
-      "status": "degraded",
+      "status": "ok",
       "quote": {
-        "price": null,
+        "price": 125.53,
         "currency": "USD",
-        "label": "fetch failed",
-        "session_date": null,
-        "change_pct": null,
-        "change_basis": null,
-        "failure_reason": "single source moved -14.01% vs prev close 145.98 (limit 12%); no independent second source to confirm",
-        "last_good": {
-          "price": 145.98,
-          "as_of": "2026-11-19"
-        }
+        "label": "confirmed close",
+        "session_date": "2026-11-20",
+        "change_pct": -14.01,
+        "change_basis": "prev-session"
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "move-flagged",
-          "title": "NVDA price withheld: single source moved -14.01% vs prev close 145.98 (limit 12%); no independent second source to confirm"
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 125.53 is 36.0% below invalidation 196"
         }
       ],
       "news": []
@@ -968,7 +1011,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "NVDA 145.98 is 8.8% below invalidation 160"
+          "title": "NVDA 145.98 is 25.5% below invalidation 196"
         }
       ],
       "news": []
@@ -990,7 +1033,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "NVDA 150.96 is 5.7% below invalidation 160"
+          "title": "NVDA 150.96 is 23.0% below invalidation 196"
         }
       ],
       "news": []
@@ -1012,7 +1055,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "NVDA 155.46 is 2.8% below invalidation 160"
+          "title": "NVDA 155.46 is 20.7% below invalidation 196"
         }
       ],
       "news": []
@@ -1034,7 +1077,7 @@
         {
           "severity": "high",
           "kind": "hit",
-          "title": "NVDA 156.14 is 2.4% below invalidation 160"
+          "title": "NVDA 156.14 is 20.3% below invalidation 196"
         }
       ],
       "news": []
@@ -1054,9 +1097,9 @@
       },
       "alerts": [
         {
-          "severity": "medium",
-          "kind": "near",
-          "title": "NVDA 162.85 is 1.8% above invalidation 160"
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 162.85 is 16.9% below invalidation 196"
         }
       ],
       "news": []
@@ -1074,7 +1117,13 @@
         "change_pct": -4.34,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 166.19 is 15.2% below invalidation 196"
+        }
+      ],
       "news": []
     },
     {
@@ -1090,7 +1139,13 @@
         "change_pct": 2.87,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 173.73 is 11.4% below invalidation 196"
+        }
+      ],
       "news": []
     },
     {
@@ -1106,7 +1161,13 @@
         "change_pct": -5.47,
         "change_basis": "prev-session"
       },
-      "alerts": [],
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 168.89 is 13.8% below invalidation 196"
+        }
+      ],
       "news": []
     },
     {
@@ -1120,6 +1181,516 @@
         "label": "confirmed close",
         "session_date": "2026-11-09",
         "change_pct": -4.27,
+        "change_basis": "prev-session"
+      },
+      "alerts": [
+        {
+          "severity": "high",
+          "kind": "hit",
+          "title": "NVDA 178.67 is 8.8% below invalidation 196"
+        }
+      ],
+      "news": []
+    }
+  ],
+  "HD": [
+    {
+      "run_id": "2026-11-20-close",
+      "type": "close",
+      "date": "2026-11-20",
+      "status": "ok",
+      "quote": {
+        "price": 339.04,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-20",
+        "change_pct": 0.7,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-19-close",
+      "type": "close",
+      "date": "2026-11-19",
+      "status": "ok",
+      "quote": {
+        "price": 336.68,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-19",
+        "change_pct": -0.28,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-18-close",
+      "type": "close",
+      "date": "2026-11-18",
+      "status": "ok",
+      "quote": {
+        "price": 337.64,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-18",
+        "change_pct": -0.4,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-17-close",
+      "type": "close",
+      "date": "2026-11-17",
+      "status": "ok",
+      "quote": {
+        "price": 339.01,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-17",
+        "change_pct": -2.45,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-16-close",
+      "type": "close",
+      "date": "2026-11-16",
+      "status": "ok",
+      "quote": {
+        "price": 347.51,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-16",
+        "change_pct": -0.34,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-13-close",
+      "type": "close",
+      "date": "2026-11-13",
+      "status": "ok",
+      "quote": {
+        "price": 348.69,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-13",
+        "change_pct": 0.12,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-12-close",
+      "type": "close",
+      "date": "2026-11-12",
+      "status": "ok",
+      "quote": {
+        "price": 348.26,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-12",
+        "change_pct": -0.87,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-11-close",
+      "type": "close",
+      "date": "2026-11-11",
+      "status": "ok",
+      "quote": {
+        "price": 351.31,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-11",
+        "change_pct": 0.09,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-10-close",
+      "type": "close",
+      "date": "2026-11-10",
+      "status": "ok",
+      "quote": {
+        "price": 351,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-10",
+        "change_pct": -0.68,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-09-close",
+      "type": "close",
+      "date": "2026-11-09",
+      "status": "ok",
+      "quote": {
+        "price": 353.42,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-09",
+        "change_pct": 2.9,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    }
+  ],
+  "PG": [
+    {
+      "run_id": "2026-11-20-close",
+      "type": "close",
+      "date": "2026-11-20",
+      "status": "ok",
+      "quote": {
+        "price": 169.37,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-20",
+        "change_pct": 0.91,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-19-close",
+      "type": "close",
+      "date": "2026-11-19",
+      "status": "ok",
+      "quote": {
+        "price": 167.85,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-19",
+        "change_pct": -1.43,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-18-close",
+      "type": "close",
+      "date": "2026-11-18",
+      "status": "ok",
+      "quote": {
+        "price": 170.29,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-18",
+        "change_pct": -0.83,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-17-close",
+      "type": "close",
+      "date": "2026-11-17",
+      "status": "ok",
+      "quote": {
+        "price": 171.72,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-17",
+        "change_pct": -0.75,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-16-close",
+      "type": "close",
+      "date": "2026-11-16",
+      "status": "ok",
+      "quote": {
+        "price": 173.02,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-16",
+        "change_pct": 1.9,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-13-close",
+      "type": "close",
+      "date": "2026-11-13",
+      "status": "ok",
+      "quote": {
+        "price": 169.8,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-13",
+        "change_pct": 1.05,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-12-close",
+      "type": "close",
+      "date": "2026-11-12",
+      "status": "ok",
+      "quote": {
+        "price": 168.03,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-12",
+        "change_pct": 0.21,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-11-close",
+      "type": "close",
+      "date": "2026-11-11",
+      "status": "ok",
+      "quote": {
+        "price": 167.67,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-11",
+        "change_pct": -0.59,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-10-close",
+      "type": "close",
+      "date": "2026-11-10",
+      "status": "ok",
+      "quote": {
+        "price": 168.66,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-10",
+        "change_pct": 0.2,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-09-close",
+      "type": "close",
+      "date": "2026-11-09",
+      "status": "ok",
+      "quote": {
+        "price": 168.32,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-09",
+        "change_pct": 1.77,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    }
+  ],
+  "XOM": [
+    {
+      "run_id": "2026-11-20-close",
+      "type": "close",
+      "date": "2026-11-20",
+      "status": "ok",
+      "quote": {
+        "price": 159.99,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-20",
+        "change_pct": 0.67,
+        "change_basis": "prev-session"
+      },
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "XOM 159.99 is 2.6% above buy 156"
+        }
+      ],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-19-close",
+      "type": "close",
+      "date": "2026-11-19",
+      "status": "ok",
+      "quote": {
+        "price": 158.93,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-19",
+        "change_pct": -1.03,
+        "change_basis": "prev-session"
+      },
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "XOM 158.93 is 1.9% above buy 156"
+        }
+      ],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-18-close",
+      "type": "close",
+      "date": "2026-11-18",
+      "status": "ok",
+      "quote": {
+        "price": 160.58,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-18",
+        "change_pct": -3.97,
+        "change_basis": "prev-session"
+      },
+      "alerts": [
+        {
+          "severity": "medium",
+          "kind": "near",
+          "title": "XOM 160.58 is 2.9% above buy 156"
+        }
+      ],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-17-close",
+      "type": "close",
+      "date": "2026-11-17",
+      "status": "ok",
+      "quote": {
+        "price": 167.21,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-17",
+        "change_pct": 0.2,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-16-close",
+      "type": "close",
+      "date": "2026-11-16",
+      "status": "ok",
+      "quote": {
+        "price": 166.87,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-16",
+        "change_pct": -2.18,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-13-close",
+      "type": "close",
+      "date": "2026-11-13",
+      "status": "ok",
+      "quote": {
+        "price": 170.59,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-13",
+        "change_pct": 0.48,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-12-close",
+      "type": "close",
+      "date": "2026-11-12",
+      "status": "ok",
+      "quote": {
+        "price": 169.78,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-12",
+        "change_pct": 1.84,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-11-close",
+      "type": "close",
+      "date": "2026-11-11",
+      "status": "ok",
+      "quote": {
+        "price": 166.71,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-11",
+        "change_pct": 1.36,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-10-close",
+      "type": "close",
+      "date": "2026-11-10",
+      "status": "ok",
+      "quote": {
+        "price": 164.47,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-10",
+        "change_pct": -0.16,
+        "change_basis": "prev-session"
+      },
+      "alerts": [],
+      "news": []
+    },
+    {
+      "run_id": "2026-11-09-close",
+      "type": "close",
+      "date": "2026-11-09",
+      "status": "ok",
+      "quote": {
+        "price": 164.73,
+        "currency": "USD",
+        "label": "confirmed close",
+        "session_date": "2026-11-09",
+        "change_pct": -0.69,
         "change_basis": "prev-session"
       },
       "alerts": [],

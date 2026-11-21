@@ -7,7 +7,7 @@ the price levels that would make me act, and what changed since the last market 
 companies and funds, and every price is a real daily close. The position sizes, average costs, cash, trades and
 levels are made up. The real one runs on my own portfolio and stays private.
 
-**[Open the live demo](https://oskar-norborg.github.io/command-center-demo/)**
+**[Open the live demo](https://oskar-norborg.github.io/command-center-demo/)** · last published with the closes of 20 Nov 2026
 
 ![The command view](screenshots/command.jpg)
 
@@ -26,9 +26,10 @@ levels are made up. The real one runs on my own portfolio and stays private.
 ## What the demo shows
 
 - A model book of about 12.5 million USD: six companies (AAPL, NVDA, AMZN, GOOGL, JPM, COST), four funds (VOO, QQQ,
-  SCHD, BND) and cash.
+  SCHD, BND) and cash, plus a watchlist of three candidates (HD, XOM, PG) with buy levels.
 - The last sixty market closes, at real prices. Which levels are hit or near, and which positions are over their
-  cap, is worked out from those prices by the same rules the private version uses.
+  cap, is worked out from those prices by the same rules the private version uses. The levels themselves are model
+  choices, re-set at the start of each quarter from that day's close.
 - Charts drawn from the same closes: the book over time against its largest fund, the distance from each price to
   its levels, and each position's price against its levels.
 
@@ -40,7 +41,8 @@ Nothing in the demo is advice, and a model book's results say nothing about mine
 
 After each US market close a scheduled job in the private repository fetches the day's closing prices, rebuilds
 this demo, checks it, and publishes the result here. The date at the top of the page is the date of the prices: if
-the job has not run, the page shows an older date and says so. The screenshots above are from one day and do not
+the job has not run, the page shows an older date and says so, and the job reports a failure once the demo is two
+sessions behind. The screenshots above are from one day and do not
 update.
 
 Prices are daily closes from Yahoo Finance. Fund values use the market close, and dividends are not counted. Earnings

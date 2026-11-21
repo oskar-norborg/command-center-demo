@@ -98,9 +98,13 @@
     ],
     "now": {
       "date": "2026-11-20",
-      "price": null,
-      "label": "fetch failed",
-      "reason": "fetch failed"
+      "price": 125.53,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-20",
+      "basis": null,
+      "change_pct": -33.4,
+      "approx": false
     }
   },
   "2026-03-17-GOOGL-trim": {

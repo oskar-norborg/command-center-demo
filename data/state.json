@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T22:05:17.911Z",
+  "generated_at": "2026-11-21T22:20:30.465Z",
   "state_commit": "demo",
   "portfolio": {
     "schema_version": 1,
@@ -117,7 +117,7 @@
         }
       },
       "near_level_pct": 3,
-      "default_move_threshold_pct": 12,
+      "default_move_threshold_pct": 20,
       "fund_nav_stale_days": 14,
       "state_quiet_warn_days": 30,
       "account_rules": "Stocks are held in the brokerage account. The IRA holds funds only.\n",
@@ -263,19 +263,19 @@
       "gav_as_of": "2025-12-01",
       "levels": [
         {
-          "id": "trim-360",
+          "id": "trim",
           "type": "trim",
-          "price": 360,
+          "price": 363,
           "action": "Trim a fifth",
-          "condition": "At or above $360, and only if the position is over its cap.",
+          "condition": "A daily close at or above the trim level, and only if the position is over its cap.",
           "status": "active"
         },
         {
-          "id": "inv-290",
+          "id": "inv",
           "type": "invalidation",
-          "price": 290,
+          "price": 291,
           "action": "Re-underwrite",
-          "condition": "Daily close below $290.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -290,7 +290,7 @@
       "role": "core",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 9,
         "rule": "No new money above 9% of the book."
@@ -305,7 +305,7 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: a very large consumer hardware and services business, held as a core position for its cash generation.</p>\n<p><strong>What has to go right:</strong> Services keep growing as a share of sales and the installed base keeps upgrading.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 290 (level <code>inv-290</code>).</li>\n<li>Two reporting periods in a row of falling services revenue.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>Two reporting periods in a row of falling services revenue.</li>\n</ul>\n",
         "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     },
@@ -317,19 +317,19 @@
       "gav_as_of": "2025-12-01",
       "levels": [
         {
-          "id": "trim-285",
+          "id": "trim",
           "type": "trim",
-          "price": 285,
+          "price": 278,
           "action": "Trim a fifth",
-          "condition": "At or above $285.",
+          "condition": "A daily close at or above the trim level.",
           "status": "active"
         },
         {
-          "id": "inv-225",
+          "id": "inv",
           "type": "invalidation",
-          "price": 225,
+          "price": 218,
           "action": "Re-underwrite",
-          "condition": "Daily close below $225.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -344,7 +344,7 @@
       "role": "core",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 8,
         "rule": "No new money above 8% of the book."
@@ -359,7 +359,7 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: online retail and a cloud business in one company, held for the cloud unit's growth and the retail unit's margin recovery.</p>\n<p><strong>What has to go right:</strong> Cloud growth holds up and retail margins keep widening.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 225 (level <code>inv-225</code>).</li>\n<li>Cloud growth slowing for two reporting periods in a row.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>Cloud growth slowing for two reporting periods in a row.</li>\n</ul>\n",
         "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     },
@@ -371,19 +371,19 @@
       "gav_as_of": "2025-12-01",
       "levels": [
         {
-          "id": "trim-1100",
+          "id": "trim",
           "type": "trim",
-          "price": 1100,
+          "price": 990,
           "action": "Trim a fifth",
-          "condition": "At or above $1,100.",
+          "condition": "A daily close at or above the trim level.",
           "status": "active"
         },
         {
-          "id": "inv-880",
+          "id": "inv",
           "type": "invalidation",
-          "price": 880,
+          "price": 840,
           "action": "Re-underwrite",
-          "condition": "Daily close below $880.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -398,7 +398,7 @@
       "role": "core",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 7,
         "rule": "No new money above 7% of the book."
@@ -413,7 +413,7 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: a membership warehouse retailer, held as the book's defensive consumer name.</p>\n<p><strong>What has to go right:</strong> Membership renewal rates stay high and new warehouses keep opening.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 880 (level <code>inv-880</code>).</li>\n<li>Membership renewal rates falling.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>Membership renewal rates falling.</li>\n</ul>\n",
         "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     },
@@ -425,19 +425,19 @@
       "gav_as_of": "2025-12-01",
       "levels": [
         {
-          "id": "trim-360",
+          "id": "trim",
           "type": "trim",
-          "price": 360,
+          "price": 386,
           "action": "Trim a quarter",
-          "condition": "At or above $360.",
+          "condition": "A daily close at or above the trim level.",
           "status": "active"
         },
         {
-          "id": "inv-275",
+          "id": "inv",
           "type": "invalidation",
-          "price": 275,
+          "price": 298,
           "action": "Re-underwrite",
-          "condition": "Daily close below $275.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -452,7 +452,7 @@
       "role": "core-active",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 7,
         "rule": "No new money above 7% of the book."
@@ -467,7 +467,7 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: search advertising and a cloud business. Trimmed once on the way up; the rest is held against a written invalidation level.</p>\n<p><strong>What has to go right:</strong> Search advertising stays intact as AI answers spread, and the cloud unit keeps growing.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 275 (level <code>inv-275</code>).</li>\n<li>Evidence that search advertising revenue is falling, not just growing more slowly.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>Evidence that search advertising revenue is falling, not just growing more slowly.</li>\n</ul>\n",
         "notes": "<h3>2025-12-01</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     },
@@ -479,19 +479,19 @@
       "gav_as_of": "2026-01-20",
       "levels": [
         {
-          "id": "trim-365",
+          "id": "trim",
           "type": "trim",
-          "price": 365,
+          "price": 363,
           "action": "Trim a fifth",
-          "condition": "At or above $365.",
+          "condition": "A daily close at or above the trim level.",
           "status": "active"
         },
         {
-          "id": "inv-300",
+          "id": "inv",
           "type": "invalidation",
-          "price": 300,
+          "price": 303,
           "action": "Re-underwrite",
-          "condition": "Daily close below $300.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -506,7 +506,7 @@
       "role": "core",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 8,
         "rule": "No new money above 8% of the book."
@@ -521,7 +521,7 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: the largest US bank, the book's only financial, bought as a counterweight to the technology names.</p>\n<p><strong>What has to go right:</strong> Credit losses stay ordinary and net interest income holds.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 300 (level <code>inv-300</code>).</li>\n<li>Credit loss provisions rising sharply for two reporting periods in a row.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>Credit loss provisions rising sharply for two reporting periods in a row.</li>\n</ul>\n",
         "notes": "<h3>2026-01-20</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     },
@@ -533,19 +533,19 @@
       "gav_as_of": "2026-02-10",
       "levels": [
         {
-          "id": "trim-240",
+          "id": "trim",
           "type": "trim",
-          "price": 240,
+          "price": 272,
           "action": "Trim a quarter",
-          "condition": "At or above $240.",
+          "condition": "A daily close at or above the trim level.",
           "status": "active"
         },
         {
-          "id": "inv-160",
+          "id": "inv",
           "type": "invalidation",
-          "price": 160,
+          "price": 196,
           "action": "Re-underwrite",
-          "condition": "Daily close below $160.",
+          "condition": "A daily close below the invalidation level.",
           "status": "active"
         }
       ],
@@ -560,7 +560,7 @@
       "role": "core-active",
       "tax_note": "A sale in the brokerage account is a taxable gain; state the tax cost in any draft order.",
       "news_priority": "normal",
-      "move_threshold_pct": 12,
+      "move_threshold_pct": 20,
       "caps": {
         "max_pct_of_book": 8,
         "rule": "No new money above 8% of the book."
@@ -575,12 +575,159 @@
       "reports": [],
       "sections": {
         "thesis": "<p><strong>Why I own it:</strong> A model holding: the largest supplier of accelerator chips for data centres. Demand comes from a small number of very large buyers, which is both the case for it and the risk.</p>\n<p><strong>What has to go right:</strong> Data-centre orders stay ahead of supply, and the large buyers keep their spending plans.</p>\n",
-        "what_would_break_it": "<ul>\n<li>A daily close below 160 (level <code>inv-160</code>).</li>\n<li>A large buyer cutting its capital spending plan.</li>\n</ul>\n",
+        "what_would_break_it": "<ul>\n<li>A daily close below the invalidation level (<code>inv</code>).</li>\n<li>A large buyer cutting its capital spending plan.</li>\n</ul>\n",
         "notes": "<h3>2026-02-10</h3>\n<p>Model portfolio note: the position size and average cost are made up for the demo. The price history is real.</p>\n"
       }
     }
   },
-  "watchlist": {},
+  "watchlist": {
+    "HD": {
+      "schema_version": 1,
+      "ticker": "HD",
+      "name": "Home Depot",
+      "aliases": [
+        "home depot",
+        "hd"
+      ],
+      "exchange": "NYSE",
+      "currency": "USD",
+      "role": "tactical",
+      "tax_note": "A purchase is not a tax event.",
+      "news_priority": "normal",
+      "move_threshold_pct": 20,
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "target_account": "AF",
+      "priority": 1,
+      "bench": false,
+      "catalyst_required": false,
+      "constraints": "Model portfolio: a first position of about 2% of the book.",
+      "suggested_size": {
+        "pct_of_book": 2,
+        "nok": 250000,
+        "approximate": true
+      },
+      "levels": [
+        {
+          "id": "buy",
+          "type": "buy",
+          "price": 266,
+          "action": "First position: about 2% of the book",
+          "condition": "A daily close at or below the buy level.",
+          "status": "active"
+        }
+      ],
+      "sections": {
+        "why_watching": "<p>A model watchlist name. The largest US home-improvement retailer. Housing turnover is low, so sales have been flat; the model waits for a lower price rather than a recovery story.</p>\n",
+        "what_would_make_me_buy": "<p>A daily close at or below the buy level.</p>\n",
+        "notes": "<h3>2026-11-21</h3>\n<p>Model portfolio note: added to the demo's watchlist. The buy level is set by each build; the price history is real.</p>\n"
+      }
+    },
+    "PG": {
+      "schema_version": 1,
+      "ticker": "PG",
+      "name": "Procter & Gamble",
+      "aliases": [
+        "procter & gamble",
+        "procter",
+        "pg"
+      ],
+      "exchange": "NYSE",
+      "currency": "USD",
+      "role": "tactical",
+      "tax_note": "A purchase is not a tax event.",
+      "news_priority": "normal",
+      "move_threshold_pct": 20,
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "target_account": "AF",
+      "priority": 3,
+      "bench": false,
+      "catalyst_required": false,
+      "constraints": "Model portfolio: a first position of about 2% of the book.",
+      "suggested_size": {
+        "pct_of_book": 2,
+        "nok": 250000,
+        "approximate": true
+      },
+      "levels": [
+        {
+          "id": "buy",
+          "type": "buy",
+          "price": 138,
+          "action": "First position: about 2% of the book",
+          "condition": "A daily close at or below the buy level, and only if COST is under its cap.",
+          "status": "active"
+        }
+      ],
+      "sections": {
+        "why_watching": "<p>A model watchlist name. Household staples with steady demand. It would add a second defensive name beside COST if the price comes in.</p>\n",
+        "what_would_make_me_buy": "<p>A daily close at or below the buy level, and only if COST is under its cap.</p>\n",
+        "notes": "<h3>2026-11-21</h3>\n<p>Model portfolio note: added to the demo's watchlist. The buy level is set by each build; the price history is real.</p>\n"
+      }
+    },
+    "XOM": {
+      "schema_version": 1,
+      "ticker": "XOM",
+      "name": "Exxon Mobil",
+      "aliases": [
+        "exxon mobil",
+        "exxon",
+        "xom"
+      ],
+      "exchange": "NYSE",
+      "currency": "USD",
+      "role": "tactical",
+      "tax_note": "A purchase is not a tax event.",
+      "news_priority": "normal",
+      "move_threshold_pct": 20,
+      "earnings": {
+        "next": null,
+        "source": null,
+        "verified_on": null,
+        "rule": "The scan takes the next earnings date from its calendar feed and reminds when none is known."
+      },
+      "metrics": [],
+      "reports": [],
+      "target_account": "AF",
+      "priority": 2,
+      "bench": false,
+      "catalyst_required": false,
+      "constraints": "Model portfolio: a first position of about 2% of the book.",
+      "suggested_size": {
+        "pct_of_book": 2,
+        "nok": 250000,
+        "approximate": true
+      },
+      "levels": [
+        {
+          "id": "buy",
+          "type": "buy",
+          "price": 156,
+          "action": "First position: about 2% of the book",
+          "condition": "A daily close at or below the buy level.",
+          "status": "active"
+        }
+      ],
+      "sections": {
+        "why_watching": "<p>A model watchlist name. The book holds no energy company. A large integrated oil company would add one, bought only on weakness.</p>\n",
+        "what_would_make_me_buy": "<p>A daily close at or below the buy level.</p>\n",
+        "notes": "<h3>2026-11-21</h3>\n<p>Model portfolio note: added to the demo's watchlist. The buy level is set by each build; the price history is real.</p>\n"
+      }
+    }
+  },
   "journal": {
     "2025-12-01-AAPL-opening": {
       "schema_version": 1,
