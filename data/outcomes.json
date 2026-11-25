@@ -39,13 +39,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-23",
-      "price": 316.66,
+      "date": "2026-11-24",
+      "price": 317.1,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-23",
+      "session_date": "2026-11-24",
       "basis": null,
-      "change_pct": 4.6,
+      "change_pct": 4.8,
       "approx": false
     }
   },
@@ -84,13 +84,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-23",
-      "price": 255.39,
+      "date": "2026-11-24",
+      "price": 252.29,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-23",
+      "session_date": "2026-11-24",
       "basis": null,
-      "change_pct": 21.4,
+      "change_pct": 20,
       "approx": false
     }
   },
@@ -129,10 +129,14 @@
       }
     ],
     "now": {
-      "date": "2026-11-23",
-      "price": null,
-      "label": "fetch failed",
-      "reason": "fetch failed"
+      "date": "2026-11-24",
+      "price": 155.38,
+      "currency": "USD",
+      "label": "confirmed close",
+      "session_date": "2026-11-24",
+      "basis": null,
+      "change_pct": -17.6,
+      "approx": false
     }
   },
   "2026-03-17-GOOGL-trim": {
@@ -170,13 +174,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-23",
-      "price": 282.1,
+      "date": "2026-11-24",
+      "price": 279.05,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-23",
+      "session_date": "2026-11-24",
       "basis": null,
-      "change_pct": -9.3,
+      "change_pct": -10.2,
       "approx": false
     }
   }

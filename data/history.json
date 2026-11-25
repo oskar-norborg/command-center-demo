@@ -7408,5 +7408,35 @@
         "pnl_pct": 4.03
       }
     }
+  },
+  {
+    "session": "2026-11-24",
+    "run_id": "2026-11-24-close",
+    "type": "close",
+    "source": "published",
+    "status": "ok",
+    "total_nok": 12221042.1,
+    "stocks_nok": 4278446.2,
+    "funds_nok": 7318895,
+    "cash_nok": 623700.9,
+    "oldest_fund_nav_date": "2026-11-24",
+    "approximate": false,
+    "pnl": {
+      "stocks": {
+        "cost_nok": 4123918,
+        "pnl_nok": 154528.2,
+        "pnl_pct": 3.75
+      },
+      "funds": {
+        "cost_nok": 6923654,
+        "pnl_nok": 395241,
+        "pnl_pct": 5.71
+      },
+      "holdings": {
+        "cost_nok": 11047572,
+        "pnl_nok": 549769.2,
+        "pnl_pct": 4.98
+      }
+    }
   }
 ]
