@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T10:32:18.848Z",
+  "generated_at": "2026-11-26T03:42:58.539Z",
   "state_commit": "demo",
   "portfolio": {
     "schema_version": 1,
@@ -153,36 +153,36 @@
   },
   "marks": {
     "schema_version": 1,
-    "confirmed_current_on": "2026-11-24",
+    "confirmed_current_on": "2026-11-25",
     "cash": {
       "ASK": {
         "nok": 152400.5,
-        "as_of": "2026-11-24"
+        "as_of": "2026-11-25"
       },
       "AF": {
         "nok": 471300.4,
-        "as_of": "2026-11-24"
+        "as_of": "2026-11-25"
       }
     },
     "navs": {
       "voo": {
-        "nav": 660.71,
-        "as_of": "2026-11-24",
+        "nav": 658.87,
+        "as_of": "2026-11-25",
         "status": "manual"
       },
       "qqq": {
-        "nav": 638.1,
-        "as_of": "2026-11-24",
+        "nav": 633.93,
+        "as_of": "2026-11-25",
         "status": "manual"
       },
       "schd": {
-        "nav": 34.89,
-        "as_of": "2026-11-24",
+        "nav": 35.29,
+        "as_of": "2026-11-25",
         "status": "manual"
       },
       "bnd": {
-        "nav": 71.36,
-        "as_of": "2026-11-24",
+        "nav": 71.6,
+        "as_of": "2026-11-25",
         "status": "manual"
       }
     }

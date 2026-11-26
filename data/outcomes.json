@@ -39,13 +39,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-24",
-      "price": 317.1,
+      "date": "2026-11-25",
+      "price": 316.74,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-24",
+      "session_date": "2026-11-25",
       "basis": null,
-      "change_pct": 4.8,
+      "change_pct": 4.6,
       "approx": false
     }
   },
@@ -84,13 +84,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-24",
-      "price": 252.29,
+      "date": "2026-11-25",
+      "price": 244.43,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-24",
+      "session_date": "2026-11-25",
       "basis": null,
-      "change_pct": 20,
+      "change_pct": 16.2,
       "approx": false
     }
   },
@@ -129,13 +129,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-24",
-      "price": 155.38,
+      "date": "2026-11-25",
+      "price": 149.3,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-24",
+      "session_date": "2026-11-25",
       "basis": null,
-      "change_pct": -17.6,
+      "change_pct": -20.8,
       "approx": false
     }
   },
@@ -174,13 +174,13 @@
       }
     ],
     "now": {
-      "date": "2026-11-24",
-      "price": 279.05,
+      "date": "2026-11-25",
+      "price": 273.1,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-24",
+      "session_date": "2026-11-25",
       "basis": null,
-      "change_pct": -10.2,
+      "change_pct": -12.2,
       "approx": false
     }
   }
