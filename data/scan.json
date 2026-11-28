@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "run": {
-    "id": "2026-11-25-close",
+    "id": "2026-11-27-close",
     "type": "close",
-    "started_utc": "2026-11-25T21:41:51Z",
-    "finished_utc": "2026-11-25T21:41:55Z",
+    "started_utc": "2026-11-27T21:41:54Z",
+    "finished_utc": "2026-11-27T21:41:58Z",
     "status": "ok",
     "status_reasons": [],
     "state_commit": "demo",
     "sessions": {
       "NYSE": {
-        "date": "2026-11-25",
+        "date": "2026-11-27",
         "state": "open",
-        "close_utc": "2026-11-25T21:00:00Z"
+        "close_utc": "2026-11-27T18:00:00Z"
       },
       "OSE": {
-        "date": "2026-11-25",
+        "date": "2026-11-27",
         "state": "open",
-        "close_utc": "2026-11-25T15:20:00Z"
+        "close_utc": "2026-11-27T15:20:00Z"
       }
     },
     "llm": {
@@ -29,12 +29,12 @@
   "fx": {},
   "quotes": {
     "AAPL": {
-      "price": 355.58,
+      "price": 358.54,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 354.07,
-      "change_pct": 0.43,
+      "session_date": "2026-11-27",
+      "prev_close": 355.58,
+      "change_pct": 0.83,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -44,20 +44,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 355.58,
+          "price": 358.54,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "AMZN": {
-      "price": 244.43,
+      "price": 254.12,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 252.29,
-      "change_pct": -3.12,
+      "session_date": "2026-11-27",
+      "prev_close": 244.43,
+      "change_pct": 3.96,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -67,20 +67,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 244.43,
+          "price": 254.12,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "COST": {
-      "price": 1086.81,
+      "price": 1097.81,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 1091.71,
-      "change_pct": -0.45,
+      "session_date": "2026-11-27",
+      "prev_close": 1086.81,
+      "change_pct": 1.01,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -90,20 +90,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 1086.81,
+          "price": 1097.81,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "GOOGL": {
-      "price": 273.1,
+      "price": 274.96,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 279.05,
-      "change_pct": -2.13,
+      "session_date": "2026-11-27",
+      "prev_close": 273.1,
+      "change_pct": 0.68,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -113,20 +113,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 273.1,
+          "price": 274.96,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "JPM": {
-      "price": 316.74,
+      "price": 322.96,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 317.1,
-      "change_pct": -0.11,
+      "session_date": "2026-11-27",
+      "prev_close": 316.74,
+      "change_pct": 1.96,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -136,20 +136,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 316.74,
+          "price": 322.96,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "NVDA": {
-      "price": 149.3,
+      "price": 150.49,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 155.38,
-      "change_pct": -3.91,
+      "session_date": "2026-11-27",
+      "prev_close": 149.3,
+      "change_pct": 0.8,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -159,20 +159,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 149.3,
+          "price": 150.49,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "HD": {
-      "price": 361.26,
+      "price": 362.15,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 353.69,
-      "change_pct": 2.14,
+      "session_date": "2026-11-27",
+      "prev_close": 361.26,
+      "change_pct": 0.25,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -182,20 +182,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 361.26,
+          "price": 362.15,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "PG": {
-      "price": 173.23,
+      "price": 172.86,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 172.47,
-      "change_pct": 0.44,
+      "session_date": "2026-11-27",
+      "prev_close": 173.23,
+      "change_pct": -0.21,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -205,20 +205,20 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 173.23,
+          "price": 172.86,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     },
     "XOM": {
-      "price": 158.08,
+      "price": 160.18,
       "currency": "USD",
       "label": "confirmed close",
-      "session_date": "2026-11-25",
-      "prev_close": 158.23,
-      "change_pct": -0.09,
+      "session_date": "2026-11-27",
+      "prev_close": 158.08,
+      "change_pct": 1.33,
       "change_basis": "prev-session",
       "sources": [
         {
@@ -228,62 +228,62 @@
         },
         {
           "name": "yahoo-chart",
-          "price": 158.08,
+          "price": 160.18,
           "ok": true,
-          "timestamp": "2026-11-25T21:04:00Z"
+          "timestamp": "2026-11-27T18:04:00Z"
         }
       ],
       "flags": []
     }
   },
   "book": {
-    "total_nok": 12152005,
-    "stocks_nok": 4213587,
-    "funds_nok": 7314717.1,
+    "total_nok": 12322589,
+    "stocks_nok": 4278676.8,
+    "funds_nok": 7420211.3,
     "cash_nok": 623700.9,
-    "oldest_fund_nav_date": "2026-11-25",
+    "oldest_fund_nav_date": "2026-11-27",
     "approximate": false,
-    "day_change_nok": -64859.2,
-    "day_change_pct": -1.32,
+    "day_change_nok": 65089.8,
+    "day_change_pct": 1.35,
     "day_change_scope": "stocks-only",
     "day_change_reason": null,
     "day_change_excluded": [],
     "day_change_approximate": false,
     "unconfirmed_prices": [],
     "allocation": {
-      "funds": 60.19,
-      "stocks": 34.67,
-      "cash": 5.13
+      "funds": 60.22,
+      "stocks": 34.72,
+      "cash": 5.06
     },
     "by_account": {
-      "ASK": 3853825.5,
-      "AF": 8298179.5
+      "ASK": 3884557.5,
+      "AF": 8438031.5
     },
-    "tech_pct": 29.94,
+    "tech_pct": 29.98,
     "tech_cap_pct": 45,
     "pnl": {
       "stocks": {
         "cost_nok": 4123918,
-        "pnl_nok": 89669,
-        "pnl_pct": 2.17
+        "pnl_nok": 154758.8,
+        "pnl_pct": 3.75
       },
       "funds": {
         "cost_nok": 6923654,
-        "pnl_nok": 391063.1,
-        "pnl_pct": 5.65
+        "pnl_nok": 496557.3,
+        "pnl_pct": 7.17
       },
       "holdings": {
         "cost_nok": 11047572,
-        "pnl_nok": 480732.1,
-        "pnl_pct": 4.35
+        "pnl_nok": 651316.1,
+        "pnl_pct": 5.9
       }
     }
   },
   "book_inputs": {
-    "today": "2026-11-25",
+    "today": "2026-11-27",
     "sessions": {
-      "NYSE": "2026-11-25",
-      "OSE": "2026-11-25"
+      "NYSE": "2026-11-27",
+      "OSE": "2026-11-27"
     },
     "previous_caps": {
       "AAPL": "clear",
@@ -294,52 +294,52 @@
       "NVDA": "clear"
     },
     "previous_prices": {
-      "AAPL": 354.07,
-      "AMZN": 252.29,
-      "COST": 1091.71,
-      "GOOGL": 279.05,
-      "JPM": 317.1,
-      "NVDA": 155.38,
-      "HD": 353.69,
-      "PG": 172.47,
-      "XOM": 158.23
+      "AAPL": 355.58,
+      "AMZN": 244.43,
+      "COST": 1086.81,
+      "GOOGL": 273.1,
+      "JPM": 316.74,
+      "NVDA": 149.3,
+      "HD": 361.26,
+      "PG": 173.23,
+      "XOM": 158.08
     },
     "last_good": {
       "AAPL": {
-        "price": 354.07,
-        "as_of": "2026-11-24"
+        "price": 355.58,
+        "as_of": "2026-11-25"
       },
       "AMZN": {
-        "price": 252.29,
-        "as_of": "2026-11-24"
+        "price": 244.43,
+        "as_of": "2026-11-25"
       },
       "COST": {
-        "price": 1091.71,
-        "as_of": "2026-11-24"
+        "price": 1086.81,
+        "as_of": "2026-11-25"
       },
       "GOOGL": {
-        "price": 279.05,
-        "as_of": "2026-11-24"
+        "price": 273.1,
+        "as_of": "2026-11-25"
       },
       "JPM": {
-        "price": 317.1,
-        "as_of": "2026-11-24"
+        "price": 316.74,
+        "as_of": "2026-11-25"
       },
       "NVDA": {
-        "price": 155.38,
-        "as_of": "2026-11-24"
+        "price": 149.3,
+        "as_of": "2026-11-25"
       },
       "HD": {
-        "price": 353.69,
-        "as_of": "2026-11-24"
+        "price": 361.26,
+        "as_of": "2026-11-25"
       },
       "PG": {
-        "price": 172.47,
-        "as_of": "2026-11-24"
+        "price": 173.23,
+        "as_of": "2026-11-25"
       },
       "XOM": {
-        "price": 158.23,
-        "as_of": "2026-11-24"
+        "price": 158.08,
+        "as_of": "2026-11-25"
       }
     },
     "holdings": {
@@ -371,28 +371,28 @@
     "cash": {
       "ASK": {
         "nok": 152400.5,
-        "as_of": "2026-11-25"
+        "as_of": "2026-11-27"
       },
       "AF": {
         "nok": 471300.4,
-        "as_of": "2026-11-25"
+        "as_of": "2026-11-27"
       }
     }
   },
   "positions": {
     "AAPL": {
-      "value_nok": 881838.4,
+      "value_nok": 889179.2,
       "cost_nok": 702088,
-      "pnl_nok": 179750.4,
-      "pnl_pct": 25.6,
-      "day_change_nok": 3744.8,
-      "pct_of_book": 7.26,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": 187091.2,
+      "pnl_pct": 26.65,
+      "day_change_nok": 7340.8,
+      "pct_of_book": 7.22,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 355.58,
-        "as_of": "2026-11-25"
+        "price": 358.54,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 9,
       "cap_state": "clear",
@@ -400,32 +400,32 @@
         {
           "id": "trim",
           "state": "near",
-          "distance_pct": 2.1,
+          "distance_pct": 1.2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -2
+          "price_vs_level_pct": -1.2
         },
         {
           "id": "inv",
           "state": "clear",
-          "distance_pct": -18.2,
+          "distance_pct": -18.8,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 22.2
+          "price_vs_level_pct": 23.2
         }
       ]
     },
     "AMZN": {
-      "value_nok": 708847,
+      "value_nok": 736948,
       "cost_nok": 678310,
-      "pnl_nok": 30537,
-      "pnl_pct": 4.5,
-      "day_change_nok": -22794,
-      "pct_of_book": 5.83,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": 58638,
+      "pnl_pct": 8.64,
+      "day_change_nok": 28101,
+      "pct_of_book": 5.98,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 244.43,
-        "as_of": "2026-11-25"
+        "price": 254.12,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 8,
       "cap_state": "clear",
@@ -433,32 +433,32 @@
         {
           "id": "trim",
           "state": "clear",
-          "distance_pct": 13.7,
+          "distance_pct": 9.4,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.1
+          "price_vs_level_pct": -8.6
         },
         {
           "id": "inv",
           "state": "clear",
-          "distance_pct": -10.8,
+          "distance_pct": -14.2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 12.1
+          "price_vs_level_pct": 16.6
         }
       ]
     },
     "COST": {
-      "value_nok": 608613.6,
+      "value_nok": 614773.6,
       "cost_nok": 510720,
-      "pnl_nok": 97893.6,
-      "pnl_pct": 19.17,
-      "day_change_nok": -2744,
-      "pct_of_book": 5.01,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": 104053.6,
+      "pnl_pct": 20.37,
+      "day_change_nok": 6160,
+      "pct_of_book": 4.99,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 1086.81,
-        "as_of": "2026-11-25"
+        "price": 1097.81,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 7,
       "cap_state": "clear",
@@ -466,32 +466,32 @@
         {
           "id": "trim",
           "state": "hit",
-          "distance_pct": -8.9,
-          "hit_streak_sessions": 20,
-          "price_vs_level_pct": 9.8
+          "distance_pct": -9.8,
+          "hit_streak_sessions": 21,
+          "price_vs_level_pct": 10.9
         },
         {
           "id": "inv",
           "state": "clear",
-          "distance_pct": -22.7,
+          "distance_pct": -23.5,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 29.4
+          "price_vs_level_pct": 30.7
         }
       ]
     },
     "GOOGL": {
-      "value_nok": 600820,
+      "value_nok": 604912,
       "cost_nok": 692780,
-      "pnl_nok": -91960,
-      "pnl_pct": -13.27,
-      "day_change_nok": -13090,
-      "pct_of_book": 4.94,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": -87868,
+      "pnl_pct": -12.68,
+      "day_change_nok": 4092,
+      "pct_of_book": 4.91,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 273.1,
-        "as_of": "2026-11-25"
+        "price": 274.96,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 7,
       "cap_state": "clear",
@@ -499,32 +499,32 @@
         {
           "id": "trim",
           "state": "clear",
-          "distance_pct": 41.3,
+          "distance_pct": 40.4,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -29.2
+          "price_vs_level_pct": -28.8
         },
         {
           "id": "inv",
           "state": "hit",
-          "distance_pct": 9.1,
-          "hit_streak_sessions": 9,
-          "price_vs_level_pct": -8.4
+          "distance_pct": 8.4,
+          "hit_streak_sessions": 10,
+          "price_vs_level_pct": -7.7
         }
       ]
     },
     "JPM": {
-      "value_nok": 696828,
+      "value_nok": 710512,
       "cost_nok": 665940,
-      "pnl_nok": 30888,
-      "pnl_pct": 4.64,
-      "day_change_nok": -792,
-      "pct_of_book": 5.73,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": 44572,
+      "pnl_pct": 6.69,
+      "day_change_nok": 13684,
+      "pct_of_book": 5.77,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 316.74,
-        "as_of": "2026-11-25"
+        "price": 322.96,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 8,
       "cap_state": "clear",
@@ -532,32 +532,32 @@
         {
           "id": "trim",
           "state": "clear",
-          "distance_pct": 14.6,
+          "distance_pct": 12.4,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -12.7
+          "price_vs_level_pct": -11
         },
         {
           "id": "inv",
           "state": "clear",
-          "distance_pct": -4.3,
+          "distance_pct": -6.2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 4.5
+          "price_vs_level_pct": 6.6
         }
       ]
     },
     "NVDA": {
-      "value_nok": 716640,
+      "value_nok": 722352,
       "cost_nok": 874080,
-      "pnl_nok": -157440,
-      "pnl_pct": -18.01,
-      "day_change_nok": -29184,
-      "pct_of_book": 5.9,
-      "pct_basis_date": "2026-11-25",
+      "pnl_nok": -151728,
+      "pnl_pct": -17.36,
+      "day_change_nok": 5712,
+      "pct_of_book": 5.86,
+      "pct_basis_date": "2026-11-27",
       "pct_approximate": false,
       "priced": {
         "source": "quote",
-        "price": 149.3,
-        "as_of": "2026-11-25"
+        "price": 150.49,
+        "as_of": "2026-11-27"
       },
       "cap_pct": 8,
       "cap_state": "clear",
@@ -565,56 +565,56 @@
         {
           "id": "trim",
           "state": "clear",
-          "distance_pct": 82.2,
+          "distance_pct": 80.7,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": -45.1
+          "price_vs_level_pct": -44.7
         },
         {
           "id": "inv",
           "state": "hit",
-          "distance_pct": 31.3,
-          "hit_streak_sessions": 2,
-          "price_vs_level_pct": -23.8
+          "distance_pct": 30.2,
+          "hit_streak_sessions": 3,
+          "price_vs_level_pct": -23.2
         }
       ]
     }
   },
   "funds": {
     "voo": {
-      "value_nok": 3623785,
+      "value_nok": 3683845,
       "cost_nok": 3440250,
-      "pnl_nok": 183535,
-      "pnl_pct": 5.33,
-      "pct_of_book": 29.82,
-      "nav": 658.87,
-      "nav_as_of": "2026-11-25"
+      "pnl_nok": 243595,
+      "pnl_pct": 7.08,
+      "pct_of_book": 29.9,
+      "nav": 669.79,
+      "nav_as_of": "2026-11-27"
     },
     "qqq": {
-      "value_nok": 1439021.1,
+      "value_nok": 1477747.3,
       "cost_nok": 1401044,
-      "pnl_nok": 37977.1,
-      "pnl_pct": 2.71,
-      "pct_of_book": 11.84,
-      "nav": 633.93,
-      "nav_as_of": "2026-11-25"
+      "pnl_nok": 76703.3,
+      "pnl_pct": 5.47,
+      "pct_of_book": 11.99,
+      "nav": 650.99,
+      "nav_as_of": "2026-11-27"
     },
     "schd": {
-      "value_nok": 984591,
+      "value_nok": 995193,
       "cost_nok": 767250,
-      "pnl_nok": 217341,
-      "pnl_pct": 28.33,
-      "pct_of_book": 8.1,
-      "nav": 35.29,
-      "nav_as_of": "2026-11-25"
+      "pnl_nok": 227943,
+      "pnl_pct": 29.71,
+      "pct_of_book": 8.08,
+      "nav": 35.67,
+      "nav_as_of": "2026-11-27"
     },
     "bnd": {
-      "value_nok": 1267320,
+      "value_nok": 1263426,
       "cost_nok": 1315110,
-      "pnl_nok": -47790,
-      "pnl_pct": -3.63,
-      "pct_of_book": 10.43,
-      "nav": 71.6,
-      "nav_as_of": "2026-11-25"
+      "pnl_nok": -51684,
+      "pnl_pct": -3.93,
+      "pct_of_book": 10.25,
+      "nav": 71.38,
+      "nav_as_of": "2026-11-27"
     }
   },
   "watchlist": {
@@ -623,9 +623,9 @@
         {
           "id": "buy",
           "state": "clear",
-          "distance_pct": -26.4,
+          "distance_pct": -26.5,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 35.8
+          "price_vs_level_pct": 36.1
         }
       ]
     },
@@ -634,9 +634,9 @@
         {
           "id": "buy",
           "state": "clear",
-          "distance_pct": -20.3,
+          "distance_pct": -20.2,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 25.5
+          "price_vs_level_pct": 25.3
         }
       ]
     },
@@ -645,9 +645,9 @@
         {
           "id": "buy",
           "state": "near",
-          "distance_pct": -1.3,
+          "distance_pct": -2.6,
           "hit_streak_sessions": 0,
-          "price_vs_level_pct": 1.3
+          "price_vs_level_pct": 2.7
         }
       ]
     }
@@ -659,12 +659,12 @@
       "ticker": "COST",
       "level_id": "trim",
       "level_type": "trim",
-      "price": 1086.81,
+      "price": 1097.81,
       "price_label": "confirmed close",
-      "price_date": "2026-11-25",
+      "price_date": "2026-11-27",
       "level_price": 990,
-      "distance_pct": 9.8,
-      "title": "COST 1086.81 is 9.8% above trim 990",
+      "distance_pct": 10.9,
+      "title": "COST 1097.81 is 10.9% above trim 990",
       "action": "Trim a fifth",
       "condition": "A daily close at or above the trim level.",
       "decision_needed": null,
@@ -677,12 +677,12 @@
       "ticker": "GOOGL",
       "level_id": "inv",
       "level_type": "invalidation",
-      "price": 273.1,
+      "price": 274.96,
       "price_label": "confirmed close",
-      "price_date": "2026-11-25",
+      "price_date": "2026-11-27",
       "level_price": 298,
-      "distance_pct": -8.4,
-      "title": "GOOGL 273.10 is 8.4% below invalidation 298",
+      "distance_pct": -7.7,
+      "title": "GOOGL 274.96 is 7.7% below invalidation 298",
       "action": "Re-underwrite",
       "condition": "A daily close below the invalidation level.",
       "decision_needed": null,
@@ -695,12 +695,12 @@
       "ticker": "NVDA",
       "level_id": "inv",
       "level_type": "invalidation",
-      "price": 149.3,
+      "price": 150.49,
       "price_label": "confirmed close",
-      "price_date": "2026-11-25",
+      "price_date": "2026-11-27",
       "level_price": 196,
-      "distance_pct": -23.8,
-      "title": "NVDA 149.30 is 23.8% below invalidation 196",
+      "distance_pct": -23.2,
+      "title": "NVDA 150.49 is 23.2% below invalidation 196",
       "action": "Re-underwrite",
       "condition": "A daily close below the invalidation level.",
       "decision_needed": null,
@@ -713,12 +713,12 @@
       "ticker": "AAPL",
       "level_id": "trim",
       "level_type": "trim",
-      "price": 355.58,
+      "price": 358.54,
       "price_label": "confirmed close",
-      "price_date": "2026-11-25",
+      "price_date": "2026-11-27",
       "level_price": 363,
-      "distance_pct": -2,
-      "title": "AAPL 355.58 is 2.0% below trim 363",
+      "distance_pct": -1.2,
+      "title": "AAPL 358.54 is 1.2% below trim 363",
       "action": "Trim a fifth",
       "condition": "A daily close at or above the trim level, and only if the position is over its cap.",
       "decision_needed": null,
@@ -731,12 +731,12 @@
       "ticker": "XOM",
       "level_id": "buy",
       "level_type": "buy",
-      "price": 158.08,
+      "price": 160.18,
       "price_label": "confirmed close",
-      "price_date": "2026-11-25",
+      "price_date": "2026-11-27",
       "level_price": 156,
-      "distance_pct": 1.3,
-      "title": "XOM 158.08 is 1.3% above buy 156",
+      "distance_pct": 2.7,
+      "title": "XOM 160.18 is 2.7% above buy 156",
       "action": "First position: about 2% of the book",
       "condition": "A daily close at or below the buy level.",
       "decision_needed": null,
@@ -750,42 +750,42 @@
       "date": "2027-01-14",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 50
+      "days_away": 48
     },
     {
       "ticker": "XOM",
       "date": "2027-01-29",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 65
+      "days_away": 63
     },
     {
       "ticker": "GOOGL",
       "date": "2027-02-03",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 70
+      "days_away": 68
     },
     {
       "ticker": "AAPL",
       "date": "2027-02-04",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 71
+      "days_away": 69
     },
     {
       "ticker": "AMZN",
       "date": "2027-02-04",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 71
+      "days_away": 69
     },
     {
       "ticker": "NVDA",
       "date": "2027-02-24",
       "source": "fmp",
       "confidence": "estimated",
-      "days_away": 91
+      "days_away": 89
     }
   ],
   "news": {
@@ -801,7 +801,7 @@
   },
   "briefing": {
     "mode": "template",
-    "text": "CLOSE SCAN 2026-11-25 · status OK · 9/9 quotes confirmed · book in USD\nBOOK 12,152,005 USD (funds as of 25 Nov) · stocks+cash day change −64,859 USD (−1.3%)\nTRIGGERS\n • COST 1086.81 is 9.8% above trim 990 (confirmed close, 25 Nov). Condition to check: A daily close at or above the trim level. Action to consider: Trim a fifth\n • GOOGL 273.10 is 8.4% below invalidation 298 (confirmed close, 25 Nov). Condition to check: A daily close below the invalidation level. Action to consider: Re-underwrite\n • NVDA 149.30 is 23.8% below invalidation 196 (confirmed close, 25 Nov). Condition to check: A daily close below the invalidation level. Action to consider: Re-underwrite\n • AAPL 355.58 is 2.0% below trim 363 (confirmed close, 25 Nov). Condition to check: A daily close at or above the trim level, and only if the position is over its cap. Action to consider: Trim a fifth\n • XOM 158.08 is 1.3% above buy 156 (confirmed close, 25 Nov). Condition to check: A daily close at or below the buy level. Action to consider: First position: about 2% of the book\nEARNINGS ≤ 14 d: none\nNEWS: none\nHOUSEKEEPING: COST earnings date needed",
+    "text": "CLOSE SCAN 2026-11-27 · status OK · 9/9 quotes confirmed · book in USD\nBOOK 12,322,589 USD (funds as of 27 Nov) · stocks+cash day change +65,090 USD (+1.4%)\nTRIGGERS\n • COST 1097.81 is 10.9% above trim 990 (confirmed close, 27 Nov). Condition to check: A daily close at or above the trim level. Action to consider: Trim a fifth\n • GOOGL 274.96 is 7.7% below invalidation 298 (confirmed close, 27 Nov). Condition to check: A daily close below the invalidation level. Action to consider: Re-underwrite\n • NVDA 150.49 is 23.2% below invalidation 196 (confirmed close, 27 Nov). Condition to check: A daily close below the invalidation level. Action to consider: Re-underwrite\n • AAPL 358.54 is 1.2% below trim 363 (confirmed close, 27 Nov). Condition to check: A daily close at or above the trim level, and only if the position is over its cap. Action to consider: Trim a fifth\n • XOM 160.18 is 2.7% above buy 156 (confirmed close, 27 Nov). Condition to check: A daily close at or below the buy level. Action to consider: First position: about 2% of the book\nEARNINGS ≤ 14 d: none\nNEWS: none\nHOUSEKEEPING: COST earnings date needed",
     "generated_by": "template"
   },
   "housekeeping": [

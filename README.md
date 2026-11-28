@@ -7,7 +7,7 @@ the price levels that would make me act, and what changed since the last market 
 companies and funds, and every price is a real daily close. The position sizes, average costs, cash, trades and
 levels are made up. The real one runs on my own portfolio and stays private.
 
-**[Open the live demo](https://oskar-norborg.github.io/command-center-demo/)** · last published with the closes of 25 Nov 2026
+**[Open the live demo](https://oskar-norborg.github.io/command-center-demo/)** · last published with the closes of 27 Nov 2026
 
 ![A walkthrough: the command view, the book over the year, a position page, the watchlist and the journal](screenshots/walkthrough.gif)
 
